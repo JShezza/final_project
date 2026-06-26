@@ -1,3 +1,4 @@
+import pickle
 import time
 from pathlib import Path
 
@@ -63,7 +64,22 @@ def main():
     print("Loading data...")
     df = load_data(CSV_PATH)
 
-    return
+    index, scaler = build_faiss(df)
+
+    faiss.write_index(index, str(DATA_DIR / "tracks.index"))
+    with open(DATA_DIR / "scaler.pkl", "wb") as f:
+        pickle.dump(scaler, f)
+
+    # Keep the original row order with matching FAISS ids
+    meta = df[["id", "name", "artists", "year"]].reset_index(drop=True)
+    meta.to_pickle(DATA_DIR / "metadata.pkl")
+
+    # Match id -> position allows look up by spotify id
+    id_to_pos = {tid: i for i, tid in enumerate(meta["id"].tolist())}
+    with open(DATA_DIR / "id_to_pos.pkl", "wb") as f:
+        pickle.dump(id_to_pos, f)
+
+    print("Saved artifacts to: ", DATA_DIR)
 
 
 if __name__ == "__main__":
