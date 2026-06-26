@@ -1,11 +1,14 @@
+import time
 from pathlib import Path
 
 import faiss
 import numpy as np
 import pandas as pd
+from sklearn.preprocessing import StandardScaler
 
 DATA_DIR = Path(__file__).parent / "data"
 CSV_PATH = "tracks_features.csv"
+NLIST = 1024  # Voroni cells
 
 # Audio features from data set. Ignoring categorical and time
 FEATURES = [
@@ -34,7 +37,25 @@ def load_data(csv_path: str) -> pd.DataFrame:
 
 def build_faiss(df: pd.DataFrame):
     """Train FAISS IVF index and Scale features."""
-    return
+    X = df[FEATURES].to_numpy(dtype="float32")
+
+    # Standardise - mean 0 std 1 per feature. without, tempo 0-249
+    scaler = StandardScaler()
+    X = scaler.fit_transform(X).astype("float32")
+
+    # Dimension - features per vector
+    dim = X.shape[1]
+    # IVF index - Don't compare against every vector. Chop space into NLIST and check closet on search
+    quantiser = faiss.IndexFlatL2(dim)
+    index = faiss.IndexIVFFlat(quantiser, dim, NLIST, faiss.METRIC_L2)
+
+    print(f"Training index on {len(X):,} vectors ({dim} dims)...")
+    t0 = time.time()
+    index.train(X)  # Learn chunk boundaries
+    index.add(X)  # Load the vectors in
+    print(f"Index built in {time.time() - t0:.1f}s, ntotal={index.ntotal:,}")
+
+    return index, scaler
 
 
 def main():
