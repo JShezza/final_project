@@ -1,3 +1,4 @@
+__pycache__
 .venv/
 data/id_to_pos.pkl 
 data/metadata.pkl
