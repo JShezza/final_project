@@ -79,7 +79,7 @@ def main():
 
     # neighbour quality (APIs default nprobe = 16)
     index.nprobe = 16  # type: ignore
-    dists, idxs = index.dists[:, 1:]  # type: ignore
+    dists, idxs = index.search(queries, K + 1)
 
     # Mean similiarity of neighbours
     neighbour_dists = dists[:, 1:]  # type: ignore
