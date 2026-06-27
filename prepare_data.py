@@ -1,3 +1,14 @@
+"""
+Preapes the audio similarity index
+
+1. Loads audio features from dataset
+2. Standardises the feautres to stop a single feature dominating
+3. Train FAISS index for approximate nearest neighbour search
+4. Save the index, scaler and metadata table to directory
+
+Ran before the API
+"""
+
 import pickle
 import time
 from pathlib import Path
