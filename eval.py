@@ -4,7 +4,7 @@ from pathlib import Path
 import faiss
 import numpy as np
 import pandas as pd
-from faiss.loader import approx_topk_by_mode
+from faiss.loader import Neighbor, approx_topk_by_mode
 
 RNG = np.random.default_rng(42)
 N_QUERIES = 1000  # random seed to eval over
@@ -76,3 +76,35 @@ def main():
         f"\nExact brute force: {exact_ms:.3f} ms/query"
         f"({1000 / exact_ms:.0f} queries/sec)"
     )
+
+    # neighbour quality (APIs default nprobe = 16)
+    index.nprobe = 16  # type: ignore
+    dists, idxs = index.dists[:, 1:]  # type: ignore
+
+    # Mean similiarity of neighbours
+    neighbour_dists = dists[:, 1:]  # type: ignore
+    mean_sim = float(np.mean(1 / (1 + neighbour_dists)))
+
+    # Average pairwise distance
+    div = []
+    for row in idxs[:, 1:]:
+        vecs = vectors[row]
+        d = np.linalg.norm(vecs[:, None] - vecs[None, :], axis=-1)
+        div.append(d[np.triu_indices(len(vecs), k=1)].mean())
+    mean_div = float(np.mean(div))
+
+    # year spread - std of release years inside a rec
+    # weak proxy only - no genre/popularitry field
+    year_std = []
+    for row in idxs[:, 1:]:
+        year_std.append(meta.iloc[row]["year"].std())
+    mean_year_std = float(np.nanmean(year_std))
+
+    print("\nNeighbourhood quality (nprobe=16):")
+    print(f"  Mean neighbour similarity : {mean_sim:.3f}")
+    print(f"  Mean intra-list diversity : {mean_div:.3f} (lower = tighter list)")
+    print(f"  Mean release-year spread  : {mean_year_std:.1f} years")
+
+
+if __name__ == "__main__":
+    main()
