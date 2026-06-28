@@ -30,4 +30,4 @@ class RecommendedTrack(BaseModel):
 class RecommendationResponse(BaseModel):
     seed_tracks: list[str]
     results: list[RecommendedTrack]
-    variant: str = "faiss"  # The strategy used to handle the request
+    variant: str = "audio-only"  # The strategy used to handle the request
