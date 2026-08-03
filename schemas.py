@@ -16,6 +16,7 @@ class RecommendationRequest(BaseModel):
 class Rationale(BaseModel):
     """Why a track was recommended by a signal"""
 
+    # Scale from 0 - 1. The higher the most similar
     audio_similarity: float
 
 

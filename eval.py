@@ -4,7 +4,6 @@ from pathlib import Path
 import faiss
 import numpy as np
 import pandas as pd
-from faiss.loader import Neighbor, approx_topk_by_mode
 
 RNG = np.random.default_rng(42)
 N_QUERIES = 1000  # random seed to eval over
