@@ -22,9 +22,12 @@ import sqlite3
 import time
 from pathlib import Path
 
+import requests
+
 API_ROOT = "http://ws.audioscrobbler.com/2.0/"
 CACHE_STORE = Path(__file__).parent / "data" / "lastfm_cache" / "lastfm_cache.sqlite"
 CACHE_SECONDS_TTL = 7 * 24 * 3600
+GAP_SECONDS = 0.25  # 4 requests a second
 
 
 class LastFmAdapter:
@@ -62,6 +65,38 @@ class LastFmAdapter:
             (key, json.dumps(payload), time.time()),
         )
         self.db.commit()
+
+    # HTTP LAyer
+    def _get(self, method: str, **params) -> dict:
+        """Call a method from Last.fm API using the cache first"""
+        key = method + "|" + "|".join(f"{k}={v}" for k, v in sorted(params.items()))
+
+        cached = self._cache_get(key)
+        if cached is not None:
+            return cached
+
+        # rate limiting
+        wait = GAP_SECONDS - (time.time() - self._last_request)
+        if wait > 0:
+            time.sleep(wait)
+
+        resp = requests.get(
+            API_ROOT,
+            params={
+                "method": method,
+                "api_key": self.api_key,
+                "format": "json",
+                **params,
+            },
+            timeout=10,
+        )
+
+        self._last_request = time.time()
+        resp.raise_for_status()
+        payload = resp.json()
+        self._cache_put(key, payload)
+
+        return payload
 
 
 if __name__ == "__main__":
