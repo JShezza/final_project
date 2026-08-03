@@ -155,3 +155,8 @@ if __name__ == "__main__":
         raise SystemExit("No LASTFM_API_KEY in .env")
 
     adapter = LastFmAdapter(api_key=key)
+    # Simple test for chef believe
+    print("Similar to Kendrick Lamar - HUMBLE.:")
+    for t in adapter.similar_tracks("Kendrick Lamar", "HUMBLE.", limit=5):
+        print(f"{t['match']:.3f} {t['name']} - {t['artist']}")
+    print("\nPopularirty:", adapter.popularity("Kendrick Lamar", "HUMBLE."))
