@@ -17,11 +17,14 @@ Design:
 
 """
 
+import json
 import sqlite3
+import time
 from pathlib import Path
 
 API_ROOT = "http://ws.audioscrobbler.com/2.0/"
 CACHE_STORE = Path(__file__).parent / "data" / "lastfm_cache" / "lastfm_cache.sqlite"
+CACHE_SECONDS_TTL = 7 * 24 * 3600
 
 
 class LastFmAdapter:
@@ -35,6 +38,30 @@ class LastFmAdapter:
             "   response TEXT NOT NULL,"
             "   fetched_at REAL NOT NULL)"
         )
+        self.db.commit()
+        self._last_request = 0.0
+
+    # Cache logic
+    def _cache_get(self, key: str):
+        row = self.db.execute(
+            "SELECT response, fetch_at FROM cache WHERE key = ?", (key,)
+        ).fetchone()
+
+        if row is None:
+            return None
+
+        response, fetched_at = row
+        if time.time() - fetched_at > CACHE_SECONDS_TTL:
+            return None
+
+        return json.loads(response)
+
+    def _cache_put(self, key: str, payload: dict):
+        self.db.execute(
+            "INSERT OR REPLACE INTO cache VALUES (?, ?, ?)",
+            (key, json.dumps(payload), time.time()),
+        )
+        self.db.commit()
 
 
 if __name__ == "__main__":
