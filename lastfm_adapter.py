@@ -98,6 +98,50 @@ class LastFmAdapter:
 
         return payload
 
+    # Signal methods
+    def similar_tracks(self, artist: str, track: str, limit: int = 20) -> list[dict]:
+        """
+        Collab signal.
+        Returns a list of {artist, name, matches} dicts, where a match is the 0-1 from last.fm scoring
+        Returns empty [] if track is unknown.
+        """
+
+        payload = self._get(
+            "track.getSimilar", artist=artist, track=track, limit=limit, autocorrect=1
+        )
+
+        # Handle unknown tracks
+        if "error" in payload:
+            return []
+
+        raw = payload.get("similartracks", {}).get("track", [])
+        return [
+            {
+                "artist": t.get("artist", {}).get("name", ""),
+                "name": t.get("name", ""),
+                "match": float(t.get("match", 0.0)),
+            }
+            for t in raw
+        ]
+
+    def popularity(self, artist: str, track: str) -> dict | None:
+        """
+        Grab popularity data for novelty parameter.
+        Returns { playcount, listeners } or None
+        """
+
+        payload = self._get("track.getInfo", artist=artist, track=track, autocorrect=1)
+
+        if "error" in payload or "track" not in payload:
+            return None
+
+        info = payload["track"]
+
+        return {
+            "playcount": int(info.get("playcount", 0)),
+            "listeners": int(info.get("listeners", 0)),
+        }
+
 
 if __name__ == "__main__":
     import os
