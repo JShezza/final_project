@@ -47,7 +47,7 @@ class LastFmAdapter:
     # Cache logic
     def _cache_get(self, key: str):
         row = self.db.execute(
-            "SELECT response, fetch_at FROM cache WHERE key = ?", (key,)
+            "SELECT response, fetched_at FROM cache WHERE key = ?", (key,)
         ).fetchone()
 
         if row is None:
