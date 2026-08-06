@@ -10,6 +10,9 @@ Checks for the three fail points:
     - Cache: Duplicate calls are served from SQLite instead of the network
 """
 
+import tempfile
+from pathlib import Path
+
 from lastfm_adapter import LastFmAdapter
 
 # Last FM shape for responses
@@ -33,7 +36,7 @@ SIMILAR_GOOD = {
 
 # https://ws.audioscrobbler.com/2.0/?method=track.getInfo&artist=Kendrick%20Lamar&track=HUMBLE.&api_key=LAST_FM_API_KEY&format=json
 INFO_GOOD = {
-    "track": {"name": "HUMBLE.", "listeners": "2324945", "playcount": "32144593"}
+    "track": {"name": "HUMBLE.", "playcount": "32147319", "listeners": "2325228"}
 }
 
 UNKNOWN = {"error": 6, "message": "Track not found"}
@@ -63,6 +66,22 @@ class TestAdapter(LastFmAdapter):
 
 
 def main():
+    tmp = Path(tempfile.mkdtemp()) / "test_cache.sqlite"
+    adp = TestAdapter(cache_path=tmp)
+
+    # Parse similar tracks
+    adp.fixtures["track.getSimilar"] = SIMILAR_GOOD
+    sim = adp.similar_tracks("Kendrick Lamar", "HUMBLE.")
+    assert len(sim) == 4, sim
+    assert sim[0] == {"artist": "Kendrick Lamar", "name": "DNA.", "match": 1.0}
+    assert isinstance(sim[1]["match"], float)
+    print("similar_tracks payload parsed")
+
+    # Parse popularity
+    adp.fixtures["track.getInfo"] = INFO_GOOD
+    pop = adp.popularity("Kendrick Lamar", "HUMBLE.")
+    assert pop == {"playcount:"}
+
     print("Tests Complete")
 
 
