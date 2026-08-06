@@ -5,4 +5,5 @@ data/metadata.pkl
 data/scaler.pkl
 data/tracks.index
 data/lastfm_cache/
+tmp/
 .env
