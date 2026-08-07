@@ -69,7 +69,11 @@ class LastFmAdapter:
     # HTTP LAyer
     def _get(self, method: str, **params) -> dict:
         """Call a method from Last.fm API using the cache first"""
-        key = method + "|" + "|".join(f"{k}={v}" for k, v in sorted(params.items()))
+        key = (
+            method
+            + "|"
+            + "|".join(f"{k}={str(v).lower()}" for k, v in sorted(params.items()))
+        )
 
         cached = self._cache_get(key)
         if cached is not None:
