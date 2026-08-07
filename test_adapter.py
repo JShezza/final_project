@@ -75,14 +75,40 @@ def main():
     assert len(sim) == 4, sim
     assert sim[0] == {"artist": "Kendrick Lamar", "name": "DNA.", "match": 1.0}
     assert isinstance(sim[1]["match"], float)
-    print("similar_tracks payload parsed")
+    print("PASS: similar_tracks payload parsed")
 
     # Parse popularity
     adp.fixtures["track.getInfo"] = INFO_GOOD
     pop = adp.popularity("Kendrick Lamar", "HUMBLE.")
-    assert pop == {"playcount:"}
+    assert pop == {"playcount": 32147319, "listeners": 2325228}
 
-    print("Tests Complete")
+    print("PASS: Popularity payload parsed")
+
+    # Unknown Tracks fails properly
+    adp.fixtures["track.getSimilar"] = UNKNOWN
+    assert adp.similar_tracks("Nobody", "No Song") == []
+    adp.fixtures["track.getInfo"] = UNKNOWN
+    assert adp.popularity("Nobody", "No Song") is None
+    print("PASS: Unknown tracks return empty results without a crash.")
+
+    # Cache - Use sql cache instead of the API
+    before = adp.network_calls
+    adp.fixtures["tracks.getSimilar"] = SIMILAR_GOOD
+    adp.similar_tracks("Kendrick Lamar", "HUMBLE.")
+    assert adp.network_calls == before, "expected a cache call"
+    print(
+        "PASS: Duplicate calls served via Cache " f"({adp.network_calls} calls total)"
+    )
+
+    # Cache is used for a new adapter instance (saved to disk)
+    backupAdp = TestAdapter(cache_path=tmp)
+    backupAdp.fixtures = {}
+    sim2 = backupAdp.similar_tracks("Kendrick Lamar", "HUMBLE.")
+    assert sim2[0]["name"] == "DNA."
+    assert backupAdp.network_calls == 0
+    print("PASS: Cache is used across restarts.")
+
+    print("\nTests Complete")
 
 
 if __name__ == "__main__":
