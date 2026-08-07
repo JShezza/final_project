@@ -52,7 +52,11 @@ class TestAdapter(LastFmAdapter):
 
     def _get(self, method, **params):
         # Same logic as the original class but with fixture dict instead
-        key = method + "|" + "|".join(f"{k}={v}" for k, v in sorted(params.items()))
+        key = (
+            method
+            + "|"
+            + "|".join(f"{k}={str(v).lower()}" for k, v in sorted(params.items()))
+        )
 
         cached = self._cache_get(key)
         if cached is not None:
