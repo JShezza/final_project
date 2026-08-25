@@ -21,9 +21,24 @@ from lastfm_adapter import LastFmAdapter
 SIMILAR_GOOD = {
     "similartracks": {
         "track": [
-            {"name": "DNA.", "match": "1.0", "artist": {"name": "Kendrick Lamar"}},
-            {"name": "N95", "match": "0.565109", "artist": {"name": "Kendrick Lamar"}},
-            {"name": "The Box", "match": "0.363724", "artist": {"name": "Roddy Ricch"}},
+            {
+                "name": "DNA.",
+                "match": "1.0",
+                "playcount": "41230567",
+                "artist": {"name": "Kendrick Lamar"},
+            },
+            {
+                "name": "N95",
+                "match": "0.565109",
+                "playcount": "28904411",
+                "artist": {"name": "Kendrick Lamar"},
+            },
+            {
+                "name": "The Box",
+                "match": "0.363724",
+                "playcount": "23928455",
+                "artist": {"name": "Roddy Ricch"},
+            },
             {
                 "name": "No Role Modelz",
                 "match": "0.338553",
@@ -77,7 +92,12 @@ def main():
     adp.fixtures["track.getSimilar"] = SIMILAR_GOOD
     sim = adp.similar_tracks("Kendrick Lamar", "HUMBLE.")
     assert len(sim) == 4, sim
-    assert sim[0] == {"artist": "Kendrick Lamar", "name": "DNA.", "match": 1.0}
+    assert sim[0] == {
+        "artist": "Kendrick Lamar",
+        "name": "DNA.",
+        "match": 1.0,
+        "playcount": 41230567,
+    }
     assert isinstance(sim[1]["match"], float)
     print("PASS: similar_tracks payload parsed")
 
