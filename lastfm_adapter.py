@@ -124,6 +124,8 @@ class LastFmAdapter:
                 "artist": t.get("artist", {}).get("name", ""),
                 "name": t.get("name", ""),
                 "match": float(t.get("match", 0.0)),
+                # data for novelty
+                "playcount": int(t.get("playcount", 0) or 0),
             }
             for t in raw
         ]
