@@ -6,6 +6,7 @@ THe score is [0,1]
 """
 
 import math
+import re
 
 # A/B Variants
 VARIANTS = {
@@ -72,3 +73,49 @@ class Blender:
 
         results.sort(key=lambda r: r["score"], reverse=True)
         return results[:limit]
+
+
+def normalise_title(name: str, artist: str) -> tuple[str, str]:
+    """
+    Reduce pairs to a form for Last.fm results to be matched against catalogue rows
+    (Case, punctuation, style suffixes)
+    """
+
+    def clean(s: str) -> str:
+        s = s.lower()
+        s = re.sub(r"\s*[-(\[].*?(remaster|live|version|edit|mono|stereo).*", "", s)
+        s = re.sub(r"[^\w\s]", "", s)  # get rid of punctuation
+        return re.sub(r"\s+", " ", s).strip()  # handle whitespace
+
+    return clean(name), clean(artist)
+
+
+def catalogue_lookup(meta) -> dict[tuple[str, str], str]:
+    """
+    Build a map: {(normalised name, normalised first artist): track_id} for last.fms (artist, title) results
+    """
+    lookup = {}
+    for row in meta.itertuples(index=False):
+        first_artist = str(row.artists).split(",")[0]
+        key = normalise_title(str(row.name), first_artist)
+        lookup.setdefault(key, row.id)
+
+    return lookup
+
+
+def collabroative_pool(
+    similar: list[dict], lookup: dict[tuple[str, str], str]
+) -> dict[str, float]:
+    """
+    Convert Last.fm adapter similar_tracks into a track_id: match_score pool with only tracks in the catalogue.
+    Drop tracks that can't be matched
+    """
+    pool = {}
+    for t in similar:
+        key = normalise_title(t["name"], t["artist"])
+        track_id = lookup.get(key)
+        if track_id is not None:
+            # If song is returned twice, use the best score.
+            pool[track_id] = max(pool.get(track_id, 0.0), t["match"])
+
+    return pool
