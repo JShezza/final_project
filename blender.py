@@ -7,6 +7,7 @@ THe score is [0,1]
 
 import math
 import re
+from collections.abc import Mapping
 
 # A/B Variants
 VARIANTS = {
@@ -29,7 +30,7 @@ class Blender:
     def blend(
         self,
         signal_pools: dict[str, dict[str, float]],
-        popularity: dict[str, float] | None = None,
+        popularity: Mapping[str, float] | None = None,
         novelty: float = 0.0,
         limit: int = 10,
     ) -> list[dict]:
@@ -65,7 +66,7 @@ class Blender:
             results.append(
                 {
                     "id": track_id,
-                    "scoure": round(score, 4),
+                    "score": round(score, 4),
                     # Signals actual contribution to the blend
                     "rationale": {s: round(c, 4) for s, c in contributions.items()},
                 }
@@ -103,7 +104,7 @@ def catalogue_lookup(meta) -> dict[tuple[str, str], str]:
     return lookup
 
 
-def collabroative_pool(
+def collaborative_pool(
     similar: list[dict], lookup: dict[tuple[str, str], str]
 ) -> dict[str, float]:
     """
