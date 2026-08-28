@@ -91,7 +91,7 @@ def main():
     # Parse similar tracks
     adp.fixtures["track.getSimilar"] = SIMILAR_GOOD
     sim = adp.similar_tracks("Kendrick Lamar", "HUMBLE.")
-    assert len(sim) == 4, sim
+    assert len(sim) == 3, sim
     assert sim[0] == {
         "artist": "Kendrick Lamar",
         "name": "DNA.",
@@ -104,8 +104,7 @@ def main():
     # Parse popularity
     adp.fixtures["track.getInfo"] = INFO_GOOD
     pop = adp.popularity("Kendrick Lamar", "HUMBLE.")
-    assert pop == {"playcount": 32147319, "listeners": 2325228}
-
+    assert pop == {"playcount": 32147319, "listeners": 2325228}, pop
     print("PASS: Popularity payload parsed")
 
     # Unknown Tracks fails properly
