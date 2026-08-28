@@ -8,28 +8,117 @@ GET     /tracks/search
 GET     /health
 """
 
+import os
+import pickle
+from pathlib import Path
+
+from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 
+from ab_router import assign_variant
+from blender import (
+    VARIANTS,
+    Blender,
+    catalogue_lookup,
+    collaborative_pool,
+    normalise_title,
+)
+from outcome_logger import OutcomeLogger
 from recommender import Recommender
-from schemas import RecommendationRequest, RecommendationResponse
+from schemas import (
+    FeedbackRequest,
+    MetricEvent,
+    RecommendationRequest,
+    RecommendationResponse,
+    RecommendedTrack,
+)
+
+load_dotenv()
+
+DATA_DIR = Path(__file__).parent / "data"
+LOOKUP_CACHE = DATA_DIR / "title_lookup.pkl"
+CANDIDATE_POOL = 50
 
 app = FastAPI(title="NextTrack API")
 
-# Start recommender at start up
+# Start recommender at start up ----------------------------------------------
 recommender = Recommender()
+logger = OutcomeLogger()
+
+# Lookup cache
+if LOOKUP_CACHE.exists():
+    with open(LOOKUP_CACHE, "rb") as f:
+        title_lookup = pickle.load(f)
+else:
+    title_lookup = catalogue_lookup(recommender.meta)
+    with open(LOOKUP_CACHE, "wb") as f:
+        pickle.dump(title_lookup, f)
+
+adapter = None
+_key = os.environ.get("LAST_API_KEY")
+if _key:
+    from lastfm_adapter import LastFmAdapter
+
+    adapter = LastFmAdapter(api_key=_key)
+else:
+    print("WARNING: No LAST_FM_API KEY. ONLY RUNNING IN AUDIO-ONLY MODE")
 
 
-@app.post("/recommend", response_model=RecommendationResponse)
-def recommend(req: RecommendationRequest):
-    results = recommender.recommend(
-        seed_tracks=req.seed_tracks,
-        limit=req.limit,
-        exclude_seen=req.parameters.exclude_seen,
-    )
-    if not results:
-        # No seeds ids in catalogue
-        raise HTTPException(status_code=404, detail="No known seed tracks.")
-    return RecommendationResponse(seed_tracks=req.seed_tracks, results=results)
+# Helper functions -----------------------------------------------------------
+def _seed_artist_title(track_id: str) -> tuple[str, str] | None:
+    """Look up seed id in catalogue: (first artist, track name)"""
+    pos = recommender.id_to_pos.get(track_id)
+
+    if pos is None:
+        return None
+    row = recommender.meta.iloc[pos]
+    return str(row["artists"]).split(",")[0], str(row["name"])
+
+
+def _collaborative(seed_tracks: list[str]) -> tuple[dict, dict]:
+    """
+    Query last.fm for every known seed and merge results into one candidate pool
+    ({id: match}) ({id: playcount})
+    """
+    pool: dict[str, float] = {}
+    popularity: dict[str, float] = {}
+
+    if adapter is None:
+        return pool, popularity
+
+    for tid in seed_tracks:
+        at = _seed_artist_title(tid)
+
+        if at is None:
+            continue
+
+        artist, title = at
+        similar = adapter.similar_tracks(artist, title, limit=CANDIDATE_POOL)
+        matched = collaborative_pool(similar, title_lookup)
+
+        for cid, score in matched.items():
+            pool[cid] = max(pool.get(cid, 0.0), score)
+
+        # Popularity for novelty bias
+        for t in similar:
+            cid = title_lookup.get(normalise_title(t["name"], t["artist"]))
+
+            if cid is not None and t.get("playcount"):
+                popularity[cid] = max(popularity.get(cid, 0), t["playcount"])
+
+    return pool, popularity
+
+
+# Routes ----------------------------------------------------------------------
+
+
+@app.get("/health")
+def health():
+    return {
+        "status": "ok",
+        "catalogue_size": recommender.index.ntotal,
+        "collaborative_signal": adapter is not None,
+    }
 
 
 @app.get("/tracks/search")
@@ -38,6 +127,61 @@ def search_tracks(q: str, limit: int = 10):
     return {"query": q, "results": recommender.search(q, limit)}
 
 
-@app.get("/health")
-def health():
-    return {"status": "ok", "catalogue_size": recommender.index.ntotal}
+@app.post("/recommend", response_model=RecommendationResponse)
+def recommend(req: RecommendationRequest):
+    # A/B Router strategy
+    variant_name = assign_variant(req.user_id)
+
+    audio_results = recommender.recommend(
+        seed_tracks=req.seed_tracks,
+        limit=CANDIDATE_POOL,
+        exclude_seen=req.parameters.exclude_seen,
+    )
+    audio_pool = {r["id"]: r["rationale"]["audio_similarity"] for r in audio_results}
+
+    collab_pool, popularity = _collaborative(req.seed_tracks)
+    if req.parameters.exclude_seen:
+        for tid in req.seed_tracks:
+            collab_pool.pop(tid, None)
+
+    if not audio_pool and not collab_pool:
+        # No seeds ids in catalogue
+        raise HTTPException(status_code=404, detail="No known seed tracks.")
+
+    blended = Blender(VARIANTS[variant_name]).blend(
+        {"audio": audio_pool, "collaborative": collab_pool},
+        popularity=popularity or None,
+        novelty=req.parameters.novelty,
+        limit=req.limit,
+    )
+
+    results = []
+    for r in blended:
+        pos = recommender.id_to_pos[r["id"]]
+        row = recommender.meta.iloc[pos]
+        results.append(
+            RecommendedTrack(
+                id=r["id"],
+                name=str(row["name"]),
+                artists=str(row["artists"]),
+                year=int(row["year"]),
+                score=r["score"],
+                rationale=r["rationale"],
+            )
+        )
+
+    # log it with outcome_logger
+    request_id = logger.log_request(
+        user_id=req.user_id,
+        variant=variant_name,
+        seeds=req.seed_tracks,
+        params=req.parameters.model_dump(mode="json"),
+        result_ids=[r.id for r in results],
+    )
+
+    return RecommendationResponse(
+        request_id=request_id,
+        seed_tracks=req.seed_tracks,
+        results=results,
+        variant=variant_name,
+    )
