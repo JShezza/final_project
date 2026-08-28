@@ -127,6 +127,28 @@ def search_tracks(q: str, limit: int = 10):
     return {"query": q, "results": recommender.search(q, limit)}
 
 
+@app.get("/feedback")
+def feedback(fb: FeedbackRequest):
+    """Record rating against logged request. Thumbs up/down/skip"""
+    if not logger.log_feedback(fb.request_id, fb.track_id, fb.rating):
+        raise HTTPException(status_code=404, detail="Unknown request_id")
+    return {"status": "recorded"}
+
+
+@app.get("/experiments/{name}/variant")
+def experiment_variant(name: str, user_id: str):
+    """WHich A/B variant is assigned to a user id"""
+    return {"experiment": name, "user_id": user_id, "variant": assign_variant(user_id)}
+
+
+@app.get("/experiments/{name}/metrics")
+def experiment_metrics(name: str, event: MetricEvent):
+    """Log a metric observation for offline user"""
+    variant = assign_variant(event.user_id) if event.user_id else None
+    logger.log_metric(name, event.user_id, variant, event.metric, event.value)
+    return {"status": "recorded", "experiment": name, "variant": variant}
+
+
 @app.post("/recommend", response_model=RecommendationResponse)
 def recommend(req: RecommendationRequest):
     # A/B Router strategy
