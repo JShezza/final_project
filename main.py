@@ -55,7 +55,7 @@ else:
         pickle.dump(title_lookup, f)
 
 adapter = None
-_key = os.environ.get("LAST_API_KEY")
+_key = os.environ.get("LASTFM_API_KEY")
 if _key:
     from lastfm_adapter import LastFmAdapter
 
