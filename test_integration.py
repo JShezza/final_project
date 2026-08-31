@@ -176,7 +176,7 @@ def test_outcome_logging_feedback():
     fb = client.post(
         "/feedback", json={"request_id": rid, "track_id": track, "rating": "up"}
     )
-    assert fb.status_code == 200
+    assert fb.status_code == 200, (fb.status_code, fb.text)
     assert (
         main.logger.db.execute(
             "SELECT rating FROM feedback WHERE request_id = ?", (rid,)
