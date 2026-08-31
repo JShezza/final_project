@@ -57,7 +57,7 @@ INFO_GOOD = {
 UNKNOWN = {"error": 6, "message": "Track not found"}
 
 
-class TestAdapter(LastFmAdapter):
+class FakeAdapter(LastFmAdapter):
     """Network call swapped with a fixture lookup"""
 
     def __init__(self, cache_path):
