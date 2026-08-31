@@ -3,6 +3,8 @@ __pycache__
 data/id_to_pos.pkl 
 data/metadata.pkl
 data/scaler.pkl
+data/title_lookup.pkl
+data/outcomes.sqlite
 data/tracks.index
 data/lastfm_cache/
 tmp/
