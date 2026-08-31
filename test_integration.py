@@ -119,8 +119,91 @@ def test_variant_assignment():
 
 
 # to do report contract, outcome and feedback
+def test_report_contract():
+    """Defaults and fields are set"""
+    main.adapter = None
+
+    # No limit = 1 track
+    r = client.post("/recommend", json={"seed_tracks": [SEED]})
+    assert r.status_code == 200, r.text
+
+    body = r.json()
+    assert len(body["results"])
+    assert "request_id" in body and body["request_id"]
+
+    # target_mood is part of the contract
+    r2 = client.post(
+        "/recommend",
+        json={"seed_tracks": [SEED], "parameters": {"target_mood": "calm"}},
+    )
+    assert r2.status_code == 200, r2.text
+
+    bad = client.post(
+        "/recommend",
+        json={"seed_tracks": [SEED], "parameters": {"target_mood": "angry"}},
+    )
+    assert bad.status_code == 422
+    print("pass: Contract matches (limit default 1, target_mood)")
+
+
+def test_outcome_logging_feedback():
+    """A/B loop closes properly: request logged -> feedback conkoined via request_id"""
+
+    main.adapter = None
+    r = client.post(
+        "/recommend", json={"seed_tracks": [SEED], "user_id": "stinky", "limit": 3}
+    )
+
+    body = r.json()
+    rid, track = body["request_id"], body["results"][0]["id"]
+
+    row = main.logger.db.execute(
+        "SELECT variant, results FROM requests WHERE request_id =?", (rid,)
+    ).fetchone()
+    assert row is not None, "request wasn't logged"
+    assert row[0] == body["variant"]
+    import hashlib
+    import json as _json
+
+    assert track in _json.loads(row[1])
+
+    # user_id stored only as a hash and not raw
+    raw = main.logger.db.execute(
+        "SELECT user_key FROM requests WHERE request_id = ?", (rid,)
+    ).fetchone()[0]
+    assert raw == hashlib.sha256(b"stinky").hexdigest() and raw != "stinky"
+
+    fb = client.post(
+        "/feedback", json={"request_id": rid, "track_id": track, "rating": "up"}
+    )
+    assert fb.status_code == 200
+    assert (
+        main.logger.db.execute(
+            "SELECT rating FROM feedback WHERE request_id = ?", (rid,)
+        ).fetchone()[0]
+        == "up"
+    )
+
+    assert (
+        client.post(
+            "/feedback", json={"request_id": "nope", "track_id": track, "rating": "up"}
+        ).status_code
+        == 404
+    )
+
+    m = client.post(
+        "/experiments/blend-test/metrics",
+        json={"user_id": "stinky", "metric": "session_length", "value": 4.0},
+    )
+    assert m.status_code == 200 and m.json()["variant"] == assign_variant("stinky")
+    print("PASS: outcome logger + feedback + metrics close the A/B loop")
+
 
 if __name__ == "__main__":
     test_audio_only_fallback()
     test_hybrid_blend_over_http()
+    test_novelty_over_http()
     test_variant_assignment()
+    test_report_contract()
+    test_outcome_logging_feedback()
+    print("\nAll integration tests passed")
