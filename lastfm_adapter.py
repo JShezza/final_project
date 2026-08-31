@@ -34,7 +34,7 @@ class LastFmAdapter:
     def __init__(self, api_key: str, cache_path: Path = CACHE_STORE):
         self.api_key = api_key
         cache_path.parent.mkdir(parents=True, exist_ok=True)
-        self.db = sqlite3.connect(cache_path)
+        self.db = sqlite3.connect(cache_path, check_same_thread=False)
         self.db.execute(
             "CREATE TABLE IF NOT EXISTS cache ("
             "   key TEXT PRIMARY KEY,"
