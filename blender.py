@@ -18,14 +18,27 @@ VARIANTS = {
 }
 
 
+def min_max(pool: Mapping[str, float]) -> dict[str, float]:
+    """
+    Rescale signal to [0,1]
+    """
+    if not pool:
+        return {}
+    lo, hi = min(pool.values()), max(pool.values())
+    if hi == lo:
+        return {k: 1.0 for k in pool}
+    return {k: (v - lo) / (hi - lo) for k, v in pool.items()}
+
+
 class Blender:
-    def __init__(self, weights: dict[str, float]):
+    def __init__(self, weights: dict[str, float], normalise: bool = False):
         total = sum(weights.values())
         if total <= 0:
             raise ValueError("At least one weight must be greater than 0.")
 
         # Noramlise to stay between [0,1]
         self.weights = {k: v / total for k, v in weights.items()}
+        self.normalise = normalise
 
     def blend(
         self,
@@ -39,6 +52,9 @@ class Blender:
         popularity:   optional {track_id: playcount} for the novelty bias
         novelty:      0 = ignore popularity, 1 = maximum bias to the long tail
         """
+        if self.normalise:
+            signal_pools = {s: min_max(p) for s, p in signal_pools.items()}
+
         # Create a union of candiates for every processed signal
         candidates = set()
         for pool in signal_pools.values():
@@ -72,7 +88,13 @@ class Blender:
                 }
             )
 
-        results.sort(key=lambda r: r["score"], reverse=True)
+        results.sort(
+            key=lambda r: (
+                -r["score"],
+                -sum(1 for c in r["rationale"].values() if c > 0),
+                r["id"],
+            )
+        )
         return results[:limit]
 
 
