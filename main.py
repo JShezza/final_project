@@ -38,6 +38,7 @@ load_dotenv()
 DATA_DIR = Path(__file__).parent / "data"
 LOOKUP_CACHE = DATA_DIR / "title_lookup.pkl"
 CANDIDATE_POOL = 50
+NORMALISE_SCORES = True
 
 app = FastAPI(title="NextTrack API")
 
@@ -170,7 +171,7 @@ def recommend(req: RecommendationRequest):
         # No seeds ids in catalogue
         raise HTTPException(status_code=404, detail="No known seed tracks.")
 
-    blended = Blender(VARIANTS[variant_name]).blend(
+    blended = Blender(VARIANTS[variant_name], normalise=NORMALISE_SCORES).blend(
         {"audio": audio_pool, "collaborative": collab_pool},
         popularity=popularity or None,
         novelty=req.parameters.novelty,

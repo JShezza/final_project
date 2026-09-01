@@ -11,6 +11,7 @@ from blender import (
     Blender,
     catalogue_lookup,
     collaborative_pool,
+    min_max,
     normalise_title,
 )
 
@@ -69,6 +70,26 @@ def test_novelty_damping():
     print("PASS: novelty re-ranks toward the long tail.")
 
 
+def test_score_normalisation():
+    """min-max  makes the weights mean what they say"""
+    audio = {"a1": 0.95, "a2": 0.92, "a3": 0.9}
+    collab = {"c1": 1.0, "c2": 0.4}
+
+    raw = Blender(VARIANTS["audio_heavy"]).blend(
+        {"audio": audio, "collaborative": collab}, limit=3
+    )
+    norm = Blender(VARIANTS["audio_heavy"], normalise=True).blend(
+        {"audio": audio, "collaborative": collab}, limit=3
+    )
+
+    assert all(r["id"].startswith("a") for r in raw), raw
+    assert "c1" in {r["id"] for r in norm}, norm
+
+    assert min_max({"x": 5.0}) == {"x": 1.0}
+    assert min_max({"x": 2.0, "y": 2.0}) == {"x": 1.0, "y": 1.0}
+    print("PASS: score normalisation gives weights meaning")
+
+
 def test_normalise_title():
     a = normalise_title("HUMBLE.", "Kendrick Lamar")
     b = normalise_title("Humble", "kendrick lamar")
@@ -106,6 +127,7 @@ if __name__ == "__main__":
     test_weight_normalisation()
     test_zero_weight_disables_signal()
     test_novelty_damping()
+    test_score_normalisation()
     test_normalise_title()
     test_lastfm_to_catalogue_mapping()
     print("\nAll blender tests passed")

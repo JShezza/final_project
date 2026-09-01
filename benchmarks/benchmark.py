@@ -20,6 +20,7 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
+from dotenv import load_dotenv
 from scipy.stats import wilcoxon
 
 from blender import (
@@ -31,11 +32,13 @@ from blender import (
 )
 from recommender import Recommender
 
+load_dotenv()
+
 SEEDS_FILE = Path(__file__).parent / "benchmark_seeds.json"
 OUT_FILE = Path(__file__).parent / "becnhmark_results.json"
 TOP_N = 10
 CANDIDATE_POOL = 50
-NOVELTY_SETTINGS = [0.0, 1.0]
+NOVELTY_SETTINGS = [0.0, 0.25, 0.5, 0.75, 1.0]
 MODES = {"raw": False, "norm": True}
 RNG = random.Random(42)
 
@@ -134,6 +137,7 @@ def main():
                         "novelty": novelty,
                         "coherence": coherence(rec, seed_id, ids),
                         "diversity": diversity(rec, ids),
+                        "pop_coverage": len(known) / len(ids),
                         "mean_log_playcount": (
                             float(np.mean([math.log1p(p) for p in known]))
                             if known
@@ -180,7 +184,7 @@ def main():
 
     print("\n Wilcoxon signed-rank (coherence, novelty=0, paired  per seed)")
     pairs = [
-        ("balanced", "audio-only"),
+        ("balanced", "audio_only"),
         ("audio_heavy", "audio_only"),
         ("balanced", "random"),
         ("audio_only", "random"),
@@ -191,7 +195,7 @@ def main():
         report_wilcoxon(base[base["mode"] == mode], "coherence", pairs)
 
     print("\n Novelty Param effect (balanced, noramlised): Reach the tail?")
-    print(f"{'novelty':>7} | {'pop cov':>7} | {'mean log-playcount (known)'}:>26")
+    print(f"{'novelty':>7} | {'pop cov':>7} | {'mean log-playcount (known)':>26}")
     for nov in NOVELTY_SETTINGS:
         g = df[
             (df["variant"] == "balanced")
