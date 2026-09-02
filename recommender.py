@@ -77,9 +77,19 @@ class Recommender:
         query: str,
         limit: int = 10,
     ):
-        mask = self.meta["name"].str.contains(query, case=False, na=False)
-        hits = self.meta[mask].head(limit)
-        return hits.to_dict(orient="records")  # type: ignore
+        """Search the catalogue by artistortrack name"""
+        name_hit = self.meta["name"].str.contains(
+            query, case=False, na=False, regex=False
+        )
+        artist_hit = self.meta["artists"].str.contains(
+            query, case=False, na=False, regex=False
+        )
+
+        hits = self.meta[name_hit | artist_hit].copy()
+        hits["_rank"] = (~artist_hit[hits.index]).astype(int)
+        hits = hits.sort_values("_rank", kind="stable").head(limit)  # type: ignore
+
+        return hits.drop(columns="_rank").to_dict(orient="records")
 
 
 if __name__ == "__main__":
