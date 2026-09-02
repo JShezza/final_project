@@ -22,7 +22,8 @@ async function request(path, options) {
 
 const json = (body) => ({
     method: "POST",
-    headers: JSON.stringify(body),
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(body),
 });
 
 export const searchTracks = (q, limit = 8) =>
