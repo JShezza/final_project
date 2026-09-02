@@ -177,7 +177,8 @@ input[type="range"] {
     padding: 0;
     border: 1px solid var(--line);
     border-radius: var(--radius);
-    overflow: scroll;
+    overflow-y: auto;
+    max-height: 320px;
 }
 
 .matches button {

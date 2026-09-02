@@ -6,6 +6,7 @@ turns a list of seed track ids into a ranked list of tracks
 
 import pickle
 from pathlib import Path
+from re import RegexFlag
 from typing import cast
 
 import faiss
@@ -78,15 +79,20 @@ class Recommender:
         limit: int = 10,
     ):
         """Search the catalogue by artistortrack name"""
-        name_hit = self.meta["name"].str.contains(
-            query, case=False, na=False, regex=False
-        )
-        artist_hit = self.meta["artists"].str.contains(
-            query, case=False, na=False, regex=False
-        )
+        words = [w for w in query.lower().split() if w]
+        if not words:
+            return []
 
-        hits = self.meta[name_hit | artist_hit].copy()
-        hits["_rank"] = (~artist_hit[hits.index]).astype(int)
+        haystack = (self.meta["artists"] + " " + self.meta["name"]).str.lower()
+        mask = pd.Series(True, index=self.meta.index)
+
+        for w in words:
+            mask &= haystack.str.contains(w, regex=False, na=False)
+
+        hits = self.meta[mask].copy()
+        artist_hit = hits["artists"].str.lower().str.contains(words[0], regex=False)  # type: ignore
+
+        hits["_rank"] = (~artist_hit).astype(int)
         hits = hits.sort_values("_rank", kind="stable").head(limit)  # type: ignore
 
         return hits.drop(columns="_rank").to_dict(orient="records")

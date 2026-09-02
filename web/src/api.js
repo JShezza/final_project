@@ -26,7 +26,7 @@ const json = (body) => ({
     body: JSON.stringify(body),
 });
 
-export const searchTracks = (q, limit = 8) =>
+export const searchTracks = (q, limit = 30) =>
     request(`/tracks/search?q=${encodeURIComponent(q)}&limit=${limit}`);
 
 export const health = () => request(`/health`);
