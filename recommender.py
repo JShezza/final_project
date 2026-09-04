@@ -39,7 +39,14 @@ class Recommender:
 
         return self.index.reconstruct(pos)
 
-    def recommend(self, seed_tracks, limit=10, exclude_seen=True):
+    def recommend(
+        self,
+        seed_tracks,
+        limit=10,
+        exclude_seen=True,
+        dim_targets=None,
+        dim_strength=0.6,
+    ):
         # Only seeds in the data
         known = [t for t in seed_tracks if t in self.id_to_pos]
         if not known:
@@ -48,6 +55,13 @@ class Recommender:
         # Avg seed vectors in a query vector
         seed_vects = np.array([self._vector_for(t) for t in known], dtype="float32")
         query = seed_vects.mean(axis=0, keepdims=True)
+
+        # Context steering:
+        if dim_targets:
+            for dim, target in dim_targets.items():
+                query[0, dim] = (1 - dim_strength) * query[
+                    0, dim
+                ] + dim_strength * target
 
         # overfetch ensuring enough after removing seeds
         k = limit + len(known)
