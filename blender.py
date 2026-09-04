@@ -45,12 +45,16 @@ class Blender:
         signal_pools: dict[str, dict[str, float]],
         popularity: Mapping[str, float] | None = None,
         novelty: float = 0.0,
+        mood_fit: Mapping[str, float] | None = None,
+        mood_strength: float = 0.7,
         limit: int = 10,
     ) -> list[dict]:
         """
         signal_pools: {"audio": {track_id: score}, "collaborative": {...}}
         popularity:   optional {track_id: playcount} for the novelty bias
         novelty:      0 = ignore popularity, 1 = maximum bias to the long tail
+        mood_fit:   option from the context engine
+        mood_strength:  how much the mood re-ranks. <1 is poor match
         """
         if self.normalise:
             signal_pools = {s: min_max(p) for s, p in signal_pools.items()}
@@ -78,6 +82,10 @@ class Blender:
             if novelty > 0 and popularity and track_id in popularity:
                 pop_norm = math.log1p(popularity[track_id]) / max_log_pop
                 score *= 1 - novelty * pop_norm
+
+            if mood_fit:
+                fit = mood_fit.get(track_id, 0.0)
+                score *= 1 - mood_strength * (1 - fit)
 
             results.append(
                 {

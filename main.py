@@ -24,11 +24,13 @@ from blender import (
     collaborative_pool,
     normalise_title,
 )
+from mood import MoodScorer
 from outcome_logger import OutcomeLogger
 from recommender import Recommender
 from schemas import (
     FeedbackRequest,
     MetricEvent,
+    Mood,
     RecommendationRequest,
     RecommendationResponse,
     RecommendedTrack,
@@ -52,6 +54,7 @@ app.add_middleware(
 # Start recommender at start up ----------------------------------------------
 recommender = Recommender()
 logger = OutcomeLogger()
+mood_scorer = MoodScorer(recommender)
 
 # Lookup cache
 if LOOKUP_CACHE.exists():
@@ -162,10 +165,18 @@ def recommend(req: RecommendationRequest):
     # A/B Router strategy
     variant_name = assign_variant(req.user_id)
 
+    wants_mood = req.parameters.target_mood != Mood.any
+    dim_targets = (
+        mood_scorer.query_targets(req.parameters.target_mood.value)
+        if wants_mood
+        else None
+    )
+
     audio_results = recommender.recommend(
         seed_tracks=req.seed_tracks,
         limit=CANDIDATE_POOL,
         exclude_seen=req.parameters.exclude_seen,
+        dim_targets=dim_targets,
     )
     audio_pool = {r["id"]: r["rationale"]["audio_similarity"] for r in audio_results}
 
@@ -178,10 +189,17 @@ def recommend(req: RecommendationRequest):
         # No seeds ids in catalogue
         raise HTTPException(status_code=404, detail="No known seed tracks.")
 
+    mood_fit = None
+    if wants_mood:
+        mood_fit = mood_scorer.fit_scores(
+            set(audio_pool) | set(collab_pool), req.parameters.target_mood.value
+        )
+
     blended = Blender(VARIANTS[variant_name], normalise=NORMALISE_SCORES).blend(
         {"audio": audio_pool, "collaborative": collab_pool},
         popularity=popularity or None,
         novelty=req.parameters.novelty,
+        mood_fit=mood_fit,
         limit=req.limit,
     )
 
