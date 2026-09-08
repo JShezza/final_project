@@ -69,3 +69,42 @@ class MetricEvent(BaseModel):
     user_id: str | None = None
     metric: str
     value: float
+
+
+class SimilarRequest(BaseModel):
+    """Tracks similar to one track"""
+
+    track_id: str
+    limit: int = Field(10, ge=1, le=50)
+
+
+class OnboardRequest(BaseModel):
+    """
+    Cold start seed. New users don't have history so name artists
+    and a mood for seed tracks to start with.
+    """
+
+
+class MoodAnalyseRequest(BaseModel):
+    """Free  text describing the vibe"""
+
+    text: str = Field(..., min_length=1, max_length=2000)
+
+
+class MoodAnalysis(BaseModel):
+    compound: float  # Vader polarity -1 to +1
+    positive: float
+    neutral: float
+    negative: float
+    mood: Mood  # happy sad any
+
+
+class LoginRequest(BaseModel):
+    username: str
+    password: str
+
+
+class TokenResponse(BaseModel):
+    access_token: str
+    token_type: str = "bearer"
+    expires_in: int  # Seconds
