@@ -15,6 +15,7 @@ VARIANTS = {
     "collab_only": {"audio": 0.0, "collaborative": 1.0},
     "balanced": {"audio": 0.5, "collaborative": 0.5},
     "audio_heavy": {"audio": 0.75, "collaborative": 0.25},
+    "full_hybrid": {"audio": 0.4, "collaborative": 0.4, "lyric": 0.2},
 }
 
 

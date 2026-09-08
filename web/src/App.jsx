@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { health, recommend, searchTracks, sendFeedback } from "./api.js";
 
 const MOODS = ["any", "happy", "sad", "energetic", "calm"];

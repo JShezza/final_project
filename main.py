@@ -24,6 +24,8 @@ from blender import (
     collaborative_pool,
     normalise_title,
 )
+from lyric_signal import LyricSentiment
+from lyrics_adapter import LyricsAdapter
 from mood import MoodScorer
 from outcome_logger import OutcomeLogger
 from recommender import Recommender
@@ -41,6 +43,7 @@ load_dotenv()
 DATA_DIR = Path(__file__).parent / "data"
 LOOKUP_CACHE = DATA_DIR / "title_lookup.pkl"
 CANDIDATE_POOL = 50
+LYRIC_POOL = 20
 NORMALISE_SCORES = True
 
 app = FastAPI(title="NextTrack API")
@@ -55,6 +58,7 @@ app.add_middleware(
 recommender = Recommender()
 logger = OutcomeLogger()
 mood_scorer = MoodScorer(recommender)
+lyrics = LyricSentiment(LyricsAdapter())
 
 # Lookup cache
 if LOOKUP_CACHE.exists():
@@ -120,6 +124,35 @@ def _collaborative(seed_tracks: list[str]) -> tuple[dict, dict]:
     return pool, popularity
 
 
+def _lyric(seed_tracks, audio_pool, collab_pool, target_mood):
+    """
+    Lyric sentiment pool over the shortlist
+    top pool cadniantes from cheaper signal, scored for closeness to the seed or  target mood
+    Returns {} if no lyrics
+    """
+
+    def top(pool):
+        return sorted(pool, key=pool.get, reverse=True)[:LYRIC_POOL]
+
+    seed_compounds = []
+    for tid in seed_tracks:
+        at = _seed_artist_title(tid)
+        if at:
+            seed_compounds.append(lyrics.compound_for(tid, *at))
+
+    reference = lyrics.reference_for(seed_compounds, target_mood)
+    if reference is None:
+        return {}
+
+    shortlist = []
+    for tid in dict.fromkeys(top(audio_pool) + top(collab_pool)):
+        at = _seed_artist_title(tid)
+        if at:
+            shortlist.append((tid, *at))
+
+    return lyrics.pool(shortlist, reference)
+
+
 # Routes ----------------------------------------------------------------------
 
 
@@ -129,6 +162,7 @@ def health():
         "status": "ok",
         "catalogue_size": recommender.index.ntotal,
         "collaborative_signal": adapter is not None,
+        "lyric_signal": True,
     }
 
 
@@ -189,6 +223,12 @@ def recommend(req: RecommendationRequest):
         # No seeds ids in catalogue
         raise HTTPException(status_code=404, detail="No known seed tracks.")
 
+    lyric_pool = {}
+    if VARIANTS[variant_name].get("lyric", 0) > 0:
+        lyric_pool = _lyric(
+            req.seed_tracks, audio_pool, collab_pool, req.parameters.target_mood.value
+        )
+
     mood_fit = None
     if wants_mood:
         mood_fit = mood_scorer.fit_scores(
@@ -196,7 +236,7 @@ def recommend(req: RecommendationRequest):
         )
 
     blended = Blender(VARIANTS[variant_name], normalise=NORMALISE_SCORES).blend(
-        {"audio": audio_pool, "collaborative": collab_pool},
+        {"audio": audio_pool, "collaborative": collab_pool, "lyric": lyric_pool},
         popularity=popularity or None,
         novelty=req.parameters.novelty,
         mood_fit=mood_fit,
