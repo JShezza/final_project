@@ -105,3 +105,21 @@ class OutcomeLogger:
             (experiment, time.time(), _anon(user_id), variant, metric, value),
         )
         self.db.commit()
+
+    def stats(self) -> dict:
+        """Aggregate counts for the admin dashboard: no per user detail"""
+        q = self.db.execute
+        by_variant = dict(
+            q("SELECT variant, COUNT(*) FROM requests GROUP BY variant").fetchall()
+        )
+        by_rating = dict(
+            q("SELECT rating, COUNT(*) FROM feedback GROUP BY rating").fetchall()
+        )
+
+        return {
+            "requests": q("SELECT COUNT(*) FROM requests").fetchone()[0],
+            "feedback": q("SELECT COUNT(*) FROM feedback").fetchone()[0],
+            "metrics": q("SELECT COUNT(*) FROM metrics").fetchone()[0],
+            "requests_by_variant": by_variant,
+            "requests_by_rating": by_rating,
+        }
