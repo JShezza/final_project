@@ -340,7 +340,7 @@ def onboard(req: OnboardRequest):
 
     """
     candidates = {}
-    for artist in req.artist:
+    for artist in req.artists:
         for hit in recommender.search(artist, limit=req.limit):
             candidates.setdefault(hit["id"], hit)
 
@@ -353,7 +353,7 @@ def onboard(req: OnboardRequest):
         ids.sort(key=lambda i: fit.get(i, 0.0), reverse=True)
 
     return {
-        "artists": req.artist,
+        "artists": req.artists,
         "target_mood": req.target_mood,
         "seeds": [
             {k: candidates[i][k] for k in ("id", "name", "artists", "year")}

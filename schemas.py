@@ -32,13 +32,6 @@ class RecommendationRequest(BaseModel):
     limit: int = Field(1, ge=1, le=20)
 
 
-# class Rationale(BaseModel):
-#     """Why a track was recommended by a signal"""
-#
-#     # Scale from 0 - 1. The higher the most similar
-#     audio_similarity: float
-
-
 class RecommendedTrack(BaseModel):
     id: str
     name: str
@@ -84,6 +77,10 @@ class OnboardRequest(BaseModel):
     and a mood for seed tracks to start with.
     """
 
+    artists: list[str] = Field(..., min_length=1, max_length=10)
+    target_mood: Mood = Mood.any
+    limit: int = Field(10, ge=1, le=30)
+
 
 class MoodAnalyseRequest(BaseModel):
     """Free  text describing the vibe"""
@@ -97,6 +94,16 @@ class MoodAnalysis(BaseModel):
     neutral: float
     negative: float
     mood: Mood  # happy sad any
+
+
+class MoodRecommendRequest(BaseModel):
+    """Mood driven recommendation"""
+
+    text: str = Field(..., min_length=1, max_length=2000)
+    seed_tracks: list[str] = Field(..., min_length=1, max_length=50)
+    user_id: str | None = None
+    novelty: float = Field(0.5, ge=0, le=1)
+    limit: int = Field(1, ge=1, le=20)
 
 
 class LoginRequest(BaseModel):
