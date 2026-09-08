@@ -15,8 +15,10 @@ from pathlib import Path
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from requests import request
 
 from ab_router import assign_variant
+from admin_auth import check_credentials, issue_token, require_admin
 from blender import (
     VARIANTS,
     Blender,
@@ -31,11 +33,18 @@ from outcome_logger import OutcomeLogger
 from recommender import Recommender
 from schemas import (
     FeedbackRequest,
+    LoginRequest,
     MetricEvent,
     Mood,
+    MoodAnalyseRequest,
+    MoodAnalysis,
+    OnboardRequest,
+    PreferenceParameters,
     RecommendationRequest,
     RecommendationResponse,
     RecommendedTrack,
+    SimilarRequest,
+    TokenResponse,
 )
 
 load_dotenv()
@@ -153,6 +162,109 @@ def _lyric(seed_tracks, audio_pool, collab_pool, target_mood):
     return lyrics.pool(shortlist, reference)
 
 
+def _track_row(track_id: str):
+    pos = recommender.id_to_pos(track_id)
+    return None if pos is None else recommender.meta.iloc[pos]
+
+
+def _hydrate(track_id: str, score: float, rationale: dict) -> RecommendedTrack:
+    row = _track_row(track_id)
+    return RecommendedTrack(
+        id=track_id,
+        name=str(row["row"]),  # type: ignore
+        artists=str(row["artists"]),  # type: ignore
+        year=int(row["year"]),  # type: ignore
+        score=score,
+        rationale=rationale,
+    )
+
+
+def _mood_from_text(text: str) -> MoodAnalysis:
+    """VADER over free text -> a mood"""
+    scores = lyrics.analyser.polarity_scores(text)
+    compound = float(scores["compound"])
+    if compound >= 0.3:
+        mood = Mood.happy
+    elif compound <= -0.3:
+        mood = Mood.sad
+    else:
+        mood = Mood.any
+    return MoodAnalysis(
+        compound=compound,
+        positive=scores["pos"],
+        neutral=scores["neu"],
+        negative=scores["neg"],
+        mood=mood,
+    )
+
+
+def _run_pipeline(
+    seed_tracks: list[str],
+    user_id: str | None,
+    params: PreferenceParameters,
+    limit: int,
+) -> RecommendationResponse:
+    """The full hybrid pipeline. through /recommend and /mood/recommend"""
+    variant_name = assign_variant(user_id)
+
+    wants_mood = params.target_mood != Mood.any
+    dim_targets = (
+        mood_scorer.query_targets(params.target_mood.value) if wants_mood else None
+    )
+
+    audio_results = recommender.recommend(
+        seed_tracks=seed_tracks,
+        limit=CANDIDATE_POOL,
+        exclude_seen=params.exclude_seen,
+        dim_targets=dim_targets,
+    )
+    audio_pool = {r["id"]: r["rationale"]["audio_similarity"] for r in audio_results}
+
+    collab_pool, popularity = _collaborative(seed_tracks)
+    if params.exclude_seen:
+        for tid in seed_tracks:
+            collab_pool.pop(tid, None)
+
+    if not audio_pool and not collab_pool:
+        raise HTTPException(status_code=404, detail="No known seed tracks")
+
+    lyric_pool: dict[str, float] = {}
+    if VARIANTS[variant_name].get("lyric", 0) > 0:
+        lyric_pool = _lyric(
+            seed_tracks, audio_pool, collab_pool, params.target_mood.value
+        )
+
+    mood_fit = None
+    if wants_mood:
+        mood_fit = mood_scorer.fit_scores(
+            set(audio_pool) | set(collab_pool), params.target_mood.value
+        )
+
+    blended = Blender(VARIANTS[variant_name], normalise=NORMALISE_SCORES).blend(
+        {"audio": audio_pool, "collaborative": collab_pool, "lyric": lyric_pool},
+        popularity=popularity or None,
+        novelty=params.novelty,
+        mood_fit=mood_fit,
+        limit=limit,
+    )
+    results = [_hydrate(r["id"], r["score"], r["rationale"]) for r in blended]
+
+    request_id = logger.log_request(
+        user_id=user_id,
+        variant=variant_name,
+        seeds=seed_tracks,
+        params=params.model_dump(mode="json"),
+        result_ids=[r.id for r in results],
+    )
+
+    return RecommendationResponse(
+        request_id=request_id,
+        seed_tracks=seed_tracks,
+        results=results,
+        variant=variant_name,
+    )
+
+
 # Routes ----------------------------------------------------------------------
 
 
@@ -196,80 +308,55 @@ def experiment_metrics(name: str, event: MetricEvent):
 
 @app.post("/recommend", response_model=RecommendationResponse)
 def recommend(req: RecommendationRequest):
-    # A/B Router strategy
-    variant_name = assign_variant(req.user_id)
+    return _run_pipeline(req.seed_tracks, req.user_id, req.parameters, req.limit)
 
-    wants_mood = req.parameters.target_mood != Mood.any
-    dim_targets = (
-        mood_scorer.query_targets(req.parameters.target_mood.value)
-        if wants_mood
-        else None
-    )
 
-    audio_results = recommender.recommend(
-        seed_tracks=req.seed_tracks,
-        limit=CANDIDATE_POOL,
-        exclude_seen=req.parameters.exclude_seen,
-        dim_targets=dim_targets,
-    )
-    audio_pool = {r["id"]: r["rationale"]["audio_similarity"] for r in audio_results}
+@app.post("/recommend/similar")
+def recommend_similar(req: SimilarRequest):
+    """Audio neartest track to one"""
+    if req.track_id not in recommender.id_to_pos:
+        raise HTTPException(status_code=404, detail="Unknown track id")
 
-    collab_pool, popularity = _collaborative(req.seed_tracks)
-    if req.parameters.exclude_seen:
-        for tid in req.seed_tracks:
-            collab_pool.pop(tid, None)
+    results = recommender.recommend([req.track_id], limit=req.limit)
 
-    if not audio_pool and not collab_pool:
-        # No seeds ids in catalogue
-        raise HTTPException(status_code=404, detail="No known seed tracks.")
-
-    lyric_pool = {}
-    if VARIANTS[variant_name].get("lyric", 0) > 0:
-        lyric_pool = _lyric(
-            req.seed_tracks, audio_pool, collab_pool, req.parameters.target_mood.value
-        )
-
-    mood_fit = None
-    if wants_mood:
-        mood_fit = mood_scorer.fit_scores(
-            set(audio_pool) | set(collab_pool), req.parameters.target_mood.value
-        )
-
-    blended = Blender(VARIANTS[variant_name], normalise=NORMALISE_SCORES).blend(
-        {"audio": audio_pool, "collaborative": collab_pool, "lyric": lyric_pool},
-        popularity=popularity or None,
-        novelty=req.parameters.novelty,
-        mood_fit=mood_fit,
-        limit=req.limit,
-    )
-
-    results = []
-    for r in blended:
-        pos = recommender.id_to_pos[r["id"]]
-        row = recommender.meta.iloc[pos]
-        results.append(
-            RecommendedTrack(
-                id=r["id"],
-                name=str(row["name"]),
-                artists=str(row["artists"]),
-                year=int(row["year"]),
-                score=r["score"],
-                rationale=r["rationale"],
+    return {
+        "track_id": req.track_id,
+        "results": [
+            _hydrate(
+                r["id"],
+                r["rationale"]["audio_similarity"],
+                {"audio": r["rationale"]["audio_similarity"]},
             )
-        )
+            for r in results
+        ],
+    }
 
-    # log it with outcome_logger
-    request_id = logger.log_request(
-        user_id=req.user_id,
-        variant=variant_name,
-        seeds=req.seed_tracks,
-        params=req.parameters.model_dump(mode="json"),
-        result_ids=[r.id for r in results],
-    )
 
-    return RecommendationResponse(
-        request_id=request_id,
-        seed_tracks=req.seed_tracks,
-        results=results,
-        variant=variant_name,
-    )
+@app.post("/onboard")
+def onboard(req: OnboardRequest):
+    """
+    Cold-start seeding
+    turns artist names into candidate seed track
+
+    """
+    candidates = {}
+    for artist in req.artist:
+        for hit in recommender.search(artist, limit=req.limit):
+            candidates.setdefault(hit["id"], hit)
+
+    if not candidates:
+        raise HTTPException(status_code=404, detail="No catalogue tracks")
+
+    ids = list(candidates)
+    if req.target_mood != Mood.any:
+        fit = mood_scorer.fit_scores(ids, req.target_mood.value)
+        ids.sort(key=lambda i: fit.get(i, 0.0), reverse=True)
+
+    return {
+        "artists": req.artist,
+        "target_mood": req.target_mood,
+        "seeds": [
+            {k: candidates[i][k] for k in ("id", "name", "artists", "year")}
+            for i in ids[: req.limit]
+        ],
+    }
