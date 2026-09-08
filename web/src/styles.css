@@ -400,3 +400,8 @@ input[type="range"] {
     border-color: var(--collab);
     background: color-mix(in srgb, var(--collab) 18%, var(--ink));
 }
+
+.penalty {
+    margin-left: var(--collab);
+    background: color-mix(in srgb, var(--collab) 18%, var(--ink));
+}

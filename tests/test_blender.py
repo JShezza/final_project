@@ -90,6 +90,28 @@ def test_score_normalisation():
     print("PASS: score normalisation gives weights meaning")
 
 
+def test_rationale_explains_score():
+    """The rationale must addup to the score including adjusments"""
+    pools = {"audio": {"hit": 0.9, "niche": 0.8}}
+    popularity = {"hit": 10_000_000, "niche": 500}
+    mood_fit = {"hit": 0.2, "niche": 0.9}
+
+    out = Blender({"audio": 1.0}).blend(
+        pools, popularity=popularity, novelty=0.5, mood_fit=mood_fit, limit=2
+    )
+
+    for r in out:
+        total = sum(r["rationale"].values())
+        assert abs(total - r["score"]) < 0.001, (r["rationale"], r["score"])
+
+        assert r["rationale"].get("novelty", 0) <= 0
+        assert r["rationale"].get("mood", 0) <= 0
+
+    plain = Blender({"audio": 1.0}).blend(pools, limit=2)
+    assert set(plain[0]["rationale"]) == {"audio"}, plain[0]["rationale"]
+    print("PASS: Rationale sums to final score")
+
+
 def test_normalise_title():
     a = normalise_title("HUMBLE.", "Kendrick Lamar")
     b = normalise_title("Humble", "kendrick lamar")

@@ -190,7 +190,6 @@ function App() {
                         >
                             {MOODS.map((m) => (
                                 <option key={m} value={m}>
-                                    {" "}
                                     {m}
                                 </option>
                             ))}
@@ -303,7 +302,10 @@ function App() {
 }
 
 function TrackRow({ track, topScore, blind, rating, onRate, open, onOpen }) {
-    const total = Object.values(track.rationale).reduce((a, b) => a + b, 0);
+    const parts = Object.entries(track.rationale);
+    const contributions = parts.filter(([, v]) => v > 0);
+    const penalties = parts.filter(([, v]) => v < 0);
+    const total = contributions.reduce((sum, [, v]) => sum + v, 0);
     const strength =
         topScore > 0 ? Math.max((track.score / topScore) * 100, 4) : 0;
 
@@ -337,28 +339,31 @@ function TrackRow({ track, topScore, blind, rating, onRate, open, onOpen }) {
                                 role="img"
                                 aria-label={`Score ${track.score.toFixed(2)}, signal contributions`}
                             >
-                                {Object.entries(track.rationale)
-                                    .filter(([, v]) => v > 0)
-                                    .map(([signal, value]) => (
-                                        <span
-                                            className="bar-part"
-                                            key={signal}
-                                            style={{
-                                                width: `${(value / total) * 100}%`,
-                                                background:
-                                                    SIGNAL_COLOUR[signal],
-                                            }}
-                                        ></span>
-                                    ))}
+                                {contributions.map(([signal, value]) => (
+                                    <span
+                                        className="bar-part"
+                                        key={signal}
+                                        style={{
+                                            width: `${(value / total) * 100}%`,
+                                            background:
+                                                SIGNAL_COLOUR[signal] ??
+                                                "var(--muted)",
+                                        }}
+                                    />
+                                ))}
                             </div>
                             <p className="rationale-text">
-                                {Object.entries(track.rationale)
-                                    .filter(([, v]) => v > 0)
+                                {contributions
                                     .map(
                                         ([signal, value]) =>
                                             `${signal} ${value.toFixed(2)}`,
                                     )
-                                    .join("  ")}
+                                    .join(" ")}
+                                {penalties.map(([name, value]) => (
+                                    <span key={name} className="penalty">
+                                        {name} {value.toFixed(2)}
+                                    </span>
+                                ))}
                             </p>
                         </div>
                     )}

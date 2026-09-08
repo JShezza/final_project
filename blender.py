@@ -78,28 +78,40 @@ class Blender:
             }
             score = sum(contributions.values())
 
+            # Preference adjustments
+            adjustments = {}
+
             # Novelty dumbing. Popularity a % of novelty up * 100%
             if novelty > 0 and popularity and track_id in popularity:
                 pop_norm = math.log1p(popularity[track_id]) / max_log_pop
-                score *= 1 - novelty * pop_norm
+                damped = score * (1 - novelty * pop_norm)
+                adjustments["novelty"] = damped - score
+                score = damped
 
             if mood_fit:
                 fit = mood_fit.get(track_id, 0.0)
-                score *= 1 - mood_strength * (1 - fit)
+                damped = score * (1 - mood_strength * (1 - fit))
+                adjustments["mood"] = damped - score
+                score = damped
+
+            rationale = {s: round(c, 4) for s, c in contributions.items()}
+            rationale.update({k: round(v, 4) for k, v in adjustments.items()})
 
             results.append(
                 {
                     "id": track_id,
                     "score": round(score, 4),
                     # Signals actual contribution to the blend
-                    "rationale": {s: round(c, 4) for s, c in contributions.items()},
+                    "rationale": rationale,
                 }
             )
 
         results.sort(
             key=lambda r: (
                 -r["score"],
-                -sum(1 for c in r["rationale"].values() if c > 0),
+                -sum(
+                    1 for s, c in r["rationale"].items() if c > 0 and s in signal_pools
+                ),
                 r["id"],
             )
         )
