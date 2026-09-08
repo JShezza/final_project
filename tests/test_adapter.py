@@ -10,14 +10,10 @@ Checks for the three fail points:
     - Cache: Duplicate calls are served from SQLite instead of the network
 """
 
-import tempfile
-from pathlib import Path
+import pytest
 
 from lastfm_adapter import LastFmAdapter
 
-# Last FM shape for responses
-# https://ws.audioscrobbler.com/2.0/?method=track.getsimilar&artist=Kendrick%20Lamar&track=HUMBLE.&api_key=LAST_FM_API_KEY&format=json
-# Above url to get the results for similartracks
 SIMILAR_GOOD = {
     "similartracks": {
         "track": [
@@ -49,7 +45,6 @@ SIMILAR_GOOD = {
     }
 }
 
-# https://ws.audioscrobbler.com/2.0/?method=track.getInfo&artist=Kendrick%20Lamar&track=HUMBLE.&api_key=LAST_FM_API_KEY&format=json
 INFO_GOOD = {
     "track": {"name": "HUMBLE.", "playcount": "32147319", "listeners": "2325228"}
 }
@@ -58,7 +53,7 @@ UNKNOWN = {"error": 6, "message": "Track not found"}
 
 
 class FakeAdapter(LastFmAdapter):
-    """Network call swapped with a fixture lookup"""
+    """Replace network responses with fixtures while retaining the real cache."""
 
     def __init__(self, cache_path):
         super().__init__(api_key="fake-key", cache_path=cache_path)
@@ -66,7 +61,6 @@ class FakeAdapter(LastFmAdapter):
         self.fixtures = {}
 
     def _get(self, method, **params):
-        # Same logic as the original class but with fixture dict instead
         key = (
             method
             + "|"
@@ -80,59 +74,70 @@ class FakeAdapter(LastFmAdapter):
         self.network_calls += 1
         payload = self.fixtures[method]
         self._cache_put(key, payload)
-
         return payload
 
 
-def main():
-    tmp = Path(tempfile.mkdtemp()) / "test_cache.sqlite"
-    adp = TestAdapter(cache_path=tmp)
+@pytest.fixture
+def adapter(tmp_path):
+    """Give each test a fresh adapter and its own temporary SQLite database."""
+    return FakeAdapter(cache_path=tmp_path / "test_cache.sqlite")
 
-    # Parse similar tracks
-    adp.fixtures["track.getSimilar"] = SIMILAR_GOOD
-    sim = adp.similar_tracks("Kendrick Lamar", "HUMBLE.")
-    assert len(sim) == 3, sim
-    assert sim[0] == {
+
+def test_similar_tracks_payload_parsed(adapter):
+    adapter.fixtures["track.getSimilar"] = SIMILAR_GOOD
+
+    similar = adapter.similar_tracks("Kendrick Lamar", "HUMBLE.")
+
+    assert len(similar) == 4, similar
+    assert similar[0] == {
         "artist": "Kendrick Lamar",
         "name": "DNA.",
         "match": 1.0,
         "playcount": 41230567,
     }
-    assert isinstance(sim[1]["match"], float)
-    print("PASS: similar_tracks payload parsed")
-
-    # Parse popularity
-    adp.fixtures["track.getInfo"] = INFO_GOOD
-    pop = adp.popularity("Kendrick Lamar", "HUMBLE.")
-    assert pop == {"playcount": 32147319, "listeners": 2325228}, pop
-    print("PASS: Popularity payload parsed")
-
-    # Unknown Tracks fails properly
-    adp.fixtures["track.getSimilar"] = UNKNOWN
-    assert adp.similar_tracks("Nobody", "No Song") == []
-    adp.fixtures["track.getInfo"] = UNKNOWN
-    assert adp.popularity("Nobody", "No Song") is None
-    print("PASS: Unknown tracks return empty results without a crash.")
-
-    # Cache - Use sql cache instead of the API
-    before = adp.network_calls
-    adp.fixtures["tracks.getSimilar"] = SIMILAR_GOOD
-    adp.similar_tracks("Kendrick Lamar", "HUMBLE.")
-    assert adp.network_calls == before, "expected a cache call"
-    print(
-        "PASS: Duplicate calls served via Cache " f"({adp.network_calls} calls total)"
-    )
-
-    # Cache is used for a new adapter instance (saved to disk)
-    backupAdp = TestAdapter(cache_path=tmp)
-    backupAdp.fixtures = {}
-    sim2 = backupAdp.similar_tracks("Kendrick Lamar", "HUMBLE.")
-    assert sim2[0]["name"] == "DNA."
-    assert backupAdp.network_calls == 0
-    print("PASS: Cache is used across restarts.")
-
-    print("\nTests Complete")
+    assert isinstance(similar[1]["match"], float)
 
 
-if __name__ == "__main__":
-    main()
+def test_popularity_payload_parsed(adapter):
+    adapter.fixtures["track.getInfo"] = INFO_GOOD
+
+    popularity = adapter.popularity("Kendrick Lamar", "HUMBLE.")
+
+    assert popularity == {"playcount": 32147319, "listeners": 2325228}, popularity
+
+
+def test_unknown_track_returns_no_similar_tracks(adapter):
+    adapter.fixtures["track.getSimilar"] = UNKNOWN
+
+    assert adapter.similar_tracks("Nobody", "No Song") == []
+
+
+def test_unknown_track_returns_no_popularity(adapter):
+    adapter.fixtures["track.getInfo"] = UNKNOWN
+
+    assert adapter.popularity("Nobody", "No Song") is None
+
+
+def test_duplicate_calls_use_cache(adapter):
+    adapter.fixtures["track.getSimilar"] = SIMILAR_GOOD
+    first = adapter.similar_tracks("Kendrick Lamar", "HUMBLE.")
+    before = adapter.network_calls
+
+    # A cache miss now fails because no response fixture remains.
+    adapter.fixtures.clear()
+    second = adapter.similar_tracks("Kendrick Lamar", "HUMBLE.")
+
+    assert second == first
+    assert adapter.network_calls == before, "expected a cache call"
+
+
+def test_cache_is_reused_by_new_adapter(adapter, tmp_path):
+    adapter.fixtures["track.getSimilar"] = SIMILAR_GOOD
+    first = adapter.similar_tracks("Kendrick Lamar", "HUMBLE.")
+
+    restarted = FakeAdapter(cache_path=tmp_path / "test_cache.sqlite")
+    second = restarted.similar_tracks("Kendrick Lamar", "HUMBLE.")
+
+    assert second == first
+    assert second[0]["name"] == "DNA."
+    assert restarted.network_calls == 0

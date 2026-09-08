@@ -7,9 +7,9 @@ fixture responses; VADER and teh cahces are real.
 Checks: Parsing, copyright, scoring, reference, cache
 """
 
-import sqlite3
-import tempfile
-from pathlib import Path
+from unittest.mock import patch
+
+import pytest
 
 from lyric_signal import LyricSentiment
 from lyrics_adapter import FOUND, INSTRUMENTAL, MISSING, LyricsAdapter
@@ -31,7 +31,7 @@ class FakeResponse:
 
 
 class FakeAdapter(LyricsAdapter):
-    """LRCLIB swapped for a fixture table keyd by title"""
+    """Replace LRCLIB responses with a fixture table keyed by title."""
 
     def __init__(self, cache_path):
         super().__init__(cache_path=cache_path)
@@ -45,66 +45,97 @@ class FakeAdapter(LyricsAdapter):
         }
 
     def fetch_lyrics(self, artist, title):
-        import requests as _r
-
         self.calls += 1
-        original = _r.get
-        _r.get = lambda *a, **k: self.fixtures[k["params"]["track_name"]]
-        try:
+        with patch("requests.get") as get:
+            get.side_effect = lambda *args, **kwargs: self.fixtures[
+                kwargs["params"]["track_name"]
+            ]
             return super().fetch_lyrics(artist, title)
-        finally:
-            _r.get = original
 
 
-def main():
-    tmp = Path(tempfile.mkdtemp())
-    adapter = FakeAdapter(cache_path=tmp / "lookup.sqlite")
-    signal = LyricSentiment(adapter, cache_path=tmp / "sentiment.sqlite")
+@pytest.fixture
+def adapter(tmp_path):
+    return FakeAdapter(cache_path=tmp_path / "lookup.sqlite")
 
-    # Parsing
-    assert adapter.fetch_lyrics("x", "happy song") == (FOUND, HAPPY)
-    assert adapter.fetch_lyrics("x", "nowhere") == (MISSING, None)
-    assert adapter.fetch_lyrics("x", "drum solo") == (INSTRUMENTAL, None)
-    assert adapter.fetch_lyrics("x", "blank") == (MISSING, None)
-    print("PASS: found / 404/ instrumental /empty handled")
 
-    # copyright (no lyrics text in database)
+@pytest.fixture
+def signal(adapter, tmp_path):
+    return LyricSentiment(adapter, cache_path=tmp_path / "sentiment.sqlite")
+
+
+@pytest.mark.parametrize(
+    ("title", "expected"),
+    [
+        ("happy song", (FOUND, HAPPY)),
+        ("nowhere", (MISSING, None)),
+        ("drum solo", (INSTRUMENTAL, None)),
+        ("blank", (MISSING, None)),
+    ],
+    ids=["found", "missing", "instrumental", "empty"],
+)
+def test_fetch_lyrics_parses_statuses(adapter, title, expected):
+    assert adapter.fetch_lyrics("x", title) == expected
+
+
+def test_lyrics_text_is_not_persisted(signal, tmp_path):
+    # Populate both caches before checking their contents.
+    signal.compound_for("h1", "x", "happy song")
+    signal.compound_for("s1", "x", "sad song")
+
     for db_file in ("lookup.sqlite", "sentiment.sqlite"):
-        raw = open(tmp / db_file, "rb").read()
+        raw = (tmp_path / db_file).read_bytes()
         assert b"Sunshine" not in raw and b"broken" not in raw, db_file
-    print("PASS: lyrics text is never persisted")
 
-    # Scoring
+
+def test_compound_scores(signal):
     happy = signal.compound_for("h1", "x", "happy song")
     sad = signal.compound_for("s1", "x", "sad song")
+
     assert happy is not None and sad is not None
     assert happy > 0.3 and sad < -0.3, (happy, sad)
     assert signal.compound_for("n1", "x", "nowhere") is None
+
+
+def test_pool_ranks_by_closeness_to_reference(signal):
     pool = signal.pool(
         [("h1", "x", "happy song"), ("s1", "x", "sad song"), ("n1", "x", "nowhere")],
         reference=0.6,
     )
+
     assert set(pool) == {"h1", "s1"}
     assert pool["h1"] > pool["s1"]
-    print("PASS: sentiment scores and pool closeness make sense")
 
-    # Reference point
-    assert signal.reference_for([0.1, 0.5], "happy") == 0.6
-    assert signal.reference_for([0.1, 0.5], "sad") == -0.6
-    assert abs(signal.reference_for([0.1, 0.5], "energetic") - 0.3) < 1e-9  # type: ignore
-    assert abs(signal.reference_for([0.1, None, 0.5], "any") - 0.3) < 1e-9  # type: ignore
-    assert signal.reference_for([None, None], "any") is None
-    print("PASS: reference is a mood target or the seeds' mean")
 
-    # Cache: rescoring is free
+@pytest.mark.parametrize(
+    ("scores", "mood", "expected"),
+    [
+        ([0.1, 0.5], "happy", 0.6),
+        ([0.1, 0.5], "sad", -0.6),
+        ([0.1, 0.5], "energetic", 0.3),
+        ([0.1, None, 0.5], "any", 0.3),
+        ([None, None], "any", None),
+    ],
+    ids=["happy-target", "sad-target", "seed-mean", "missing-seed", "no-scores"],
+)
+def test_reference_uses_mood_target_or_seed_mean(signal, scores, mood, expected):
+    reference = signal.reference_for(scores, mood)
+
+    if expected is None:
+        assert reference is None
+    else:
+        assert reference == pytest.approx(expected, rel=0, abs=1e-9)
+
+
+@pytest.mark.parametrize(
+    ("track_id", "title"),
+    [("h1", "happy song"), ("n1", "nowhere")],
+    ids=["scored-track", "missing-track"],
+)
+def test_repeated_scores_use_cache(signal, adapter, track_id, title):
+    first = signal.compound_for(track_id, "x", title)
     before = adapter.calls
-    signal.compound_for("h1", "x", "happy song")
-    signal.compound_for("n1", "x", "nowhere")
+
+    second = signal.compound_for(track_id, "x", title)
+
+    assert second == first
     assert adapter.calls == before, "cached tracks should not hit the adapter"
-    print("PASS: scored tracks are served from cache")
-
-    ("\nALll lyrics signal tests passed")
-
-
-if __name__ == "__main__":
-    main()
