@@ -8,44 +8,32 @@ GET     /tracks/search
 GET     /health
 """
 
+from __future__ import _Feature
+
 import os
 import pickle
 from pathlib import Path
 
 from dotenv import load_dotenv
-from fastapi import FastAPI, HTTPException
+from fastapi import Depends, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from requests import request
 
 from ab_router import assign_variant
 from admin_auth import check_credentials, issue_token, require_admin
-from blender import (
-    VARIANTS,
-    Blender,
-    catalogue_lookup,
-    collaborative_pool,
-    normalise_title,
-)
+from blender import (VARIANTS, Blender, catalogue_lookup, collaborative_pool,
+                     normalise_title)
 from lyric_signal import LyricSentiment
 from lyrics_adapter import LyricsAdapter
-from mood import MoodScorer
+from mood import MOOD_TARGETS, MoodScorer
 from outcome_logger import OutcomeLogger
+from prepare_data import FEATURES
 from recommender import Recommender
-from schemas import (
-    FeedbackRequest,
-    LoginRequest,
-    MetricEvent,
-    Mood,
-    MoodAnalyseRequest,
-    MoodAnalysis,
-    OnboardRequest,
-    PreferenceParameters,
-    RecommendationRequest,
-    RecommendationResponse,
-    RecommendedTrack,
-    SimilarRequest,
-    TokenResponse,
-)
+from schemas import (FeedbackRequest, LoginRequest, MetricEvent, Mood,
+                     MoodAnalyseRequest, MoodAnalysis, MoodRecommendRequest,
+                     OnboardRequest, PreferenceParameters,
+                     RecommendationRequest, RecommendationResponse,
+                     RecommendedTrack, SimilarRequest, TokenResponse)
 
 load_dotenv()
 
@@ -359,4 +347,85 @@ def onboard(req: OnboardRequest):
             {k: candidates[i][k] for k in ("id", "name", "artists", "year")}
             for i in ids[: req.limit]
         ],
+    }
+
+
+@app.post("/mood/analyse", response_model=MoodAnalysis)
+def mood_analyse(req: MoodAnalyseRequest):
+    """VADER: emotional sentiment of the free text"""
+    return _mood_from_text(req.text)
+
+
+@app.post("/mood/recommend", response_model=RecommendationResponse)
+def mood_recommend(req: MoodRecommendRequest):
+    """Mood-driven recommendation - text set target_mood"""
+    analysis = _mood_from_text(req.text)
+    params = PreferenceParameters(novelty=req.novelty, target_mood=analysis.mood)
+    return _run_pipeline(req.seed_tracks, req.user_id, params, req.limit)
+
+
+@app.get("/tracks/{track_id}/info")
+def track_info(track_id: str):
+    row = _track_row(track_id)
+    if row is None:
+        raise HTTPException(status_code=404, detail="Unkown track id")
+
+    return {
+        k: (int(row[k]) if k == "year" else str(row[k]))
+        for k in ("id", "name", "artist", "year")
+    }
+
+
+@app.get("/tracks/{track_id}/features")
+def track_features(track_id: str):
+    """
+    Audio features for a tracks
+    """
+
+    pos = recommender.id_to_pos.get(track_id)
+    if pos is None:
+        raise HTTPException(status_code=404, detail="Unknown track id")
+
+    standardised = recommender.index.reconstruct(pos)
+    raw = recommender.scaler.inverse_transform(standardised.reshape(1, -1))[0]
+
+    return {
+        "id": track_id,
+        "features": {f: round(float(v), 4) for f, v in zip(FEATURES, raw)},
+        "standardised": {f: round(float(v), 4) for f, v in zip(FEATURES, standardised)}
+    }
+
+# JWT/ADMIN
+
+@app.post("/auth/login", response_model=TokenResponse)
+def login(req: LoginRequest):
+    if not check_credentials(req.username, req.password):
+        raise HTTPException(status_code=401, detail="Invalid credentials")
+
+    token, ttl = issue_token(req.username)
+    return TokenResponse(access_token=token, expires_in=ttl)
+
+
+@app.get("/admin/stats")
+def admin_stats(_: str = Depends(require_admin)):
+    """Aggregate experiment counts"""
+    return logger.stats()
+
+
+@app.get("/admin/health")
+def admin_health(_:str = Depends(require_admin)):
+    """Detailed component status for the operator"""
+    return {
+        "catalogue_size": recommender.index.ntotal,
+        "index_nprobe": recommender.index.nprobe, # type: ignore
+        "signal": {
+            "audio": True,
+            "collaborative": adapter is not None,
+            "lyric": True,
+        },
+        "variants": list(VARIANTS),
+        "moods": ["any", *MOOD_TARGETS],
+        "normalise_scores": NORMALISE_SCORES,
+        "candidate_pool": CANDIDATE_POOL,
+        "lyric_pool": LYRIC_POOL,
     }
