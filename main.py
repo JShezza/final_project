@@ -8,8 +8,6 @@ GET     /tracks/search
 GET     /health
 """
 
-from __future__ import _Feature
-
 import os
 import pickle
 from pathlib import Path
@@ -21,19 +19,35 @@ from requests import request
 
 from ab_router import assign_variant
 from admin_auth import check_credentials, issue_token, require_admin
-from blender import (VARIANTS, Blender, catalogue_lookup, collaborative_pool,
-                     normalise_title)
+from blender import (
+    VARIANTS,
+    Blender,
+    catalogue_lookup,
+    collaborative_pool,
+    normalise_title,
+)
 from lyric_signal import LyricSentiment
 from lyrics_adapter import LyricsAdapter
 from mood import MOOD_TARGETS, MoodScorer
 from outcome_logger import OutcomeLogger
 from prepare_data import FEATURES
 from recommender import Recommender
-from schemas import (FeedbackRequest, LoginRequest, MetricEvent, Mood,
-                     MoodAnalyseRequest, MoodAnalysis, MoodRecommendRequest,
-                     OnboardRequest, PreferenceParameters,
-                     RecommendationRequest, RecommendationResponse,
-                     RecommendedTrack, SimilarRequest, TokenResponse)
+from schemas import (
+    FeedbackRequest,
+    LoginRequest,
+    MetricEvent,
+    Mood,
+    MoodAnalyseRequest,
+    MoodAnalysis,
+    MoodRecommendRequest,
+    OnboardRequest,
+    PreferenceParameters,
+    RecommendationRequest,
+    RecommendationResponse,
+    RecommendedTrack,
+    SimilarRequest,
+    TokenResponse,
+)
 
 load_dotenv()
 
@@ -392,10 +406,12 @@ def track_features(track_id: str):
     return {
         "id": track_id,
         "features": {f: round(float(v), 4) for f, v in zip(FEATURES, raw)},
-        "standardised": {f: round(float(v), 4) for f, v in zip(FEATURES, standardised)}
+        "standardised": {f: round(float(v), 4) for f, v in zip(FEATURES, standardised)},
     }
 
+
 # JWT/ADMIN
+
 
 @app.post("/auth/login", response_model=TokenResponse)
 def login(req: LoginRequest):
@@ -413,11 +429,11 @@ def admin_stats(_: str = Depends(require_admin)):
 
 
 @app.get("/admin/health")
-def admin_health(_:str = Depends(require_admin)):
+def admin_health(_: str = Depends(require_admin)):
     """Detailed component status for the operator"""
     return {
         "catalogue_size": recommender.index.ntotal,
-        "index_nprobe": recommender.index.nprobe, # type: ignore
+        "index_nprobe": recommender.index.nprobe,  # type: ignore
         "signal": {
             "audio": True,
             "collaborative": adapter is not None,
