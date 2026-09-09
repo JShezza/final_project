@@ -15,7 +15,6 @@ from pathlib import Path
 from dotenv import load_dotenv
 from fastapi import Depends, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from requests import request
 
 from ab_router import assign_variant
 from admin_auth import check_credentials, issue_token, require_admin
@@ -165,7 +164,7 @@ def _lyric(seed_tracks, audio_pool, collab_pool, target_mood):
 
 
 def _track_row(track_id: str):
-    pos = recommender.id_to_pos(track_id)
+    pos = recommender.id_to_pos.get(track_id)
     return None if pos is None else recommender.meta.iloc[pos]
 
 
@@ -173,7 +172,7 @@ def _hydrate(track_id: str, score: float, rationale: dict) -> RecommendedTrack:
     row = _track_row(track_id)
     return RecommendedTrack(
         id=track_id,
-        name=str(row["row"]),  # type: ignore
+        name=str(row["name"]),  # type: ignore
         artists=str(row["artists"]),  # type: ignore
         year=int(row["year"]),  # type: ignore
         score=score,
@@ -230,7 +229,7 @@ def _run_pipeline(
     if not audio_pool and not collab_pool:
         raise HTTPException(status_code=404, detail="No known seed tracks")
 
-    lyric_pool: dict[str, float] = {}
+    lyric_pool = {}
     if VARIANTS[variant_name].get("lyric", 0) > 0:
         lyric_pool = _lyric(
             seed_tracks, audio_pool, collab_pool, params.target_mood.value
@@ -386,7 +385,7 @@ def track_info(track_id: str):
 
     return {
         k: (int(row[k]) if k == "year" else str(row[k]))
-        for k in ("id", "name", "artist", "year")
+        for k in ("id", "name", "artists", "year")
     }
 
 
@@ -434,7 +433,7 @@ def admin_health(_: str = Depends(require_admin)):
     return {
         "catalogue_size": recommender.index.ntotal,
         "index_nprobe": recommender.index.nprobe,  # type: ignore
-        "signal": {
+        "signals": {
             "audio": True,
             "collaborative": adapter is not None,
             "lyric": True,
