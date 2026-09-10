@@ -289,9 +289,9 @@ def main():
     lyrics_cov = base[(base["mode"] == "norm") & (base["variant"] == "full_hybrid")][
         "lyric_coverage"
     ]
+    print(f"\nLyric Signal coverage (full_hybrid, norm): {lyrics_cov.mean():.1%}")
     print(
-        f"\nLyric Signal coverage (full_hybrid, norm): {lyrics_cov.mean():.1%}",
-        "does target_mood move the result?",
+        "\nMood sweep (balanced, normalised, novelty=0): does target_mood move the result?"
     )
     print(f"{'mood':>10} | {'valence':>7} | {'energy':>6} | {'coherence':>9}")
     mdf = pd.DataFrame(mood_rows)
