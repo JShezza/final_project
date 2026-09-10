@@ -202,7 +202,7 @@ def main():
                         )
                         record(variant, mode, novelty, [b["id"] for b in out])
             # mood sweep
-            for mood in MODES:
+            for mood in MOODS:
                 targets = (
                     mood_scorer.query_targets(mood) if mood in MOOD_TARGETS else None
                 )
@@ -241,7 +241,7 @@ def main():
         print(f"done: {genre}")
 
     df = pd.DataFrame(rows)
-    df.to_csv(OUT_FILE, index=False)
+    df.to_json(OUT_FILE, orient="records", indent=2)
     n_seeds = sum(len(v) for v in seeds.values())
 
     # Summary of novelty at 0 raw vs normalised
@@ -263,6 +263,8 @@ def main():
     pairs = [
         ("balanced", "audio_only"),
         ("audio_heavy", "audio_only"),
+        ("full_hybrid", "balanced"),
+        ("full_hybrid", "audio_only"),
         ("balanced", "random"),
         ("audio_only", "random"),
     ]
@@ -288,7 +290,7 @@ def main():
         "lyric_coverage"
     ]
     print(
-        f"\nLyric Signal coverage (full_hybrid, norm): ",
+        f"\nLyric Signal coverage (full_hybrid, norm): {lyrics_cov.mean():.1%}",
         "does target_mood move the result?",
     )
     print(f"{'mood':>10} | {'valence':>7} | {'energy':>6} | {'coherence':>9}")
@@ -299,7 +301,7 @@ def main():
             f"{mood:>10} | {g['valence'].mean():>7.3f} | "
             f"{g['energy'].mean():6.3f} | {g['coherence'].mean():>9.3f}"
         )
-    mdf.to_csv(OUT_FILE.with_name("benchmark_mood.json"))
+    mdf.to_json(OUT_FILE.with_name("benchmark_mood.json"), orient="records", indent=2)
 
     print(f"\nPer-seed rows written to {OUT_FILE.name}")
 
