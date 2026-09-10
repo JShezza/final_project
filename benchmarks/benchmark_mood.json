@@ -1,0 +1,962 @@
+[
+  {
+    "genre":"rock",
+    "seed":"Bohemian Rhapsody",
+    "mood":"any",
+    "valence":0.2705000037,
+    "energy":0.4675000191,
+    "coherence":0.6371008158
+  },
+  {
+    "genre":"rock",
+    "seed":"Bohemian Rhapsody",
+    "mood":"happy",
+    "valence":0.5760000038,
+    "energy":0.5960000255,
+    "coherence":0.3951137066
+  },
+  {
+    "genre":"rock",
+    "seed":"Bohemian Rhapsody",
+    "mood":"sad",
+    "valence":0.359800002,
+    "energy":0.3949000169,
+    "coherence":0.574385643
+  },
+  {
+    "genre":"rock",
+    "seed":"Testify",
+    "mood":"any",
+    "valence":0.5189999957,
+    "energy":0.9579000387,
+    "coherence":0.6982544661
+  },
+  {
+    "genre":"rock",
+    "seed":"Testify",
+    "mood":"happy",
+    "valence":0.6474999947,
+    "energy":0.8552000393,
+    "coherence":0.4990502298
+  },
+  {
+    "genre":"rock",
+    "seed":"Testify",
+    "mood":"sad",
+    "valence":0.4597999942,
+    "energy":0.5682000232,
+    "coherence":0.3849682212
+  },
+  {
+    "genre":"rock",
+    "seed":"Stairway to Heaven",
+    "mood":"any",
+    "valence":0.342899998,
+    "energy":0.386700016,
+    "coherence":0.6237342954
+  },
+  {
+    "genre":"rock",
+    "seed":"Stairway to Heaven",
+    "mood":"happy",
+    "valence":0.5647000055,
+    "energy":0.601600012,
+    "coherence":0.3610552549
+  },
+  {
+    "genre":"rock",
+    "seed":"Stairway to Heaven",
+    "mood":"sad",
+    "valence":0.3546000036,
+    "energy":0.2160000105,
+    "coherence":0.6695398092
+  },
+  {
+    "genre":"rock",
+    "seed":"Back In Black",
+    "mood":"any",
+    "valence":0.6915999961,
+    "energy":0.7373000367,
+    "coherence":0.6729505658
+  },
+  {
+    "genre":"rock",
+    "seed":"Back In Black",
+    "mood":"happy",
+    "valence":0.7690999958,
+    "energy":0.7295000335,
+    "coherence":0.7218584418
+  },
+  {
+    "genre":"rock",
+    "seed":"Back In Black",
+    "mood":"sad",
+    "valence":0.5082999994,
+    "energy":0.4304000158,
+    "coherence":0.4296270311
+  },
+  {
+    "genre":"rock",
+    "seed":"Everlong",
+    "mood":"any",
+    "valence":0.3470000043,
+    "energy":0.8780000157,
+    "coherence":0.7408812642
+  },
+  {
+    "genre":"rock",
+    "seed":"Everlong",
+    "mood":"happy",
+    "valence":0.5597999952,
+    "energy":0.8032000118,
+    "coherence":0.464669168
+  },
+  {
+    "genre":"rock",
+    "seed":"Everlong",
+    "mood":"sad",
+    "valence":0.3450999995,
+    "energy":0.5204000091,
+    "coherence":0.3964507282
+  },
+  {
+    "genre":"rock",
+    "seed":"Creep",
+    "mood":"any",
+    "valence":0.1332600051,
+    "energy":0.4748000196,
+    "coherence":0.6645220518
+  },
+  {
+    "genre":"rock",
+    "seed":"Creep",
+    "mood":"happy",
+    "valence":0.5287999939,
+    "energy":0.5864000227,
+    "coherence":0.3738203645
+  },
+  {
+    "genre":"rock",
+    "seed":"Creep",
+    "mood":"sad",
+    "valence":0.2664000096,
+    "energy":0.339000026,
+    "coherence":0.4944780469
+  },
+  {
+    "genre":"rock",
+    "seed":"Do I Wanna Know",
+    "mood":"any",
+    "valence":0.4868000026,
+    "energy":0.6094000252,
+    "coherence":0.6832877994
+  },
+  {
+    "genre":"rock",
+    "seed":"Do I Wanna Know",
+    "mood":"happy",
+    "valence":0.6601999959,
+    "energy":0.6527000241,
+    "coherence":0.5062476397
+  },
+  {
+    "genre":"rock",
+    "seed":"Do I Wanna Know",
+    "mood":"sad",
+    "valence":0.4335000042,
+    "energy":0.4000000183,
+    "coherence":0.5303837657
+  },
+  {
+    "genre":"rock",
+    "seed":"Even Flow",
+    "mood":"any",
+    "valence":0.317600003,
+    "energy":0.9174000363,
+    "coherence":0.676353693
+  },
+  {
+    "genre":"rock",
+    "seed":"Even Flow",
+    "mood":"happy",
+    "valence":0.5684000033,
+    "energy":0.8223000162,
+    "coherence":0.4248333573
+  },
+  {
+    "genre":"rock",
+    "seed":"Even Flow",
+    "mood":"sad",
+    "valence":0.3309999996,
+    "energy":0.5283000105,
+    "coherence":0.3876472712
+  },
+  {
+    "genre":"rock",
+    "seed":"Basket Case",
+    "mood":"any",
+    "valence":0.776999997,
+    "energy":0.9441000218,
+    "coherence":0.6825165749
+  },
+  {
+    "genre":"rock",
+    "seed":"Basket Case",
+    "mood":"happy",
+    "valence":0.7771999952,
+    "energy":0.8455000247,
+    "coherence":0.5943344831
+  },
+  {
+    "genre":"rock",
+    "seed":"Basket Case",
+    "mood":"sad",
+    "valence":0.5888999907,
+    "energy":0.609700021,
+    "coherence":0.3782246709
+  },
+  {
+    "genre":"rock",
+    "seed":"Last Nite",
+    "mood":"any",
+    "valence":0.7711999869,
+    "energy":0.8292000319,
+    "coherence":0.7034837008
+  },
+  {
+    "genre":"rock",
+    "seed":"Last Nite",
+    "mood":"happy",
+    "valence":0.7639999827,
+    "energy":0.7469000401,
+    "coherence":0.620785892
+  },
+  {
+    "genre":"rock",
+    "seed":"Last Nite",
+    "mood":"sad",
+    "valence":0.5734999863,
+    "energy":0.4850000157,
+    "coherence":0.3483017683
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"C.R.E.A.M.",
+    "mood":"any",
+    "valence":0.621299995,
+    "energy":0.6407000235,
+    "coherence":0.6328186989
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"C.R.E.A.M.",
+    "mood":"happy",
+    "valence":0.6984999981,
+    "energy":0.6737000238,
+    "coherence":0.5851780772
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"C.R.E.A.M.",
+    "mood":"sad",
+    "valence":0.4795999992,
+    "energy":0.4596000193,
+    "coherence":0.4878422618
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"N.Y. State of Mind",
+    "mood":"any",
+    "valence":0.8561999945,
+    "energy":0.8239000187,
+    "coherence":0.6199574471
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"N.Y. State of Mind",
+    "mood":"happy",
+    "valence":0.7629999883,
+    "energy":0.7756000246,
+    "coherence":0.5557709336
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"N.Y. State of Mind",
+    "mood":"sad",
+    "valence":0.608100001,
+    "energy":0.5553000173,
+    "coherence":0.3643845022
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Ms. Jackson",
+    "mood":"any",
+    "valence":0.6353999955,
+    "energy":0.8014000311,
+    "coherence":0.7257826328
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Ms. Jackson",
+    "mood":"happy",
+    "valence":0.7549999944,
+    "energy":0.7225000267,
+    "coherence":0.5878869891
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Ms. Jackson",
+    "mood":"sad",
+    "valence":0.4827999976,
+    "energy":0.4508000225,
+    "coherence":0.4224787354
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Can I Kick It",
+    "mood":"any",
+    "valence":0.7114999865,
+    "energy":0.5540000232,
+    "coherence":0.6173487902
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Can I Kick It",
+    "mood":"happy",
+    "valence":0.7605999918,
+    "energy":0.5894000335,
+    "coherence":0.5992536545
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Can I Kick It",
+    "mood":"sad",
+    "valence":0.5353000022,
+    "energy":0.3694000177,
+    "coherence":0.4625564516
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Fight The Power",
+    "mood":"any",
+    "valence":0.3142000043,
+    "energy":0.9584000268,
+    "coherence":0.5853180289
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Fight The Power",
+    "mood":"happy",
+    "valence":0.552899994,
+    "energy":0.887300023,
+    "coherence":0.4216712415
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Fight The Power",
+    "mood":"sad",
+    "valence":0.3662999976,
+    "energy":0.67820003,
+    "coherence":0.3876412809
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Insane in the Brain",
+    "mood":"any",
+    "valence":0.7265999859,
+    "energy":0.7007000197,
+    "coherence":0.6026922464
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Insane in the Brain",
+    "mood":"happy",
+    "valence":0.7365999815,
+    "energy":0.6955000199,
+    "coherence":0.6012974977
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Insane in the Brain",
+    "mood":"sad",
+    "valence":0.5019000033,
+    "energy":0.4455000185,
+    "coherence":0.3889815211
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Shook Ones",
+    "mood":"any",
+    "valence":0.5240999966,
+    "energy":0.780000035,
+    "coherence":0.7525779009
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Shook Ones",
+    "mood":"happy",
+    "valence":0.6820000002,
+    "energy":0.7554000182,
+    "coherence":0.5549171567
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Shook Ones",
+    "mood":"sad",
+    "valence":0.459600005,
+    "energy":0.4908000201,
+    "coherence":0.438423574
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Work It",
+    "mood":"any",
+    "valence":0.6147999951,
+    "energy":0.6772000206,
+    "coherence":0.6814295053
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Work It",
+    "mood":"happy",
+    "valence":0.725499992,
+    "energy":0.6799000268,
+    "coherence":0.6893687248
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Work It",
+    "mood":"sad",
+    "valence":0.4718999974,
+    "energy":0.4705000201,
+    "coherence":0.459558785
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"I Used to Love H.E.R.",
+    "mood":"any",
+    "valence":0.5431999933,
+    "energy":0.6181000149,
+    "coherence":0.6054290533
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"I Used to Love H.E.R.",
+    "mood":"happy",
+    "valence":0.6722999951,
+    "energy":0.6580000231,
+    "coherence":0.53807652
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"I Used to Love H.E.R.",
+    "mood":"sad",
+    "valence":0.4503000048,
+    "energy":0.4543000183,
+    "coherence":0.5136432648
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Hip Hop Hooray",
+    "mood":"any",
+    "valence":0.6932000021,
+    "energy":0.7656000202,
+    "coherence":0.5046466589
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Hip Hop Hooray",
+    "mood":"happy",
+    "valence":0.7083000011,
+    "energy":0.699400018,
+    "coherence":0.4334787428
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Hip Hop Hooray",
+    "mood":"sad",
+    "valence":0.6014000013,
+    "energy":0.5935000235,
+    "coherence":0.3522046804
+  },
+  {
+    "genre":"pop",
+    "seed":"Billie Jean",
+    "mood":"any",
+    "valence":0.8381999825,
+    "energy":0.6111000168,
+    "coherence":0.6764492989
+  },
+  {
+    "genre":"pop",
+    "seed":"Billie Jean",
+    "mood":"happy",
+    "valence":0.8167999908,
+    "energy":0.6660000216,
+    "coherence":0.6407291889
+  },
+  {
+    "genre":"pop",
+    "seed":"Billie Jean",
+    "mood":"sad",
+    "valence":0.6212999988,
+    "energy":0.4397000247,
+    "coherence":0.4056072235
+  },
+  {
+    "genre":"pop",
+    "seed":"Like a Prayer",
+    "mood":"any",
+    "valence":0.4676999986,
+    "energy":0.6264000158,
+    "coherence":0.5821454525
+  },
+  {
+    "genre":"pop",
+    "seed":"Like a Prayer",
+    "mood":"happy",
+    "valence":0.6741999852,
+    "energy":0.6807000267,
+    "coherence":0.434946388
+  },
+  {
+    "genre":"pop",
+    "seed":"Like a Prayer",
+    "mood":"sad",
+    "valence":0.3539000057,
+    "energy":0.3362000162,
+    "coherence":0.488581568
+  },
+  {
+    "genre":"pop",
+    "seed":"Toxic",
+    "mood":"any",
+    "valence":0.8746999925,
+    "energy":0.8519000344,
+    "coherence":0.6427404881
+  },
+  {
+    "genre":"pop",
+    "seed":"Toxic",
+    "mood":"happy",
+    "valence":0.8379999972,
+    "energy":0.7994000292,
+    "coherence":0.6093425751
+  },
+  {
+    "genre":"pop",
+    "seed":"Toxic",
+    "mood":"sad",
+    "valence":0.6128999901,
+    "energy":0.5137000172,
+    "coherence":0.3556925058
+  },
+  {
+    "genre":"pop",
+    "seed":"Rolling in the Deep",
+    "mood":"any",
+    "valence":0.4903000003,
+    "energy":0.7039000228,
+    "coherence":0.7192509174
+  },
+  {
+    "genre":"pop",
+    "seed":"Rolling in the Deep",
+    "mood":"happy",
+    "valence":0.6853999928,
+    "energy":0.7127000225,
+    "coherence":0.5673581958
+  },
+  {
+    "genre":"pop",
+    "seed":"Rolling in the Deep",
+    "mood":"sad",
+    "valence":0.439300002,
+    "energy":0.4480000202,
+    "coherence":0.4437090456
+  },
+  {
+    "genre":"pop",
+    "seed":"Cry Me a River",
+    "mood":"any",
+    "valence":0.6007999961,
+    "energy":0.6912000241,
+    "coherence":0.6040998101
+  },
+  {
+    "genre":"pop",
+    "seed":"Cry Me a River",
+    "mood":"happy",
+    "valence":0.7031000075,
+    "energy":0.6946000151,
+    "coherence":0.5309200287
+  },
+  {
+    "genre":"pop",
+    "seed":"Cry Me a River",
+    "mood":"sad",
+    "valence":0.5020999997,
+    "energy":0.4744000193,
+    "coherence":0.4428569674
+  },
+  {
+    "genre":"pop",
+    "seed":"Shape of You",
+    "mood":"any",
+    "valence":0.8569999899,
+    "energy":0.7072000277,
+    "coherence":0.6059672236
+  },
+  {
+    "genre":"pop",
+    "seed":"Shape of You",
+    "mood":"happy",
+    "valence":0.8272999868,
+    "energy":0.7158000343,
+    "coherence":0.6087238193
+  },
+  {
+    "genre":"pop",
+    "seed":"Shape of You",
+    "mood":"sad",
+    "valence":0.5711999897,
+    "energy":0.5302000232,
+    "coherence":0.3737004399
+  },
+  {
+    "genre":"pop",
+    "seed":"Girls Just Want to Have Fun",
+    "mood":"any",
+    "valence":0.7465999888,
+    "energy":0.7203000179,
+    "coherence":0.5531232953
+  },
+  {
+    "genre":"pop",
+    "seed":"Girls Just Want to Have Fun",
+    "mood":"happy",
+    "valence":0.8071999852,
+    "energy":0.7537000218,
+    "coherence":0.6214655638
+  },
+  {
+    "genre":"pop",
+    "seed":"Girls Just Want to Have Fun",
+    "mood":"sad",
+    "valence":0.5468999978,
+    "energy":0.5051000253,
+    "coherence":0.4023633897
+  },
+  {
+    "genre":"pop",
+    "seed":"I Want It That Way",
+    "mood":"any",
+    "valence":0.6193000064,
+    "energy":0.7417000304,
+    "coherence":0.5964841843
+  },
+  {
+    "genre":"pop",
+    "seed":"I Want It That Way",
+    "mood":"happy",
+    "valence":0.6864000001,
+    "energy":0.6883000244,
+    "coherence":0.5285260081
+  },
+  {
+    "genre":"pop",
+    "seed":"I Want It That Way",
+    "mood":"sad",
+    "valence":0.504900004,
+    "energy":0.4706000111,
+    "coherence":0.4670238495
+  },
+  {
+    "genre":"pop",
+    "seed":"Genie in a Bottle",
+    "mood":"any",
+    "valence":0.8872999942,
+    "energy":0.7967000336,
+    "coherence":0.6176083088
+  },
+  {
+    "genre":"pop",
+    "seed":"Genie in a Bottle",
+    "mood":"happy",
+    "valence":0.8422999882,
+    "energy":0.7426000357,
+    "coherence":0.5930179358
+  },
+  {
+    "genre":"pop",
+    "seed":"Genie in a Bottle",
+    "mood":"sad",
+    "valence":0.6034999916,
+    "energy":0.4570000176,
+    "coherence":0.3728940189
+  },
+  {
+    "genre":"pop",
+    "seed":"Stupid Love",
+    "mood":"any",
+    "valence":0.8035999944,
+    "energy":0.8582000282,
+    "coherence":0.7062312961
+  },
+  {
+    "genre":"pop",
+    "seed":"Stupid Love",
+    "mood":"happy",
+    "valence":0.801999986,
+    "energy":0.7815000294,
+    "coherence":0.6629333496
+  },
+  {
+    "genre":"pop",
+    "seed":"Stupid Love",
+    "mood":"sad",
+    "valence":0.5598999943,
+    "energy":0.4714000119,
+    "coherence":0.3735393882
+  },
+  {
+    "genre":"rnb",
+    "seed":"Crazy In Love",
+    "mood":"any",
+    "valence":0.6714000002,
+    "energy":0.7755000236,
+    "coherence":0.6427537799
+  },
+  {
+    "genre":"rnb",
+    "seed":"Crazy In Love",
+    "mood":"happy",
+    "valence":0.7116999977,
+    "energy":0.7378000257,
+    "coherence":0.6134566069
+  },
+  {
+    "genre":"rnb",
+    "seed":"Crazy In Love",
+    "mood":"sad",
+    "valence":0.547199998,
+    "energy":0.5376000201,
+    "coherence":0.4127736986
+  },
+  {
+    "genre":"rnb",
+    "seed":"Fallin",
+    "mood":"any",
+    "valence":0.5304999966,
+    "energy":0.4919000222,
+    "coherence":0.6577036977
+  },
+  {
+    "genre":"rnb",
+    "seed":"Fallin",
+    "mood":"happy",
+    "valence":0.6794999965,
+    "energy":0.5822000182,
+    "coherence":0.5074387789
+  },
+  {
+    "genre":"rnb",
+    "seed":"Fallin",
+    "mood":"sad",
+    "valence":0.4648000038,
+    "energy":0.3322000159,
+    "coherence":0.4672867656
+  },
+  {
+    "genre":"rnb",
+    "seed":"Yeah",
+    "mood":"any",
+    "valence":0.5974999865,
+    "energy":0.718100024,
+    "coherence":0.5219558477
+  },
+  {
+    "genre":"rnb",
+    "seed":"Yeah",
+    "mood":"happy",
+    "valence":0.7399999882,
+    "energy":0.7525000066,
+    "coherence":0.5381034017
+  },
+  {
+    "genre":"rnb",
+    "seed":"Yeah",
+    "mood":"sad",
+    "valence":0.4894999911,
+    "energy":0.5231000236,
+    "coherence":0.4141851366
+  },
+  {
+    "genre":"rnb",
+    "seed":"Waterfalls",
+    "mood":"any",
+    "valence":0.7500000031,
+    "energy":0.4793000145,
+    "coherence":0.6161832809
+  },
+  {
+    "genre":"rnb",
+    "seed":"Waterfalls",
+    "mood":"happy",
+    "valence":0.7843999897,
+    "energy":0.568900016,
+    "coherence":0.5837596655
+  },
+  {
+    "genre":"rnb",
+    "seed":"Waterfalls",
+    "mood":"sad",
+    "valence":0.5368000021,
+    "energy":0.3978000153,
+    "coherence":0.4332121909
+  },
+  {
+    "genre":"rnb",
+    "seed":"End of the Road",
+    "mood":"any",
+    "valence":0.4633000031,
+    "energy":0.3369000178,
+    "coherence":0.6348067522
+  },
+  {
+    "genre":"rnb",
+    "seed":"End of the Road",
+    "mood":"happy",
+    "valence":0.6649999906,
+    "energy":0.5539000177,
+    "coherence":0.4146077633
+  },
+  {
+    "genre":"rnb",
+    "seed":"End of the Road",
+    "mood":"sad",
+    "valence":0.3949000036,
+    "energy":0.2692000155,
+    "coherence":0.6407319903
+  },
+  {
+    "genre":"rnb",
+    "seed":"Un-Break My Heart",
+    "mood":"any",
+    "valence":0.169600005,
+    "energy":0.4904000232,
+    "coherence":0.7303714752
+  },
+  {
+    "genre":"rnb",
+    "seed":"Un-Break My Heart",
+    "mood":"happy",
+    "valence":0.5175000053,
+    "energy":0.6084000221,
+    "coherence":0.4018018246
+  },
+  {
+    "genre":"rnb",
+    "seed":"Un-Break My Heart",
+    "mood":"sad",
+    "valence":0.2780000012,
+    "energy":0.4033000171,
+    "coherence":0.422557056
+  },
+  {
+    "genre":"rnb",
+    "seed":"Respect",
+    "mood":"any",
+    "valence":0.9549999642,
+    "energy":0.4960000112,
+    "coherence":0.9999842644
+  },
+  {
+    "genre":"rnb",
+    "seed":"Respect",
+    "mood":"happy",
+    "valence":0.827099999,
+    "energy":0.6332000237,
+    "coherence":0.5470963717
+  },
+  {
+    "genre":"rnb",
+    "seed":"Respect",
+    "mood":"sad",
+    "valence":0.576099994,
+    "energy":0.3513000186,
+    "coherence":0.3651677668
+  },
+  {
+    "genre":"rnb",
+    "seed":"These Arms of Mine",
+    "mood":"any",
+    "valence":0.6387999832,
+    "energy":0.2777000114,
+    "coherence":0.6651919484
+  },
+  {
+    "genre":"rnb",
+    "seed":"These Arms of Mine",
+    "mood":"happy",
+    "valence":0.7400999889,
+    "energy":0.4989000195,
+    "coherence":0.4891031384
+  },
+  {
+    "genre":"rnb",
+    "seed":"These Arms of Mine",
+    "mood":"sad",
+    "valence":0.5009999949,
+    "energy":0.2430000129,
+    "coherence":0.5417907834
+  },
+  {
+    "genre":"rnb",
+    "seed":"Never Too Much",
+    "mood":"any",
+    "valence":0.6856199949,
+    "energy":0.6505000343,
+    "coherence":0.5677019954
+  },
+  {
+    "genre":"rnb",
+    "seed":"Never Too Much",
+    "mood":"happy",
+    "valence":0.8011999866,
+    "energy":0.7220000359,
+    "coherence":0.6383866072
+  },
+  {
+    "genre":"rnb",
+    "seed":"Never Too Much",
+    "mood":"sad",
+    "valence":0.491119998,
+    "energy":0.3871000133,
+    "coherence":0.3982896209
+  },
+  {
+    "genre":"rnb",
+    "seed":"Don't Let Go",
+    "mood":"any",
+    "valence":0.5918999811,
+    "energy":0.7003000386,
+    "coherence":0.9259332418
+  },
+  {
+    "genre":"rnb",
+    "seed":"Don't Let Go",
+    "mood":"happy",
+    "valence":0.7634000009,
+    "energy":0.6918000278,
+    "coherence":0.4684711397
+  },
+  {
+    "genre":"rnb",
+    "seed":"Don't Let Go",
+    "mood":"sad",
+    "valence":0.4756999947,
+    "energy":0.4407000217,
+    "coherence":0.4206839502
+  }
+]
