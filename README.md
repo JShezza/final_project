@@ -16,3 +16,35 @@ by a weighted blender the user can steer:
 - Lyric:
   - LRCLIB lyrics scored with VADER to gather the "mood" of the song from
     words
+
+Prefeerence parameters adjust the blend per request: **novelty** biases away from
+popular tracks, towards the long tail and **target_mood** steers the search using
+valence and energy.
+
+Noinformation about the call is stored. All requests are anonymous. The optional
+`user_id` is an opaque key, hashed before it's logged and only used for A/B variant
+assignments.
+
+## Requirements
+
+All dependencies are stored in requirements.txt however:
+
+- Python 3.11+
+- Node 18+
+- `tracks_features.csv` dataset ([~1.2M Spotify tracks with audio features](https://www.kaggle.com/datasets/rodolfofigueroa/spotify-12m-songs))
+- optional: [last.fm API Key](https://www.last.fm/api/account/create). If not used
+  the API will use audio-only.
+
+## Set up
+
+1. python dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+2. enviroment variables - rename .env.example to .env and input values.
+
+```bash
+cp .env.example .env
+```
