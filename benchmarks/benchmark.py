@@ -38,7 +38,7 @@ from recommender import Recommender
 load_dotenv()
 
 SEEDS_FILE = Path(__file__).parent / "benchmark_seeds.json"
-OUT_FILE = Path(__file__).parent / "becnhmark_results.json"
+OUT_FILE = Path(__file__).parent / "benchmark_results.json"
 TOP_N = 10
 CANDIDATE_POOL = 50
 NOVELTY_SETTINGS = [0.0, 0.25, 0.5, 0.75, 1.0]
