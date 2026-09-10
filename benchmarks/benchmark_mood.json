@@ -19,6 +19,22 @@
     "genre":"rock",
     "seed":"Bohemian Rhapsody",
     "mood":"sad",
+    "valence":0.1640300057,
+    "energy":0.374600017,
+    "coherence":0.6481973529
+  },
+  {
+    "genre":"rock",
+    "seed":"Bohemian Rhapsody",
+    "mood":"energetic",
+    "valence":0.4802000018,
+    "energy":0.6829000174,
+    "coherence":0.4121198654
+  },
+  {
+    "genre":"rock",
+    "seed":"Bohemian Rhapsody",
+    "mood":"calm",
     "valence":0.359800002,
     "energy":0.3949000169,
     "coherence":0.574385643
@@ -43,6 +59,22 @@
     "genre":"rock",
     "seed":"Testify",
     "mood":"sad",
+    "valence":0.3296000005,
+    "energy":0.6810000318,
+    "coherence":0.389277637
+  },
+  {
+    "genre":"rock",
+    "seed":"Testify",
+    "mood":"energetic",
+    "valence":0.551099999,
+    "energy":0.9487000297,
+    "coherence":0.6691598296
+  },
+  {
+    "genre":"rock",
+    "seed":"Testify",
+    "mood":"calm",
     "valence":0.4597999942,
     "energy":0.5682000232,
     "coherence":0.3849682212
@@ -67,6 +99,22 @@
     "genre":"rock",
     "seed":"Stairway to Heaven",
     "mood":"sad",
+    "valence":0.2256000021,
+    "energy":0.2978000177,
+    "coherence":0.7002356052
+  },
+  {
+    "genre":"rock",
+    "seed":"Stairway to Heaven",
+    "mood":"energetic",
+    "valence":0.4461999995,
+    "energy":0.6333000207,
+    "coherence":0.3319916427
+  },
+  {
+    "genre":"rock",
+    "seed":"Stairway to Heaven",
+    "mood":"calm",
     "valence":0.3546000036,
     "energy":0.2160000105,
     "coherence":0.6695398092
@@ -91,6 +139,22 @@
     "genre":"rock",
     "seed":"Back In Black",
     "mood":"sad",
+    "valence":0.3812000023,
+    "energy":0.5537000166,
+    "coherence":0.3803174198
+  },
+  {
+    "genre":"rock",
+    "seed":"Back In Black",
+    "mood":"energetic",
+    "valence":0.6527999903,
+    "energy":0.8305000242,
+    "coherence":0.5942898989
+  },
+  {
+    "genre":"rock",
+    "seed":"Back In Black",
+    "mood":"calm",
     "valence":0.5082999994,
     "energy":0.4304000158,
     "coherence":0.4296270311
@@ -115,6 +179,22 @@
     "genre":"rock",
     "seed":"Everlong",
     "mood":"sad",
+    "valence":0.2402000071,
+    "energy":0.6214000195,
+    "coherence":0.4326657355
+  },
+  {
+    "genre":"rock",
+    "seed":"Everlong",
+    "mood":"energetic",
+    "valence":0.4583000078,
+    "energy":0.8854000159,
+    "coherence":0.5898072124
+  },
+  {
+    "genre":"rock",
+    "seed":"Everlong",
+    "mood":"calm",
     "valence":0.3450999995,
     "energy":0.5204000091,
     "coherence":0.3964507282
@@ -139,6 +219,22 @@
     "genre":"rock",
     "seed":"Creep",
     "mood":"sad",
+    "valence":0.1203300124,
+    "energy":0.4190000209,
+    "coherence":0.6959015131
+  },
+  {
+    "genre":"rock",
+    "seed":"Creep",
+    "mood":"energetic",
+    "valence":0.381000004,
+    "energy":0.7101000305,
+    "coherence":0.4017541409
+  },
+  {
+    "genre":"rock",
+    "seed":"Creep",
+    "mood":"calm",
     "valence":0.2664000096,
     "energy":0.339000026,
     "coherence":0.4944780469
@@ -163,6 +259,22 @@
     "genre":"rock",
     "seed":"Do I Wanna Know",
     "mood":"sad",
+    "valence":0.2674000024,
+    "energy":0.4030000181,
+    "coherence":0.5230308771
+  },
+  {
+    "genre":"rock",
+    "seed":"Do I Wanna Know",
+    "mood":"energetic",
+    "valence":0.5704000044,
+    "energy":0.7395000274,
+    "coherence":0.5264390111
+  },
+  {
+    "genre":"rock",
+    "seed":"Do I Wanna Know",
+    "mood":"calm",
     "valence":0.4335000042,
     "energy":0.4000000183,
     "coherence":0.5303837657
@@ -187,6 +299,22 @@
     "genre":"rock",
     "seed":"Even Flow",
     "mood":"sad",
+    "valence":0.2137000041,
+    "energy":0.5999000225,
+    "coherence":0.4246803224
+  },
+  {
+    "genre":"rock",
+    "seed":"Even Flow",
+    "mood":"energetic",
+    "valence":0.4934999964,
+    "energy":0.9029000275,
+    "coherence":0.5042951703
+  },
+  {
+    "genre":"rock",
+    "seed":"Even Flow",
+    "mood":"calm",
     "valence":0.3309999996,
     "energy":0.5283000105,
     "coherence":0.3876472712
@@ -211,6 +339,22 @@
     "genre":"rock",
     "seed":"Basket Case",
     "mood":"sad",
+    "valence":0.4724000013,
+    "energy":0.6600000176,
+    "coherence":0.3612519205
+  },
+  {
+    "genre":"rock",
+    "seed":"Basket Case",
+    "mood":"energetic",
+    "valence":0.6768999952,
+    "energy":0.9159000191,
+    "coherence":0.5986067057
+  },
+  {
+    "genre":"rock",
+    "seed":"Basket Case",
+    "mood":"calm",
     "valence":0.5888999907,
     "energy":0.609700021,
     "coherence":0.3782246709
@@ -235,6 +379,22 @@
     "genre":"rock",
     "seed":"Last Nite",
     "mood":"sad",
+    "valence":0.4553000011,
+    "energy":0.5669000302,
+    "coherence":0.3389698565
+  },
+  {
+    "genre":"rock",
+    "seed":"Last Nite",
+    "mood":"energetic",
+    "valence":0.6692999978,
+    "energy":0.8302000259,
+    "coherence":0.5884488821
+  },
+  {
+    "genre":"rock",
+    "seed":"Last Nite",
+    "mood":"calm",
     "valence":0.5734999863,
     "energy":0.4850000157,
     "coherence":0.3483017683
@@ -259,6 +419,22 @@
     "genre":"hip_hop_rap",
     "seed":"C.R.E.A.M.",
     "mood":"sad",
+    "valence":0.347399998,
+    "energy":0.5250000228,
+    "coherence":0.4532416761
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"C.R.E.A.M.",
+    "mood":"energetic",
+    "valence":0.6107000015,
+    "energy":0.7328000332,
+    "coherence":0.5926412344
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"C.R.E.A.M.",
+    "mood":"calm",
     "valence":0.4795999992,
     "energy":0.4596000193,
     "coherence":0.4878422618
@@ -283,6 +459,22 @@
     "genre":"hip_hop_rap",
     "seed":"N.Y. State of Mind",
     "mood":"sad",
+    "valence":0.437300006,
+    "energy":0.5766000253,
+    "coherence":0.3198538721
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"N.Y. State of Mind",
+    "mood":"energetic",
+    "valence":0.6743999947,
+    "energy":0.8314000224,
+    "coherence":0.5179648399
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"N.Y. State of Mind",
+    "mood":"calm",
     "valence":0.608100001,
     "energy":0.5553000173,
     "coherence":0.3643845022
@@ -307,6 +499,22 @@
     "genre":"hip_hop_rap",
     "seed":"Ms. Jackson",
     "mood":"sad",
+    "valence":0.3202000046,
+    "energy":0.5182000264,
+    "coherence":0.4003037512
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Ms. Jackson",
+    "mood":"energetic",
+    "valence":0.6369999927,
+    "energy":0.8117000306,
+    "coherence":0.7253200412
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Ms. Jackson",
+    "mood":"calm",
     "valence":0.4827999976,
     "energy":0.4508000225,
     "coherence":0.4224787354
@@ -331,6 +539,22 @@
     "genre":"hip_hop_rap",
     "seed":"Can I Kick It",
     "mood":"sad",
+    "valence":0.3823000042,
+    "energy":0.4460000165,
+    "coherence":0.4053143561
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Can I Kick It",
+    "mood":"energetic",
+    "valence":0.6334999929,
+    "energy":0.6987000265,
+    "coherence":0.5561730862
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Can I Kick It",
+    "mood":"calm",
     "valence":0.5353000022,
     "energy":0.3694000177,
     "coherence":0.4625564516
@@ -355,6 +579,22 @@
     "genre":"hip_hop_rap",
     "seed":"Fight The Power",
     "mood":"sad",
+    "valence":0.2807000024,
+    "energy":0.7276000334,
+    "coherence":0.4250680506
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Fight The Power",
+    "mood":"energetic",
+    "valence":0.4570000035,
+    "energy":0.9522000349,
+    "coherence":0.5152704716
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Fight The Power",
+    "mood":"calm",
     "valence":0.3662999976,
     "energy":0.67820003,
     "coherence":0.3876412809
@@ -379,6 +619,22 @@
     "genre":"hip_hop_rap",
     "seed":"Insane in the Brain",
     "mood":"sad",
+    "valence":0.3874000034,
+    "energy":0.479900021,
+    "coherence":0.354614675
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Insane in the Brain",
+    "mood":"energetic",
+    "valence":0.6750999986,
+    "energy":0.7923000135,
+    "coherence":0.5510427356
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Insane in the Brain",
+    "mood":"calm",
     "valence":0.5019000033,
     "energy":0.4455000185,
     "coherence":0.3889815211
@@ -403,6 +659,22 @@
     "genre":"hip_hop_rap",
     "seed":"Shook Ones",
     "mood":"sad",
+    "valence":0.343200005,
+    "energy":0.5819000171,
+    "coherence":0.4626474977
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Shook Ones",
+    "mood":"energetic",
+    "valence":0.5810999958,
+    "energy":0.8519000326,
+    "coherence":0.6778396368
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Shook Ones",
+    "mood":"calm",
     "valence":0.459600005,
     "energy":0.4908000201,
     "coherence":0.438423574
@@ -427,6 +699,22 @@
     "genre":"hip_hop_rap",
     "seed":"Work It",
     "mood":"sad",
+    "valence":0.3116000035,
+    "energy":0.5328000214,
+    "coherence":0.3978967667
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Work It",
+    "mood":"energetic",
+    "valence":0.6099999899,
+    "energy":0.7953000164,
+    "coherence":0.6276627779
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Work It",
+    "mood":"calm",
     "valence":0.4718999974,
     "energy":0.4705000201,
     "coherence":0.459558785
@@ -451,6 +739,22 @@
     "genre":"hip_hop_rap",
     "seed":"I Used to Love H.E.R.",
     "mood":"sad",
+    "valence":0.3450000016,
+    "energy":0.4979000228,
+    "coherence":0.4733130932
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"I Used to Love H.E.R.",
+    "mood":"energetic",
+    "valence":0.5767999842,
+    "energy":0.7437000244,
+    "coherence":0.5500614047
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"I Used to Love H.E.R.",
+    "mood":"calm",
     "valence":0.4503000048,
     "energy":0.4543000183,
     "coherence":0.5136432648
@@ -475,6 +779,22 @@
     "genre":"hip_hop_rap",
     "seed":"Hip Hop Hooray",
     "mood":"sad",
+    "valence":0.4015999964,
+    "energy":0.5935000276,
+    "coherence":0.3761204779
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Hip Hop Hooray",
+    "mood":"energetic",
+    "valence":0.6155000058,
+    "energy":0.8181000253,
+    "coherence":0.5734262466
+  },
+  {
+    "genre":"hip_hop_rap",
+    "seed":"Hip Hop Hooray",
+    "mood":"calm",
     "valence":0.6014000013,
     "energy":0.5935000235,
     "coherence":0.3522046804
@@ -499,6 +819,22 @@
     "genre":"pop",
     "seed":"Billie Jean",
     "mood":"sad",
+    "valence":0.4399000055,
+    "energy":0.4403000186,
+    "coherence":0.3941025138
+  },
+  {
+    "genre":"pop",
+    "seed":"Billie Jean",
+    "mood":"energetic",
+    "valence":0.7259999924,
+    "energy":0.7791000324,
+    "coherence":0.4712516665
+  },
+  {
+    "genre":"pop",
+    "seed":"Billie Jean",
+    "mood":"calm",
     "valence":0.6212999988,
     "energy":0.4397000247,
     "coherence":0.4056072235
@@ -523,6 +859,22 @@
     "genre":"pop",
     "seed":"Like a Prayer",
     "mood":"sad",
+    "valence":0.2522000052,
+    "energy":0.4304000201,
+    "coherence":0.5568805933
+  },
+  {
+    "genre":"pop",
+    "seed":"Like a Prayer",
+    "mood":"energetic",
+    "valence":0.6347999951,
+    "energy":0.7679000286,
+    "coherence":0.4388601184
+  },
+  {
+    "genre":"pop",
+    "seed":"Like a Prayer",
+    "mood":"calm",
     "valence":0.3539000057,
     "energy":0.3362000162,
     "coherence":0.488581568
@@ -547,6 +899,22 @@
     "genre":"pop",
     "seed":"Toxic",
     "mood":"sad",
+    "valence":0.510900003,
+    "energy":0.6018000279,
+    "coherence":0.329295516
+  },
+  {
+    "genre":"pop",
+    "seed":"Toxic",
+    "mood":"energetic",
+    "valence":0.7512999916,
+    "energy":0.8737000309,
+    "coherence":0.5301873088
+  },
+  {
+    "genre":"pop",
+    "seed":"Toxic",
+    "mood":"calm",
     "valence":0.6128999901,
     "energy":0.5137000172,
     "coherence":0.3556925058
@@ -571,6 +939,22 @@
     "genre":"pop",
     "seed":"Rolling in the Deep",
     "mood":"sad",
+    "valence":0.3282000007,
+    "energy":0.5070000309,
+    "coherence":0.4422114491
+  },
+  {
+    "genre":"pop",
+    "seed":"Rolling in the Deep",
+    "mood":"energetic",
+    "valence":0.5432999981,
+    "energy":0.8245000342,
+    "coherence":0.6836453676
+  },
+  {
+    "genre":"pop",
+    "seed":"Rolling in the Deep",
+    "mood":"calm",
     "valence":0.439300002,
     "energy":0.4480000202,
     "coherence":0.4437090456
@@ -595,6 +979,22 @@
     "genre":"pop",
     "seed":"Cry Me a River",
     "mood":"sad",
+    "valence":0.3229000028,
+    "energy":0.4994000203,
+    "coherence":0.4142361581
+  },
+  {
+    "genre":"pop",
+    "seed":"Cry Me a River",
+    "mood":"energetic",
+    "valence":0.5991999998,
+    "energy":0.7406000285,
+    "coherence":0.5733957291
+  },
+  {
+    "genre":"pop",
+    "seed":"Cry Me a River",
+    "mood":"calm",
     "valence":0.5020999997,
     "energy":0.4744000193,
     "coherence":0.4428569674
@@ -619,6 +1019,22 @@
     "genre":"pop",
     "seed":"Shape of You",
     "mood":"sad",
+    "valence":0.4879999962,
+    "energy":0.5419000182,
+    "coherence":0.3381892145
+  },
+  {
+    "genre":"pop",
+    "seed":"Shape of You",
+    "mood":"energetic",
+    "valence":0.6978999881,
+    "energy":0.7884000221,
+    "coherence":0.4397434592
+  },
+  {
+    "genre":"pop",
+    "seed":"Shape of You",
+    "mood":"calm",
     "valence":0.5711999897,
     "energy":0.5302000232,
     "coherence":0.3737004399
@@ -643,6 +1059,22 @@
     "genre":"pop",
     "seed":"Girls Just Want to Have Fun",
     "mood":"sad",
+    "valence":0.3598000053,
+    "energy":0.5455000223,
+    "coherence":0.3711481094
+  },
+  {
+    "genre":"pop",
+    "seed":"Girls Just Want to Have Fun",
+    "mood":"energetic",
+    "valence":0.7031999937,
+    "energy":0.8500000255,
+    "coherence":0.6275128722
+  },
+  {
+    "genre":"pop",
+    "seed":"Girls Just Want to Have Fun",
+    "mood":"calm",
     "valence":0.5468999978,
     "energy":0.5051000253,
     "coherence":0.4023633897
@@ -667,6 +1099,22 @@
     "genre":"pop",
     "seed":"I Want It That Way",
     "mood":"sad",
+    "valence":0.3565000053,
+    "energy":0.5203000177,
+    "coherence":0.447155714
+  },
+  {
+    "genre":"pop",
+    "seed":"I Want It That Way",
+    "mood":"energetic",
+    "valence":0.5798000061,
+    "energy":0.7739000282,
+    "coherence":0.6133358479
+  },
+  {
+    "genre":"pop",
+    "seed":"I Want It That Way",
+    "mood":"calm",
     "valence":0.504900004,
     "energy":0.4706000111,
     "coherence":0.4670238495
@@ -691,6 +1139,22 @@
     "genre":"pop",
     "seed":"Genie in a Bottle",
     "mood":"sad",
+    "valence":0.4517999969,
+    "energy":0.5241000291,
+    "coherence":0.3353726566
+  },
+  {
+    "genre":"pop",
+    "seed":"Genie in a Bottle",
+    "mood":"energetic",
+    "valence":0.7736999939,
+    "energy":0.8242000339,
+    "coherence":0.5276087523
+  },
+  {
+    "genre":"pop",
+    "seed":"Genie in a Bottle",
+    "mood":"calm",
     "valence":0.6034999916,
     "energy":0.4570000176,
     "coherence":0.3728940189
@@ -715,6 +1179,22 @@
     "genre":"pop",
     "seed":"Stupid Love",
     "mood":"sad",
+    "valence":0.4085999977,
+    "energy":0.5630000334,
+    "coherence":0.3663368821
+  },
+  {
+    "genre":"pop",
+    "seed":"Stupid Love",
+    "mood":"energetic",
+    "valence":0.6719999901,
+    "energy":0.8604000198,
+    "coherence":0.6223028898
+  },
+  {
+    "genre":"pop",
+    "seed":"Stupid Love",
+    "mood":"calm",
     "valence":0.5598999943,
     "energy":0.4714000119,
     "coherence":0.3735393882
@@ -739,6 +1219,22 @@
     "genre":"rnb",
     "seed":"Crazy In Love",
     "mood":"sad",
+    "valence":0.3914000014,
+    "energy":0.5830000153,
+    "coherence":0.394641757
+  },
+  {
+    "genre":"rnb",
+    "seed":"Crazy In Love",
+    "mood":"energetic",
+    "valence":0.629800007,
+    "energy":0.8284000204,
+    "coherence":0.6005544662
+  },
+  {
+    "genre":"rnb",
+    "seed":"Crazy In Love",
+    "mood":"calm",
     "valence":0.547199998,
     "energy":0.5376000201,
     "coherence":0.4127736986
@@ -763,6 +1259,22 @@
     "genre":"rnb",
     "seed":"Fallin",
     "mood":"sad",
+    "valence":0.3800000011,
+    "energy":0.4028000144,
+    "coherence":0.4603784978
+  },
+  {
+    "genre":"rnb",
+    "seed":"Fallin",
+    "mood":"energetic",
+    "valence":0.5789999813,
+    "energy":0.6795000255,
+    "coherence":0.4891292453
+  },
+  {
+    "genre":"rnb",
+    "seed":"Fallin",
+    "mood":"calm",
     "valence":0.4648000038,
     "energy":0.3322000159,
     "coherence":0.4672867656
@@ -787,6 +1299,22 @@
     "genre":"rnb",
     "seed":"Yeah",
     "mood":"sad",
+    "valence":0.4154999933,
+    "energy":0.5790000224,
+    "coherence":0.3814304471
+  },
+  {
+    "genre":"rnb",
+    "seed":"Yeah",
+    "mood":"energetic",
+    "valence":0.5930999988,
+    "energy":0.7989000261,
+    "coherence":0.5413828492
+  },
+  {
+    "genre":"rnb",
+    "seed":"Yeah",
+    "mood":"calm",
     "valence":0.4894999911,
     "energy":0.5231000236,
     "coherence":0.4141851366
@@ -811,6 +1339,22 @@
     "genre":"rnb",
     "seed":"Waterfalls",
     "mood":"sad",
+    "valence":0.4708000021,
+    "energy":0.4090000199,
+    "coherence":0.3963861167
+  },
+  {
+    "genre":"rnb",
+    "seed":"Waterfalls",
+    "mood":"energetic",
+    "valence":0.6770000024,
+    "energy":0.707800025,
+    "coherence":0.4519731104
+  },
+  {
+    "genre":"rnb",
+    "seed":"Waterfalls",
+    "mood":"calm",
     "valence":0.5368000021,
     "energy":0.3978000153,
     "coherence":0.4332121909
@@ -835,6 +1379,22 @@
     "genre":"rnb",
     "seed":"End of the Road",
     "mood":"sad",
+    "valence":0.2731000053,
+    "energy":0.2973000181,
+    "coherence":0.5319300294
+  },
+  {
+    "genre":"rnb",
+    "seed":"End of the Road",
+    "mood":"energetic",
+    "valence":0.5934999928,
+    "energy":0.5950000139,
+    "coherence":0.3767281175
+  },
+  {
+    "genre":"rnb",
+    "seed":"End of the Road",
+    "mood":"calm",
     "valence":0.3949000036,
     "energy":0.2692000155,
     "coherence":0.6407319903
@@ -859,6 +1419,22 @@
     "genre":"rnb",
     "seed":"Un-Break My Heart",
     "mood":"sad",
+    "valence":0.1888000032,
+    "energy":0.4083000136,
+    "coherence":0.5489903092
+  },
+  {
+    "genre":"rnb",
+    "seed":"Un-Break My Heart",
+    "mood":"energetic",
+    "valence":0.4245000017,
+    "energy":0.7034000144,
+    "coherence":0.4287008345
+  },
+  {
+    "genre":"rnb",
+    "seed":"Un-Break My Heart",
+    "mood":"calm",
     "valence":0.2780000012,
     "energy":0.4033000171,
     "coherence":0.422557056
@@ -883,6 +1459,22 @@
     "genre":"rnb",
     "seed":"Respect",
     "mood":"sad",
+    "valence":0.5000000022,
+    "energy":0.4228000219,
+    "coherence":0.3429138064
+  },
+  {
+    "genre":"rnb",
+    "seed":"Respect",
+    "mood":"energetic",
+    "valence":0.7351999991,
+    "energy":0.7128000253,
+    "coherence":0.4240439534
+  },
+  {
+    "genre":"rnb",
+    "seed":"Respect",
+    "mood":"calm",
     "valence":0.576099994,
     "energy":0.3513000186,
     "coherence":0.3651677668
@@ -907,6 +1499,22 @@
     "genre":"rnb",
     "seed":"These Arms of Mine",
     "mood":"sad",
+    "valence":0.3848999993,
+    "energy":0.2651000098,
+    "coherence":0.4346777499
+  },
+  {
+    "genre":"rnb",
+    "seed":"These Arms of Mine",
+    "mood":"energetic",
+    "valence":0.5895999859,
+    "energy":0.6452000211,
+    "coherence":0.3031098247
+  },
+  {
+    "genre":"rnb",
+    "seed":"These Arms of Mine",
+    "mood":"calm",
     "valence":0.5009999949,
     "energy":0.2430000129,
     "coherence":0.5417907834
@@ -931,6 +1539,22 @@
     "genre":"rnb",
     "seed":"Never Too Much",
     "mood":"sad",
+    "valence":0.353720004,
+    "energy":0.4435000137,
+    "coherence":0.3516196907
+  },
+  {
+    "genre":"rnb",
+    "seed":"Never Too Much",
+    "mood":"energetic",
+    "valence":0.7037999948,
+    "energy":0.7794000274,
+    "coherence":0.5747882128
+  },
+  {
+    "genre":"rnb",
+    "seed":"Never Too Much",
+    "mood":"calm",
     "valence":0.491119998,
     "energy":0.3871000133,
     "coherence":0.3982896209
@@ -955,6 +1579,22 @@
     "genre":"rnb",
     "seed":"Don't Let Go",
     "mood":"sad",
+    "valence":0.295399998,
+    "energy":0.4614000144,
+    "coherence":0.4188275933
+  },
+  {
+    "genre":"rnb",
+    "seed":"Don't Let Go",
+    "mood":"energetic",
+    "valence":0.6538999983,
+    "energy":0.7699000199,
+    "coherence":0.5416588783
+  },
+  {
+    "genre":"rnb",
+    "seed":"Don't Let Go",
+    "mood":"calm",
     "valence":0.4756999947,
     "energy":0.4407000217,
     "coherence":0.4206839502
