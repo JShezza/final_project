@@ -1,0 +1,290 @@
+{
+  "rock": [
+    {
+      "id": "32mwlJqE38D1qCoFwVjgpZ",
+      "artist": "Queen",
+      "title": "Bohemian Rhapsody",
+      "catalogue_artist": "Queen",
+      "catalogue_title": "Bohemian Rhapsody"
+    },
+    {
+      "id": "7lmeHLHBe4nmXzuXc0HDjk",
+      "artist": "Rage Against The Machine",
+      "title": "Testify",
+      "catalogue_artist": "Rage Against The Machine",
+      "catalogue_title": "Testify"
+    },
+    {
+      "id": "7llNWna9CEKr88Ng4vAwiI",
+      "artist": "Led Zeppelin",
+      "title": "Stairway to Heaven",
+      "catalogue_artist": "Led Zeppelin",
+      "catalogue_title": "Stairway to Heaven - Sunset Sound Mix"
+    },
+    {
+      "id": "0FAW42EiDHgi14Ji6q5NBb",
+      "artist": "AC/DC",
+      "title": "Back In Black",
+      "catalogue_artist": "AC/DC",
+      "catalogue_title": "Back In Black"
+    },
+    {
+      "id": "5UWwZ5lm5PKu6eKsHAGxOk",
+      "artist": "Foo Fighters",
+      "title": "Everlong",
+      "catalogue_artist": "Foo Fighters",
+      "catalogue_title": "Everlong"
+    },
+    {
+      "id": "62J6RO53R6vNhOB6QXajFV",
+      "artist": "Radiohead",
+      "title": "Creep",
+      "catalogue_artist": "Radiohead",
+      "catalogue_title": "Creep"
+    },
+    {
+      "id": "7xmwLmkoWpghkq8jyEhtbx",
+      "artist": "Arctic Monkeys",
+      "title": "Do I Wanna Know",
+      "catalogue_artist": "Arctic Monkeys",
+      "catalogue_title": "Do I Wanna Know?"
+    },
+    {
+      "id": "6QewNVIDKdSl8Y3ycuHIei",
+      "artist": "Pearl Jam",
+      "title": "Even Flow",
+      "catalogue_artist": "Pearl Jam",
+      "catalogue_title": "Even Flow"
+    },
+    {
+      "id": "6L89mwZXSOwYl76YXfX13s",
+      "artist": "Green Day",
+      "title": "Basket Case",
+      "catalogue_artist": "Green Day",
+      "catalogue_title": "Basket Case"
+    },
+    {
+      "id": "3SUusuA9jH1v6PVwtYMbdv",
+      "artist": "The Strokes",
+      "title": "Last Nite",
+      "catalogue_artist": "The Strokes",
+      "catalogue_title": "Last Nite"
+    }
+  ],
+  "hip_hop_rap": [
+    {
+      "id": "61mSZDVO5k6ERyOtYRakcY",
+      "artist": "Wu-Tang Clan",
+      "title": "C.R.E.A.M.",
+      "catalogue_artist": "Wu-Tang Clan",
+      "catalogue_title": "C.R.E.A.M."
+    },
+    {
+      "id": "0trHOzAhNpGCsGBEu7dOJo",
+      "artist": "Nas",
+      "title": "N.Y. State of Mind",
+      "catalogue_artist": "Nas",
+      "catalogue_title": "N.Y. State of Mind"
+    },
+    {
+      "id": "0I3q5fE6wg7LIfHGngUTnV",
+      "artist": "OutKast",
+      "title": "Ms. Jackson",
+      "catalogue_artist": "OutKast",
+      "catalogue_title": "Ms. Jackson"
+    },
+    {
+      "id": "1EZpAn7r7fFHAfSDbxpAAl",
+      "artist": "A Tribe Called Quest",
+      "title": "Can I Kick It",
+      "catalogue_artist": "A Tribe Called Quest",
+      "catalogue_title": "Can I Kick It?"
+    },
+    {
+      "id": "0N0BJkjzI91IkGnCUuUncR",
+      "artist": "Public Enemy",
+      "title": "Fight The Power",
+      "catalogue_artist": "Public Enemy",
+      "catalogue_title": "Fight The Power"
+    },
+    {
+      "id": "4dTMU4O2DdyIlRlss7v9UP",
+      "artist": "Cypress Hill",
+      "title": "Insane in the Brain",
+      "catalogue_artist": "Cypress Hill",
+      "catalogue_title": "Insane in the Brain"
+    },
+    {
+      "id": "33ZXjLCpiINn8eQIDYEPTD",
+      "artist": "Mobb Deep",
+      "title": "Shook Ones",
+      "catalogue_artist": "Mobb Deep",
+      "catalogue_title": "Shook Ones, Pt. II"
+    },
+    {
+      "id": "0kl2l4L2pMflJAkEXgkWDs",
+      "artist": "Missy Elliott",
+      "title": "Work It",
+      "catalogue_artist": "Missy Elliott",
+      "catalogue_title": "Work It"
+    },
+    {
+      "id": "7iwdh04DumLFgMcE7OSjG6",
+      "artist": "Common",
+      "title": "I Used to Love H.E.R.",
+      "catalogue_artist": "Common",
+      "catalogue_title": "I Used to Love H.E.R."
+    },
+    {
+      "id": "5vKcPgZLtHHZWppYt3C8ie",
+      "artist": "Naughty By Nature",
+      "title": "Hip Hop Hooray",
+      "catalogue_artist": "Naughty By Nature",
+      "catalogue_title": "Hip Hop Hooray (Re-Recorded)"
+    }
+  ],
+  "pop": [
+    {
+      "id": "4WSfyC9pFp0nc8OD0rHyaD",
+      "artist": "Michael Jackson",
+      "title": "Billie Jean",
+      "catalogue_artist": "Michael Jackson",
+      "catalogue_title": "Billie Jean"
+    },
+    {
+      "id": "2v7ywbUzCgcVohHaKUcacV",
+      "artist": "Madonna",
+      "title": "Like a Prayer",
+      "catalogue_artist": "Madonna",
+      "catalogue_title": "Like a Prayer"
+    },
+    {
+      "id": "717TY4sfgKQm4kFbYQIzgo",
+      "artist": "Britney Spears",
+      "title": "Toxic",
+      "catalogue_artist": "Britney Spears",
+      "catalogue_title": "Toxic"
+    },
+    {
+      "id": "1CkvWZme3pRgbzaxZnTl5X",
+      "artist": "Adele",
+      "title": "Rolling in the Deep",
+      "catalogue_artist": "Adele",
+      "catalogue_title": "Rolling in the Deep"
+    },
+    {
+      "id": "6nBTt12mQDaPI9uSykGVAk",
+      "artist": "Justin Timberlake",
+      "title": "Cry Me a River",
+      "catalogue_artist": "Justin Timberlake",
+      "catalogue_title": "Cry Me a River"
+    },
+    {
+      "id": "0FE9t6xYkqWXU2ahLh6D8X",
+      "artist": "Ed Sheeran",
+      "title": "Shape of You",
+      "catalogue_artist": "Ed Sheeran",
+      "catalogue_title": "Shape of You"
+    },
+    {
+      "id": "4y1LsJpmMti1PfRQV9AWWe",
+      "artist": "Cyndi Lauper",
+      "title": "Girls Just Want to Have Fun",
+      "catalogue_artist": "Cyndi Lauper",
+      "catalogue_title": "Girls Just Want to Have Fun"
+    },
+    {
+      "id": "47BBI51FKFwOMlIiX6m8ya",
+      "artist": "Backstreet Boys",
+      "title": "I Want It That Way",
+      "catalogue_artist": "Backstreet Boys",
+      "catalogue_title": "I Want It That Way"
+    },
+    {
+      "id": "5yRR5ZtNLMzJGZOSXSxq6c",
+      "artist": "Christina Aguilera",
+      "title": "Genie in a Bottle",
+      "catalogue_artist": "Christina Aguilera",
+      "catalogue_title": "Genie In a Bottle"
+    },
+    {
+      "id": "7uHdOndyBvdR58ZOnBCTsA",
+      "artist": "Lady Gaga",
+      "title": "Stupid Love",
+      "catalogue_artist": "Lady Gaga",
+      "catalogue_title": "Stupid Love"
+    }
+  ],
+  "rnb": [
+    {
+      "id": "5IVuqXILoxVWvWEPm82Jxr",
+      "artist": "Beyonc\u00e9",
+      "title": "Crazy In Love",
+      "catalogue_artist": "Beyonc\u00e9, JAY-Z",
+      "catalogue_title": "Crazy In Love (feat. Jay-Z)"
+    },
+    {
+      "id": "1ZrwJeM1SPoMmYGsh958l6",
+      "artist": "Alicia Keys",
+      "title": "Fallin",
+      "catalogue_artist": "Alicia Keys",
+      "catalogue_title": "Fallin' - Radio Edit"
+    },
+    {
+      "id": "0utLWSIbolqT7KyppMuxKY",
+      "artist": "Usher",
+      "title": "Yeah",
+      "catalogue_artist": "Usher, Lil Jon, Ludacris",
+      "catalogue_title": "Yeah! (feat. Lil Jon & Ludacris)"
+    },
+    {
+      "id": "0BE2ZeVz2cDSUZCqeNrprA",
+      "artist": "TLC",
+      "title": "Waterfalls",
+      "catalogue_artist": "TLC",
+      "catalogue_title": "Waterfalls"
+    },
+    {
+      "id": "0kgA3u2SmsqNwWggutPOEp",
+      "artist": "Boyz II Men",
+      "title": "End of the Road",
+      "catalogue_artist": "Boyz II Men",
+      "catalogue_title": "End Of The Road"
+    },
+    {
+      "id": "2HAq9koJojiO4CEHQ35FOe",
+      "artist": "Toni Braxton",
+      "title": "Un-Break My Heart",
+      "catalogue_artist": "Toni Braxton",
+      "catalogue_title": "Un-Break My Heart"
+    },
+    {
+      "id": "37lds4PAdFrPc11kJkkTrs",
+      "artist": "Aretha Franklin",
+      "title": "Respect",
+      "catalogue_artist": "Aretha Franklin",
+      "catalogue_title": "Respect"
+    },
+    {
+      "id": "47UxJTVOdHzkglqZ1cajAp",
+      "artist": "Otis Redding",
+      "title": "These Arms of Mine",
+      "catalogue_artist": "Otis Redding",
+      "catalogue_title": "These Arms of Mine"
+    },
+    {
+      "id": "3F80WmM7uMh01JjRhVlW6C",
+      "artist": "Luther Vandross",
+      "title": "Never Too Much",
+      "catalogue_artist": "Luther Vandross",
+      "catalogue_title": "Never Too Much"
+    },
+    {
+      "id": "2TFimzE3O5NGrhAENbwRJt",
+      "artist": "En Vogue",
+      "title": "Don't Let Go",
+      "catalogue_artist": "En Vogue",
+      "catalogue_title": "Don't Let Go (Love)"
+    }
+  ]
+}
