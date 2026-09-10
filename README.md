@@ -43,8 +43,15 @@ All dependencies are stored in requirements.txt however:
 pip install -r requirements.txt
 ```
 
-2. enviroment variables - rename .env.example to .env and input values.
+1. enviroment variables - rename .env.example to .env and input values.
 
 ```bash
 cp .env.example .env
+```
+
+1. build the search index (can take a few minutes as it reads tracks_features.csv
+and writes the data)
+
+```bash
+python prepare_data.py
 ```
