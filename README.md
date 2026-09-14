@@ -120,4 +120,40 @@ saveed to `benchmarks/benchmark_results.json` and `benchmarks/benchmark_mood.jso
 
 As the lyrics need to be fetched from LRCLIB it can take awhile first run. Everything
 is cached in `data/lyrics_cache` once ran. `LASTFM_API_KEY` must be set before running,
-or the collaborative column will be left empty
+or the collaborative column will be left empty.
+
+## API
+
+| Area            | Endpoints                                                                               |
+| --------------- | --------------------------------------------------------------------------------------- |
+| Recommendations | `POST /recommend`, `POST /recommend/similar`, `POST /onboard`                           |
+| Mood            | `POST /mood/analyse`, `POST /mood/recommend`                                            |
+| Tracks          | `GET /tracks/search`, `GET /tracks/{id}/info`, `GET /tracks/{id}/features`              |
+| Experiments     | `GET /experiments/{name}/variant`, `POST /experiments/{name}/metrics`, `POST /feedback` |
+| Other           | `GET /health`                                                                           |
+
+### Example
+```bash
+curl -X POST http://127.0.0.1:8000/recommend \
+    -H "Content-Type: application/json"
+    -d '{
+            "seed_tracks": ["7lmeHLHBe4nmXzuXc0HDjk"],
+            "limit": 5,
+            "parameters": {"novelty": 0.5, "target_mood": "calm"},
+        }'
+```
+
+All recommendations are returned with a `rationale` giving each signal's contribution
+and each preference's penalty. They sum to the track's score, so the rankign is always explainable — a
+track witha  weaker audio match can outrank a stronger one, the rationale shows why.
+
+Use `GET /tracks/search?q=...` to find seed IDs; Recommendation is a post as it carries a request body.
+
+## Notes and limitations
+
+- **Catalogue Coverage** - The dataset is only a small snapshot and omits many artists, Last.fm suggesetions can't be matched 
+to a track and are dropped. Similarly, a small number IDs don't resolve on Spotify and the embedded player will display them as unavilabble.
+- **Matching** - Last.fm and LRCLIB are both matched on artist and title after normalisation, thus lossy — featured artists and alternative
+titles can miss.
+- **Mood** - Derived from audio features (valence and energy). Several moods can be missed. The lyric signal addresses sentiment but energetic verus calm remains audio-derived.
+- **Copyright** - Lyrics fetched for scoring are never stored or returned. Only the sentiment score is stored in cache.
