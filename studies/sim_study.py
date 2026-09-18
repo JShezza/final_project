@@ -108,6 +108,7 @@ def run(raters: int, seeds_per_rater: int, limit: int, seed: int) -> dict:
         for key in keys.values():
             hashed = hashlib.sha256(key.encode("utf-8")).hexdigest()
             session_map[hashed] = f"rater{r:03d}"
+
         chosen = rng.sample(all_seeds, seeds_per_rater)
 
         for s in chosen:
@@ -120,11 +121,26 @@ def run(raters: int, seeds_per_rater: int, limit: int, seed: int) -> dict:
                         "seed_tracks": [s["id"]],
                         "user_id": key,
                         "limit": limit,
-                        "paramters": {"novelty": 0.5},
+                        "parameters": {"novelty": 0.5},
                     },
-                    timeout=10,
-                ).raise_for_status()
-                submitted += 1
+                    timeout=60,
+                )
+                resp.raise_for_status()
+                body = resp.json()
+                assert body["variant"] == variant, (body["variant"], variant)
+
+                for track in body["results"]:
+                    score = rater.score(seed_feats, features(track["id"]), track)
+                    requests.post(
+                        f"{API}/feedback",
+                        json={
+                            "request_id": body["request_id"],
+                            "track_id": track["id"],
+                            "rating": rater.rate(score),
+                        },
+                        timeout=10,
+                    ).raise_for_status()
+                    submitted += 1
         print(f"  rater {r+1}/{raters} ({rater.profile}) done")
 
     json.dump(session_map, open(SESSION_MAP, "w"), indent=2)
@@ -149,7 +165,7 @@ def main():
         f"\n{result['ratings']} simulated ratings sumbitted by: {result['raters']} raters."
     )
     print(f"Session key map written to {SESSION_MAP.name}")
-    print("Analyse with: TBD")
+    print("Analyse with: analyse_study.py")
 
 
 if __name__ == "__main__":

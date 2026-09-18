@@ -1,0 +1,24 @@
+{
+  "experiment": "simulated round 1",
+  "summary": {
+    "audio_only": {
+      "mean_satisfaction": 0.6533333333333334,
+      "raters": 30,
+      "ratings": 600
+    },
+    "full_hybrid": {
+      "mean_satisfaction": 0.6616666666666666,
+      "raters": 30,
+      "ratings": 600
+    }
+  },
+  "tests": {
+    "audio_only_vs_full_hybrid": {
+      "W": 158.0,
+      "p": 0.6552336573207328,
+      "n": 30,
+      "mean_a": 0.6533333333333334,
+      "mean_b": 0.6616666666666666
+    }
+  }
+}

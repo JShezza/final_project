@@ -99,7 +99,7 @@ def main():
     print(
         f"--- {args.experiment}: {len(rows)} ratings from {len(per_user)} raters ---\n"
     )
-    print(f"{'variant':>12} | {'rater':>6} | {'ratings':>7}")
+    print(f"{'variant':>12} | {'satisfaction':>12}| {'rater':>6} | {'ratings':>7}")
 
     summary = {}
     for variant in variants:
@@ -130,7 +130,7 @@ def main():
                 continue
 
             if np.allclose(xa, xb):
-                print(f" {a} vs {b}: indentical on every rater")
+                print(f" {a} vs {b}: identical on every rater")
                 continue
 
             result = wilcoxon(xa, xb)
