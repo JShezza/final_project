@@ -38,12 +38,14 @@ export const recommend = ({
     targetMood,
     excludeSeen,
     limit,
+    strategy,
 }) =>
     request(
         `/recommend`,
         json({
             seed_tracks: seedTracks,
             userId: userId || null,
+            strategy: strategy || null,
             limit,
             parameters: {
                 novelty,

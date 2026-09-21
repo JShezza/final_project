@@ -1,7 +1,9 @@
 from enum import Enum
 from typing import Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
+
+from blender import VARIANTS
 
 
 class Mood(str, Enum):
@@ -17,19 +19,29 @@ class Mood(str, Enum):
 class PreferenceParameters(BaseModel):
     """User controllable params with each request"""
 
-    novelty: float = Field(0.5, ge=0, le=1)  # greater or equal, less or equal
+    novelty: float = Field(default=0.5, ge=0, le=1)  # greater or equal, less or equal
 
     target_mood: Mood = Mood.any
     exclude_seen: bool = True  # Ignore tracks that have been used in the request
+
+
+def _check_strategy(value: str | None) -> str | None:
+    """Check if a must override a name variant"""
+    if value is not None and value not in VARIANTS:
+        raise ValueError(f"Unknown strategy '{value}'; choose from {sorted(VARIANTS)}")
+    return value
 
 
 class RecommendationRequest(BaseModel):
     # Opaque key for only A/B variant assignment and anonymous logging
     user_id: str | None = None
 
+    strategy: str | None = None
+    _validate_strategy = field_validator("strategy")(_check_strategy)
+
     seed_tracks: list[str] = Field(..., min_length=1, max_length=50)
     parameters: PreferenceParameters = PreferenceParameters()
-    limit: int = Field(1, ge=1, le=20)
+    limit: int = Field(default=1, ge=1, le=20)
 
 
 class RecommendedTrack(BaseModel):
@@ -46,6 +58,7 @@ class RecommendationResponse(BaseModel):
     seed_tracks: list[str]
     results: list[RecommendedTrack]
     variant: str  # The strategy used to handle the request
+    assigned: bool = True
 
 
 class FeedbackRequest(BaseModel):
@@ -68,7 +81,7 @@ class SimilarRequest(BaseModel):
     """Tracks similar to one track"""
 
     track_id: str
-    limit: int = Field(10, ge=1, le=50)
+    limit: int = Field(default=10, ge=1, le=50)
 
 
 class OnboardRequest(BaseModel):
@@ -79,7 +92,7 @@ class OnboardRequest(BaseModel):
 
     artists: list[str] = Field(..., min_length=1, max_length=10)
     target_mood: Mood = Mood.any
-    limit: int = Field(10, ge=1, le=30)
+    limit: int = Field(default=10, ge=1, le=30)
 
 
 class MoodAnalyseRequest(BaseModel):
@@ -99,11 +112,14 @@ class MoodAnalysis(BaseModel):
 class MoodRecommendRequest(BaseModel):
     """Mood driven recommendation"""
 
+    strategy: str | None = None
+    _validate_strategy = field_validator("strategy")(_check_strategy)
+
     text: str = Field(..., min_length=1, max_length=2000)
     seed_tracks: list[str] = Field(..., min_length=1, max_length=50)
     user_id: str | None = None
-    novelty: float = Field(0.5, ge=0, le=1)
-    limit: int = Field(1, ge=1, le=20)
+    novelty: float = Field(default=0.5, ge=0, le=1)
+    limit: int = Field(default=1, ge=1, le=20)
 
 
 class LoginRequest(BaseModel):

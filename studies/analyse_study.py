@@ -35,7 +35,7 @@ def load(db_path: Path):
         SELECT r.user_key, r.variant, f.rating
         FROM feedback f
         JOIN requests r ON r.request_id = f.request_id
-        WHERE r.user_key IS NOT NULL
+        WHERE r.user_key IS NOT NULL AND r.variant NOT LIKE 'user:%'
         """).fetchall()
 
     db.close()

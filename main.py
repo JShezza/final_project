@@ -2,10 +2,6 @@
 FastAPI layer
 uvicorn main:app --reload to run
 
-Endpoints:
-POST    /recommend
-GET     /tracks/search
-GET     /health
 """
 
 import os
@@ -16,7 +12,7 @@ from dotenv import load_dotenv
 from fastapi import Depends, FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
-from ab_router import assign_variant
+from ab_router import DEFAULT_VARIANT, assign_variant
 from admin_auth import check_credentials, issue_token, require_admin
 from blender import (
     VARIANTS,
@@ -55,6 +51,8 @@ LOOKUP_CACHE = DATA_DIR / "title_lookup.pkl"
 CANDIDATE_POOL = 50
 LYRIC_POOL = 20
 NORMALISE_SCORES = True
+
+AB_TESTING = os.environ.get("AB_TESTING", "true").strip().lower() != "false"
 
 app = FastAPI(title="NextTrack API")
 app.add_middleware(
@@ -199,14 +197,31 @@ def _mood_from_text(text: str) -> MoodAnalysis:
     )
 
 
+USER_STRATEGY_PREFIX = "user:"
+
+
 def _run_pipeline(
     seed_tracks: list[str],
     user_id: str | None,
     params: PreferenceParameters,
     limit: int,
+    strategy: str | None = None,
 ) -> RecommendationResponse:
     """The full hybrid pipeline. through /recommend and /mood/recommend"""
-    variant_name = assign_variant(user_id)
+    if AB_TESTING:
+        if strategy is not None:
+            raise HTTPException(
+                status_code=409,
+                detail="Strategy selection is disabled while A/B Testing is on. "
+                "Set AB_TESTING to false via .env to be able to choose.",
+            )
+        variant_name = assign_variant(user_id)
+        assigned = True
+    else:
+        variant_name = strategy or DEFAULT_VARIANT
+        assigned = False
+
+    logged_variant = variant_name if assigned else USER_STRATEGY_PREFIX + variant_name
 
     wants_mood = params.target_mood != Mood.any
     dim_targets = (
@@ -252,7 +267,7 @@ def _run_pipeline(
 
     request_id = logger.log_request(
         user_id=user_id,
-        variant=variant_name,
+        variant=logged_variant,
         seeds=seed_tracks,
         params=params.model_dump(mode="json"),
         result_ids=[r.id for r in results],
@@ -263,6 +278,7 @@ def _run_pipeline(
         seed_tracks=seed_tracks,
         results=results,
         variant=variant_name,
+        assigned=assigned,
     )
 
 
@@ -276,6 +292,8 @@ def health():
         "catalogue_size": recommender.index.ntotal,
         "collaborative_signal": adapter is not None,
         "lyric_signal": True,
+        "ab_testing": AB_TESTING,
+        "variants": list(VARIANTS),
     }
 
 
@@ -309,7 +327,9 @@ def experiment_metrics(name: str, event: MetricEvent):
 
 @app.post("/recommend", response_model=RecommendationResponse)
 def recommend(req: RecommendationRequest):
-    return _run_pipeline(req.seed_tracks, req.user_id, req.parameters, req.limit)
+    return _run_pipeline(
+        req.seed_tracks, req.user_id, req.parameters, req.limit, req.strategy
+    )
 
 
 @app.post("/recommend/similar")
@@ -374,7 +394,7 @@ def mood_recommend(req: MoodRecommendRequest):
     """Mood-driven recommendation - text set target_mood"""
     analysis = _mood_from_text(req.text)
     params = PreferenceParameters(novelty=req.novelty, target_mood=analysis.mood)
-    return _run_pipeline(req.seed_tracks, req.user_id, params, req.limit)
+    return _run_pipeline(req.seed_tracks, req.user_id, params, req.limit, req.strategy)
 
 
 @app.get("/tracks/{track_id}/info")
@@ -441,6 +461,7 @@ def admin_health(_: str = Depends(require_admin)):
         "variants": list(VARIANTS),
         "moods": ["any", *MOOD_TARGETS],
         "normalise_scores": NORMALISE_SCORES,
+        "ab_testing": AB_TESTING,
         "candidate_pool": CANDIDATE_POOL,
         "lyric_pool": LYRIC_POOL,
     }

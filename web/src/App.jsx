@@ -15,6 +15,7 @@ function App() {
     const [targetMood, setTargetMood] = useState("any");
     const [excludeSeen, setExcludeSeen] = useState(true);
     const [limit, setLimit] = useState(10);
+    const [strategy, setStrategy] = useState("");
 
     const [response, setResponse] = useState(null);
     const [loading, setLoading] = useState(false);
@@ -66,6 +67,7 @@ function App() {
                 targetMood,
                 excludeSeen,
                 limit,
+                strategy: status?.ab_testing ? null : strategy, // reject chosen strategy while a/b testing is on
             });
             setResponse(data);
         } catch (e) {
@@ -156,13 +158,16 @@ function App() {
                                             )
                                         }
                                         aria-label={`Remove ${s.name}`}
-                                    ></button>
+                                    >
+                                        x
+                                    </button>
                                 </li>
                             ))}
                         </ul>
                     )}
 
                     <h2>Preferences</h2>
+
                     <label className="field">
                         <span className="field-label">
                             Novelty
@@ -210,6 +215,31 @@ function App() {
                         />
                     </label>
 
+                    {status && !status.ab_testing ? (
+                        <label className="field">
+                            <span className="field-label">Strategy</span>
+                            <select
+                                value={strategy}
+                                onChange={(e) => setStrategy(e.target.value)}
+                            >
+                                <option value="">Default (balanced)</option>
+                                {status.variants.map((v) => (
+                                    <option value={v} key={v}>
+                                        {v.replace(/_/, " ")}
+                                    </option>
+                                ))}
+                            </select>
+                            <span className="hint">
+                                A/B testing is off, you can choose the strategy.
+                            </span>
+                        </label>
+                    ) : (
+                        <p className="hint">
+                            Strategy is assigned automatically while A/B test is
+                            on.
+                        </p>
+                    )}
+
                     <label className="checkbox">
                         <input
                             type="checkbox"
@@ -218,18 +248,22 @@ function App() {
                         />
                         Leave out seed tracks
                     </label>
-                    <label className="field">
-                        <span className="field-label">Session Key</span>
-                        <input
-                            type="text"
-                            value={userId}
-                            placeholder="optional"
-                            onChange={(e) => setUserId(e.target.value)}
-                        />
-                        <span className="hint">
-                            Keeps you on one strategy across requests.
-                        </span>
-                    </label>
+
+                    {/* Session key to keep A/B assignment stable */}
+                    {status?.ab_testing !== false && (
+                        <label className="field">
+                            <span className="field-label">Session Key</span>
+                            <input
+                                type="text"
+                                value={userId}
+                                placeholder="optional"
+                                onChange={(e) => setUserId(e.target.value)}
+                            />
+                            <span className="hint">
+                                Keeps you on one strategy across requests.
+                            </span>
+                        </label>
+                    )}
 
                     <button
                         className="primary"
@@ -270,7 +304,14 @@ function App() {
                             {!blind && (
                                 <p className="variant">
                                     Strategy:{" "}
-                                    <strong>{response.variant}</strong>
+                                    <strong>
+                                        {response.variant.replace(/_/g, " ")}
+                                    </strong>
+                                    <span className="variant-sources">
+                                        {response.assigned
+                                            ? " assigned"
+                                            : " your choice"}
+                                    </span>
                                 </p>
                             )}
                             <ol className="tracks">
@@ -360,14 +401,18 @@ function TrackRow({ track, topScore, blind, rating, onRate, open, onOpen }) {
                                     )
                                     .join(" ")}
                                 {penalties.map(([name, value]) => (
-                                    <span key={name} className="penalty">
-                                        {name} {value.toFixed(2)}
+                                    <span key={name}>
+                                        {" "}
+                                        <span className="penalty">
+                                            {name} {value.toFixed(2)}
+                                        </span>
                                     </span>
                                 ))}
                             </p>
                         </div>
                     )}
                 </div>
+
                 <div className="ratings">
                     {[
                         ["up", "\ud83d\udc4d"],

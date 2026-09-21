@@ -292,6 +292,14 @@ input[type="range"] {
     font-weight: 500;
 }
 
+.variant-source {
+    margin-left: 0.5rem;
+    padding: 0.05rem 0.45rem;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    font-size: 0.75rem;
+}
+
 .empty,
 .error {
     color: var(--danger);
@@ -393,6 +401,7 @@ input[type="range"] {
     border: 1px solid var(--line);
     border-radius: 8px;
     background: var(--ink);
+    color: var(--paper);
     cursor: pointer;
     font-size: 0.9rem;
 }
