@@ -153,7 +153,7 @@
     "diversity":3.7141222954,
     "pop_coverage":1.0,
     "lyric_coverage":0.8,
-    "mean_log_playcount":16.35812115
+    "mean_log_playcount":16.3591283852
   },
   {
     "genre":"rock",
@@ -165,7 +165,7 @@
     "diversity":3.945677042,
     "pop_coverage":1.0,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.2134931619
+    "mean_log_playcount":16.2144162489
   },
   {
     "genre":"rock",
@@ -177,7 +177,7 @@
     "diversity":3.9456765652,
     "pop_coverage":1.0,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.2134931619
+    "mean_log_playcount":16.2144162489
   },
   {
     "genre":"rock",
@@ -189,7 +189,7 @@
     "diversity":3.8771383762,
     "pop_coverage":1.0,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.1279886608
+    "mean_log_playcount":16.1288530353
   },
   {
     "genre":"rock",
@@ -201,7 +201,7 @@
     "diversity":3.8892002106,
     "pop_coverage":1.0,
     "lyric_coverage":0.4,
-    "mean_log_playcount":15.6515870977
+    "mean_log_playcount":15.6524285329
   },
   {
     "genre":"rock",
@@ -213,7 +213,7 @@
     "diversity":3.7141222954,
     "pop_coverage":1.0,
     "lyric_coverage":0.8,
-    "mean_log_playcount":16.35812115
+    "mean_log_playcount":16.3591283852
   },
   {
     "genre":"rock",
@@ -225,7 +225,7 @@
     "diversity":3.945677042,
     "pop_coverage":1.0,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.2134931619
+    "mean_log_playcount":16.2144162489
   },
   {
     "genre":"rock",
@@ -237,7 +237,7 @@
     "diversity":3.945677042,
     "pop_coverage":1.0,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.2134931619
+    "mean_log_playcount":16.2144162489
   },
   {
     "genre":"rock",
@@ -249,7 +249,7 @@
     "diversity":3.9456765652,
     "pop_coverage":1.0,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.2134931619
+    "mean_log_playcount":16.2144162489
   },
   {
     "genre":"rock",
@@ -261,7 +261,7 @@
     "diversity":3.888720274,
     "pop_coverage":1.0,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.0023578473
+    "mean_log_playcount":16.0031964581
   },
   {
     "genre":"rock",
@@ -273,7 +273,7 @@
     "diversity":1.1291760206,
     "pop_coverage":0.1,
     "lyric_coverage":0.3,
-    "mean_log_playcount":16.1404137393
+    "mean_log_playcount":16.1426913808
   },
   {
     "genre":"rock",
@@ -333,7 +333,7 @@
     "diversity":1.1291760206,
     "pop_coverage":0.1,
     "lyric_coverage":0.3,
-    "mean_log_playcount":16.1404137393
+    "mean_log_playcount":16.1426913808
   },
   {
     "genre":"rock",
@@ -345,7 +345,7 @@
     "diversity":1.1291760206,
     "pop_coverage":0.1,
     "lyric_coverage":0.3,
-    "mean_log_playcount":16.1404137393
+    "mean_log_playcount":16.1426913808
   },
   {
     "genre":"rock",
@@ -357,7 +357,7 @@
     "diversity":1.1291760206,
     "pop_coverage":0.1,
     "lyric_coverage":0.3,
-    "mean_log_playcount":16.1404137393
+    "mean_log_playcount":16.1426913808
   },
   {
     "genre":"rock",
@@ -513,7 +513,7 @@
     "diversity":1.126819849,
     "pop_coverage":0.1,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.1404137393
+    "mean_log_playcount":16.1426913808
   },
   {
     "genre":"rock",
@@ -573,7 +573,7 @@
     "diversity":1.6401287317,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.9194313486
+    "mean_log_playcount":15.920716737
   },
   {
     "genre":"rock",
@@ -585,7 +585,7 @@
     "diversity":1.1135317087,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.1404137393
+    "mean_log_playcount":16.1426913808
   },
   {
     "genre":"rock",
@@ -777,7 +777,7 @@
     "diversity":3.4846639633,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.1380402671
+    "mean_log_playcount":16.1388969231
   },
   {
     "genre":"rock",
@@ -789,7 +789,7 @@
     "diversity":3.2920417786,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0345200707
+    "mean_log_playcount":16.0353824179
   },
   {
     "genre":"rock",
@@ -801,7 +801,7 @@
     "diversity":3.2920417786,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0345200707
+    "mean_log_playcount":16.0353824179
   },
   {
     "genre":"rock",
@@ -813,7 +813,7 @@
     "diversity":2.8980686665,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.6240332658
+    "mean_log_playcount":15.6248703395
   },
   {
     "genre":"rock",
@@ -821,11 +821,11 @@
     "variant":"collab_only",
     "mode":"raw",
     "novelty":1.0,
-    "coherence":0.3358922601,
-    "diversity":2.5233449936,
+    "coherence":0.3339341283,
+    "diversity":2.5672557354,
     "pop_coverage":1.0,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.1453898037
+    "mean_log_playcount":15.2067092611
   },
   {
     "genre":"rock",
@@ -837,7 +837,7 @@
     "diversity":3.4846639633,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.1380402671
+    "mean_log_playcount":16.1388969231
   },
   {
     "genre":"rock",
@@ -849,7 +849,7 @@
     "diversity":3.2920417786,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0345200707
+    "mean_log_playcount":16.0353824179
   },
   {
     "genre":"rock",
@@ -861,7 +861,7 @@
     "diversity":3.2920417786,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0345200707
+    "mean_log_playcount":16.0353824179
   },
   {
     "genre":"rock",
@@ -873,7 +873,7 @@
     "diversity":3.2920417786,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0345200707
+    "mean_log_playcount":16.0353824179
   },
   {
     "genre":"rock",
@@ -885,7 +885,7 @@
     "diversity":2.8980686665,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.6240332658
+    "mean_log_playcount":15.6248703395
   },
   {
     "genre":"rock",
@@ -897,7 +897,7 @@
     "diversity":0.8454742432,
     "pop_coverage":0.2,
     "lyric_coverage":0.5,
-    "mean_log_playcount":15.7651455082
+    "mean_log_playcount":15.7658178483
   },
   {
     "genre":"rock",
@@ -957,7 +957,7 @@
     "diversity":0.8454742432,
     "pop_coverage":0.2,
     "lyric_coverage":0.5,
-    "mean_log_playcount":15.7651455082
+    "mean_log_playcount":15.7658178483
   },
   {
     "genre":"rock",
@@ -969,7 +969,7 @@
     "diversity":0.8454742432,
     "pop_coverage":0.2,
     "lyric_coverage":0.5,
-    "mean_log_playcount":15.7651455082
+    "mean_log_playcount":15.7658178483
   },
   {
     "genre":"rock",
@@ -981,7 +981,7 @@
     "diversity":0.6265700459,
     "pop_coverage":0.1,
     "lyric_coverage":0.4,
-    "mean_log_playcount":15.7019666855
+    "mean_log_playcount":15.7025074771
   },
   {
     "genre":"rock",
@@ -1137,7 +1137,7 @@
     "diversity":0.8767262697,
     "pop_coverage":0.2,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.7651455082
+    "mean_log_playcount":15.7658178483
   },
   {
     "genre":"rock",
@@ -1149,7 +1149,7 @@
     "diversity":0.8767262697,
     "pop_coverage":0.2,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.7651455082
+    "mean_log_playcount":15.7658178483
   },
   {
     "genre":"rock",
@@ -1197,7 +1197,7 @@
     "diversity":0.8501320481,
     "pop_coverage":0.2,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.7651455082
+    "mean_log_playcount":15.7658178483
   },
   {
     "genre":"rock",
@@ -1209,7 +1209,7 @@
     "diversity":0.8501320481,
     "pop_coverage":0.2,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.7651455082
+    "mean_log_playcount":15.7658178483
   },
   {
     "genre":"rock",
@@ -1221,7 +1221,7 @@
     "diversity":0.8501321673,
     "pop_coverage":0.2,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.7651455082
+    "mean_log_playcount":15.7658178483
   },
   {
     "genre":"rock",
@@ -1401,7 +1401,7 @@
     "diversity":3.9253790379,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0554849048
+    "mean_log_playcount":16.0564899896
   },
   {
     "genre":"rock",
@@ -1413,7 +1413,7 @@
     "diversity":3.9253790379,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0554849048
+    "mean_log_playcount":16.0564899896
   },
   {
     "genre":"rock",
@@ -1425,7 +1425,7 @@
     "diversity":3.9253795147,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0554849048
+    "mean_log_playcount":16.0564899896
   },
   {
     "genre":"rock",
@@ -1437,7 +1437,7 @@
     "diversity":3.9144663811,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.8539477413
+    "mean_log_playcount":15.8548622265
   },
   {
     "genre":"rock",
@@ -1449,7 +1449,7 @@
     "diversity":3.7131197453,
     "pop_coverage":1.0,
     "lyric_coverage":0.7,
-    "mean_log_playcount":15.1723209595
+    "mean_log_playcount":15.1730026071
   },
   {
     "genre":"rock",
@@ -1461,7 +1461,7 @@
     "diversity":3.9253790379,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0554849048
+    "mean_log_playcount":16.0564899896
   },
   {
     "genre":"rock",
@@ -1473,7 +1473,7 @@
     "diversity":3.9253790379,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0554849048
+    "mean_log_playcount":16.0564899896
   },
   {
     "genre":"rock",
@@ -1485,7 +1485,7 @@
     "diversity":3.9253790379,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0554849048
+    "mean_log_playcount":16.0564899896
   },
   {
     "genre":"rock",
@@ -1497,7 +1497,7 @@
     "diversity":3.9253795147,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0554849048
+    "mean_log_playcount":16.0564899896
   },
   {
     "genre":"rock",
@@ -1509,7 +1509,7 @@
     "diversity":3.7321929932,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.4859078626
+    "mean_log_playcount":15.4865844561
   },
   {
     "genre":"rock",
@@ -1521,7 +1521,7 @@
     "diversity":2.3989155293,
     "pop_coverage":0.2,
     "lyric_coverage":0.4,
-    "mean_log_playcount":15.6964038545
+    "mean_log_playcount":15.6966453525
   },
   {
     "genre":"rock",
@@ -1581,7 +1581,7 @@
     "diversity":2.3989155293,
     "pop_coverage":0.2,
     "lyric_coverage":0.4,
-    "mean_log_playcount":15.6964038545
+    "mean_log_playcount":15.6966453525
   },
   {
     "genre":"rock",
@@ -1593,7 +1593,7 @@
     "diversity":2.3989155293,
     "pop_coverage":0.2,
     "lyric_coverage":0.4,
-    "mean_log_playcount":15.6964038545
+    "mean_log_playcount":15.6966453525
   },
   {
     "genre":"rock",
@@ -1761,7 +1761,7 @@
     "diversity":2.9354217052,
     "pop_coverage":0.3,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.1672754418
+    "mean_log_playcount":16.1680575295
   },
   {
     "genre":"rock",
@@ -1773,7 +1773,7 @@
     "diversity":1.6105870008,
     "pop_coverage":0.1,
     "lyric_coverage":0.8,
-    "mean_log_playcount":15.7993918761
+    "mean_log_playcount":15.7996345948
   },
   {
     "genre":"rock",
@@ -1821,7 +1821,7 @@
     "diversity":3.4687285423,
     "pop_coverage":0.4,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.0238105395
+    "mean_log_playcount":16.0244571747
   },
   {
     "genre":"rock",
@@ -1833,7 +1833,7 @@
     "diversity":1.5888359547,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.7993918761
+    "mean_log_playcount":15.7996345948
   },
   {
     "genre":"rock",
@@ -1845,7 +1845,7 @@
     "diversity":1.5888359547,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.7993918761
+    "mean_log_playcount":15.7996345948
   },
   {
     "genre":"rock",
@@ -2025,7 +2025,7 @@
     "diversity":3.3098258972,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.2836409255
+    "mean_log_playcount":16.2843472635
   },
   {
     "genre":"rock",
@@ -2037,7 +2037,7 @@
     "diversity":3.3098258972,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.2836409255
+    "mean_log_playcount":16.2843472635
   },
   {
     "genre":"rock",
@@ -2049,7 +2049,7 @@
     "diversity":3.3098258972,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.2836409255
+    "mean_log_playcount":16.2843472635
   },
   {
     "genre":"rock",
@@ -2061,7 +2061,7 @@
     "diversity":3.1868822575,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0107770446
+    "mean_log_playcount":16.0114018998
   },
   {
     "genre":"rock",
@@ -2073,7 +2073,7 @@
     "diversity":2.7887170315,
     "pop_coverage":1.0,
     "lyric_coverage":0.3,
-    "mean_log_playcount":15.1976422891
+    "mean_log_playcount":15.1982702732
   },
   {
     "genre":"rock",
@@ -2085,7 +2085,7 @@
     "diversity":3.3098258972,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.2836409255
+    "mean_log_playcount":16.2843472635
   },
   {
     "genre":"rock",
@@ -2097,7 +2097,7 @@
     "diversity":3.3098258972,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.2836409255
+    "mean_log_playcount":16.2843472635
   },
   {
     "genre":"rock",
@@ -2109,7 +2109,7 @@
     "diversity":3.3098258972,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.2836409255
+    "mean_log_playcount":16.2843472635
   },
   {
     "genre":"rock",
@@ -2121,7 +2121,7 @@
     "diversity":3.3098266125,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.2836409255
+    "mean_log_playcount":16.2843472635
   },
   {
     "genre":"rock",
@@ -2133,7 +2133,7 @@
     "diversity":3.2533242702,
     "pop_coverage":1.0,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.4759004752
+    "mean_log_playcount":15.476401467
   },
   {
     "genre":"rock",
@@ -2145,7 +2145,7 @@
     "diversity":1.4418836832,
     "pop_coverage":0.1,
     "lyric_coverage":0.5,
-    "mean_log_playcount":16.6950568761
+    "mean_log_playcount":16.6959512209
   },
   {
     "genre":"rock",
@@ -2205,7 +2205,7 @@
     "diversity":1.6492513418,
     "pop_coverage":0.2,
     "lyric_coverage":0.5,
-    "mean_log_playcount":16.537992341
+    "mean_log_playcount":16.5387407048
   },
   {
     "genre":"rock",
@@ -2217,7 +2217,7 @@
     "diversity":1.6492513418,
     "pop_coverage":0.2,
     "lyric_coverage":0.5,
-    "mean_log_playcount":16.537992341
+    "mean_log_playcount":16.5387407048
   },
   {
     "genre":"rock",
@@ -2229,7 +2229,7 @@
     "diversity":1.4418836832,
     "pop_coverage":0.1,
     "lyric_coverage":0.5,
-    "mean_log_playcount":16.6950568761
+    "mean_log_playcount":16.6959512209
   },
   {
     "genre":"rock",
@@ -2385,7 +2385,7 @@
     "diversity":2.0844480991,
     "pop_coverage":0.3,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.5929257989
+    "mean_log_playcount":16.5936912574
   },
   {
     "genre":"rock",
@@ -2445,7 +2445,7 @@
     "diversity":2.9483065605,
     "pop_coverage":0.5,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.6107907982
+    "mean_log_playcount":16.6114850923
   },
   {
     "genre":"rock",
@@ -2457,7 +2457,7 @@
     "diversity":2.0844480991,
     "pop_coverage":0.3,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.5929257989
+    "mean_log_playcount":16.5936912574
   },
   {
     "genre":"rock",
@@ -2469,7 +2469,7 @@
     "diversity":0.6722775698,
     "pop_coverage":0.1,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.3809278059
+    "mean_log_playcount":16.3815301886
   },
   {
     "genre":"rock",
@@ -2649,7 +2649,7 @@
     "diversity":3.9013736248,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":17.0503743536
+    "mean_log_playcount":17.0516578325
   },
   {
     "genre":"rock",
@@ -2661,7 +2661,7 @@
     "diversity":3.9013736248,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":17.0503743536
+    "mean_log_playcount":17.0516578325
   },
   {
     "genre":"rock",
@@ -2673,7 +2673,7 @@
     "diversity":3.9013733864,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":17.0503743536
+    "mean_log_playcount":17.0516578325
   },
   {
     "genre":"rock",
@@ -2685,7 +2685,7 @@
     "diversity":3.7260396481,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.8750543115
+    "mean_log_playcount":16.8762712311
   },
   {
     "genre":"rock",
@@ -2697,7 +2697,7 @@
     "diversity":3.0880846977,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.1623326656
+    "mean_log_playcount":16.1637088812
   },
   {
     "genre":"rock",
@@ -2709,7 +2709,7 @@
     "diversity":3.9013736248,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":17.0503743536
+    "mean_log_playcount":17.0516578325
   },
   {
     "genre":"rock",
@@ -2721,7 +2721,7 @@
     "diversity":3.9013736248,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":17.0503743536
+    "mean_log_playcount":17.0516578325
   },
   {
     "genre":"rock",
@@ -2733,7 +2733,7 @@
     "diversity":3.9013733864,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":17.0503743536
+    "mean_log_playcount":17.0516578325
   },
   {
     "genre":"rock",
@@ -2745,7 +2745,7 @@
     "diversity":3.9013733864,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":17.0503743536
+    "mean_log_playcount":17.0516578325
   },
   {
     "genre":"rock",
@@ -2757,7 +2757,7 @@
     "diversity":3.408823967,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.3951106221
+    "mean_log_playcount":16.3964128856
   },
   {
     "genre":"rock",
@@ -2769,7 +2769,7 @@
     "diversity":1.2568707466,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.5692491017
+    "mean_log_playcount":16.570288544
   },
   {
     "genre":"rock",
@@ -2829,7 +2829,7 @@
     "diversity":1.3342307806,
     "pop_coverage":0.2,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.7683051237
+    "mean_log_playcount":16.7691783234
   },
   {
     "genre":"rock",
@@ -2841,7 +2841,7 @@
     "diversity":1.3342307806,
     "pop_coverage":0.2,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.7683051237
+    "mean_log_playcount":16.7691783234
   },
   {
     "genre":"rock",
@@ -2853,7 +2853,7 @@
     "diversity":1.3342306614,
     "pop_coverage":0.2,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.7683051237
+    "mean_log_playcount":16.7691783234
   },
   {
     "genre":"rock",
@@ -3009,7 +3009,7 @@
     "diversity":2.4993858337,
     "pop_coverage":0.4,
     "lyric_coverage":1.0,
-    "mean_log_playcount":17.0637363958
+    "mean_log_playcount":17.0648454975
   },
   {
     "genre":"rock",
@@ -3021,7 +3021,7 @@
     "diversity":1.3671368361,
     "pop_coverage":0.2,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.7683051237
+    "mean_log_playcount":16.7691783234
   },
   {
     "genre":"rock",
@@ -3069,7 +3069,7 @@
     "diversity":3.0146958828,
     "pop_coverage":0.5,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.99726393
+    "mean_log_playcount":16.9985243748
   },
   {
     "genre":"rock",
@@ -3081,7 +3081,7 @@
     "diversity":2.0919127464,
     "pop_coverage":0.3,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.7631163357
+    "mean_log_playcount":16.7640877594
   },
   {
     "genre":"rock",
@@ -3093,7 +3093,7 @@
     "diversity":1.3524435759,
     "pop_coverage":0.2,
     "lyric_coverage":0.8,
-    "mean_log_playcount":16.7683051237
+    "mean_log_playcount":16.7691783234
   },
   {
     "genre":"rock",
@@ -3273,7 +3273,7 @@
     "diversity":3.895993948,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":17.2304331898
+    "mean_log_playcount":17.2317426723
   },
   {
     "genre":"rock",
@@ -3285,7 +3285,7 @@
     "diversity":3.895993948,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":17.2304331898
+    "mean_log_playcount":17.2317426723
   },
   {
     "genre":"rock",
@@ -3297,7 +3297,7 @@
     "diversity":3.895993948,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":17.2304331898
+    "mean_log_playcount":17.2317426723
   },
   {
     "genre":"rock",
@@ -3309,7 +3309,7 @@
     "diversity":3.895993948,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":17.2304331898
+    "mean_log_playcount":17.2317426723
   },
   {
     "genre":"rock",
@@ -3321,7 +3321,7 @@
     "diversity":3.6885118484,
     "pop_coverage":1.0,
     "lyric_coverage":0.7,
-    "mean_log_playcount":15.6492648231
+    "mean_log_playcount":15.6511790979
   },
   {
     "genre":"rock",
@@ -3333,7 +3333,7 @@
     "diversity":3.895993948,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":17.2304331898
+    "mean_log_playcount":17.2317426723
   },
   {
     "genre":"rock",
@@ -3345,7 +3345,7 @@
     "diversity":3.895993948,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":17.2304331898
+    "mean_log_playcount":17.2317426723
   },
   {
     "genre":"rock",
@@ -3357,7 +3357,7 @@
     "diversity":3.895993948,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":17.2304331898
+    "mean_log_playcount":17.2317426723
   },
   {
     "genre":"rock",
@@ -3369,7 +3369,7 @@
     "diversity":3.895993948,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":17.2304331898
+    "mean_log_playcount":17.2317426723
   },
   {
     "genre":"rock",
@@ -3381,7 +3381,7 @@
     "diversity":3.916623354,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.7904230873
+    "mean_log_playcount":16.7918902469
   },
   {
     "genre":"rock",
@@ -3393,7 +3393,7 @@
     "diversity":0.6021992564,
     "pop_coverage":0.1,
     "lyric_coverage":0.3,
-    "mean_log_playcount":17.8625891788
+    "mean_log_playcount":17.8638708134
   },
   {
     "genre":"rock",
@@ -3453,7 +3453,7 @@
     "diversity":1.6771376133,
     "pop_coverage":0.3,
     "lyric_coverage":0.4,
-    "mean_log_playcount":17.7164843181
+    "mean_log_playcount":17.7181043855
   },
   {
     "genre":"rock",
@@ -3465,7 +3465,7 @@
     "diversity":0.7584571838,
     "pop_coverage":0.2,
     "lyric_coverage":0.4,
-    "mean_log_playcount":17.7250630531
+    "mean_log_playcount":17.7267859309
   },
   {
     "genre":"rock",
@@ -3477,7 +3477,7 @@
     "diversity":0.7584572434,
     "pop_coverage":0.2,
     "lyric_coverage":0.4,
-    "mean_log_playcount":17.7250630531
+    "mean_log_playcount":17.7267859309
   },
   {
     "genre":"rock",
@@ -3633,7 +3633,7 @@
     "diversity":1.5636436939,
     "pop_coverage":0.2,
     "lyric_coverage":0.7,
-    "mean_log_playcount":17.7809580134
+    "mean_log_playcount":17.782306054
   },
   {
     "genre":"rock",
@@ -3645,7 +3645,7 @@
     "diversity":0.6143429279,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":17.8625891788
+    "mean_log_playcount":17.8638708134
   },
   {
     "genre":"rock",
@@ -3693,7 +3693,7 @@
     "diversity":2.2706656456,
     "pop_coverage":0.4,
     "lyric_coverage":0.9,
-    "mean_log_playcount":17.4969742513
+    "mean_log_playcount":17.4984855403
   },
   {
     "genre":"rock",
@@ -3705,7 +3705,7 @@
     "diversity":1.7002356052,
     "pop_coverage":0.3,
     "lyric_coverage":0.8,
-    "mean_log_playcount":17.7164843181
+    "mean_log_playcount":17.7181043855
   },
   {
     "genre":"rock",
@@ -3717,7 +3717,7 @@
     "diversity":0.6143429279,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":17.8625891788
+    "mean_log_playcount":17.8638708134
   },
   {
     "genre":"rock",
@@ -3897,7 +3897,7 @@
     "diversity":2.8960766792,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":17.0625708181
+    "mean_log_playcount":17.0640412344
   },
   {
     "genre":"rock",
@@ -3909,7 +3909,7 @@
     "diversity":2.8960766792,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":17.0625708181
+    "mean_log_playcount":17.0640412344
   },
   {
     "genre":"rock",
@@ -3921,7 +3921,7 @@
     "diversity":2.8960762024,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":17.0625708181
+    "mean_log_playcount":17.0640412344
   },
   {
     "genre":"rock",
@@ -3933,7 +3933,7 @@
     "diversity":2.958435297,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.9656483276
+    "mean_log_playcount":16.9670817225
   },
   {
     "genre":"rock",
@@ -3945,7 +3945,7 @@
     "diversity":2.7021369934,
     "pop_coverage":1.0,
     "lyric_coverage":0.8,
-    "mean_log_playcount":16.1158774364
+    "mean_log_playcount":16.1167692436
   },
   {
     "genre":"rock",
@@ -3957,7 +3957,7 @@
     "diversity":2.8960766792,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":17.0625708181
+    "mean_log_playcount":17.0640412344
   },
   {
     "genre":"rock",
@@ -3969,7 +3969,7 @@
     "diversity":2.8960766792,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":17.0625708181
+    "mean_log_playcount":17.0640412344
   },
   {
     "genre":"rock",
@@ -3981,7 +3981,7 @@
     "diversity":2.8960766792,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":17.0625708181
+    "mean_log_playcount":17.0640412344
   },
   {
     "genre":"rock",
@@ -3993,7 +3993,7 @@
     "diversity":2.8960762024,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":17.0625708181
+    "mean_log_playcount":17.0640412344
   },
   {
     "genre":"rock",
@@ -4001,11 +4001,11 @@
     "variant":"collab_only",
     "mode":"norm",
     "novelty":1.0,
-    "coherence":0.2874166965,
-    "diversity":2.7348444462,
+    "coherence":0.2746896744,
+    "diversity":3.1040577888,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.7645951575
+    "mean_log_playcount":16.8628095902
   },
   {
     "genre":"rock",
@@ -4017,7 +4017,7 @@
     "diversity":1.03518188,
     "pop_coverage":0.2,
     "lyric_coverage":0.4,
-    "mean_log_playcount":17.4565522447
+    "mean_log_playcount":17.4582458988
   },
   {
     "genre":"rock",
@@ -4077,7 +4077,7 @@
     "diversity":1.03518188,
     "pop_coverage":0.2,
     "lyric_coverage":0.4,
-    "mean_log_playcount":17.4565522447
+    "mean_log_playcount":17.4582458988
   },
   {
     "genre":"rock",
@@ -4089,7 +4089,7 @@
     "diversity":1.03518188,
     "pop_coverage":0.2,
     "lyric_coverage":0.4,
-    "mean_log_playcount":17.4565522447
+    "mean_log_playcount":17.4582458988
   },
   {
     "genre":"rock",
@@ -4101,7 +4101,7 @@
     "diversity":1.03518188,
     "pop_coverage":0.2,
     "lyric_coverage":0.4,
-    "mean_log_playcount":17.4565522447
+    "mean_log_playcount":17.4582458988
   },
   {
     "genre":"rock",
@@ -4197,7 +4197,7 @@
     "diversity":0.7888400555,
     "pop_coverage":0.1,
     "lyric_coverage":0.3,
-    "mean_log_playcount":17.3294067242
+    "mean_log_playcount":17.330989742
   },
   {
     "genre":"rock",
@@ -4257,7 +4257,7 @@
     "diversity":1.0341081619,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":17.4565522447
+    "mean_log_playcount":17.4582458988
   },
   {
     "genre":"rock",
@@ -4269,7 +4269,7 @@
     "diversity":0.7127032876,
     "pop_coverage":0.1,
     "lyric_coverage":0.5,
-    "mean_log_playcount":17.5836977651
+    "mean_log_playcount":17.5855020555
   },
   {
     "genre":"rock",
@@ -4317,7 +4317,7 @@
     "diversity":2.193874836,
     "pop_coverage":0.6,
     "lyric_coverage":0.8,
-    "mean_log_playcount":17.1826459386
+    "mean_log_playcount":17.1845160576
   },
   {
     "genre":"rock",
@@ -4329,7 +4329,7 @@
     "diversity":1.8253414631,
     "pop_coverage":0.5,
     "lyric_coverage":0.7,
-    "mean_log_playcount":17.1838590063
+    "mean_log_playcount":17.1858510737
   },
   {
     "genre":"rock",
@@ -4341,7 +4341,7 @@
     "diversity":1.4400236607,
     "pop_coverage":0.4,
     "lyric_coverage":0.6,
-    "mean_log_playcount":17.1688441285
+    "mean_log_playcount":17.1706827151
   },
   {
     "genre":"rock",
@@ -4353,7 +4353,7 @@
     "diversity":0.7165164351,
     "pop_coverage":0.1,
     "lyric_coverage":0.3,
-    "mean_log_playcount":17.5836977651
+    "mean_log_playcount":17.5855020555
   },
   {
     "genre":"rock",
@@ -4521,7 +4521,7 @@
     "diversity":2.9858517647,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.3139704883
+    "mean_log_playcount":16.3151341759
   },
   {
     "genre":"rock",
@@ -4533,7 +4533,7 @@
     "diversity":2.9858517647,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.3139704883
+    "mean_log_playcount":16.3151341759
   },
   {
     "genre":"rock",
@@ -4545,7 +4545,7 @@
     "diversity":2.9858517647,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.3139704883
+    "mean_log_playcount":16.3151341759
   },
   {
     "genre":"rock",
@@ -4557,7 +4557,7 @@
     "diversity":2.9858512878,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.3139704883
+    "mean_log_playcount":16.3151341759
   },
   {
     "genre":"rock",
@@ -4569,7 +4569,7 @@
     "diversity":2.3479382992,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.4839464767
+    "mean_log_playcount":15.4849836897
   },
   {
     "genre":"rock",
@@ -4581,7 +4581,7 @@
     "diversity":2.9858517647,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.3139704883
+    "mean_log_playcount":16.3151341759
   },
   {
     "genre":"rock",
@@ -4593,7 +4593,7 @@
     "diversity":2.9858517647,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.3139704883
+    "mean_log_playcount":16.3151341759
   },
   {
     "genre":"rock",
@@ -4605,7 +4605,7 @@
     "diversity":2.9858517647,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.3139704883
+    "mean_log_playcount":16.3151341759
   },
   {
     "genre":"rock",
@@ -4617,7 +4617,7 @@
     "diversity":2.9858517647,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.3139704883
+    "mean_log_playcount":16.3151341759
   },
   {
     "genre":"rock",
@@ -4629,7 +4629,7 @@
     "diversity":2.5170426369,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.0267023578
+    "mean_log_playcount":16.0278794984
   },
   {
     "genre":"rock",
@@ -4641,7 +4641,7 @@
     "diversity":0.9197602272,
     "pop_coverage":0.2,
     "lyric_coverage":0.5,
-    "mean_log_playcount":16.2841245449
+    "mean_log_playcount":16.2848865218
   },
   {
     "genre":"rock",
@@ -4701,7 +4701,7 @@
     "diversity":0.9197602272,
     "pop_coverage":0.2,
     "lyric_coverage":0.5,
-    "mean_log_playcount":16.2841245449
+    "mean_log_playcount":16.2848865218
   },
   {
     "genre":"rock",
@@ -4713,7 +4713,7 @@
     "diversity":0.9197602272,
     "pop_coverage":0.2,
     "lyric_coverage":0.5,
-    "mean_log_playcount":16.2841245449
+    "mean_log_playcount":16.2848865218
   },
   {
     "genre":"rock",
@@ -4881,7 +4881,7 @@
     "diversity":1.6265016794,
     "pop_coverage":0.3,
     "lyric_coverage":0.8,
-    "mean_log_playcount":16.7558586459
+    "mean_log_playcount":16.7568381127
   },
   {
     "genre":"rock",
@@ -4893,7 +4893,7 @@
     "diversity":0.7574589849,
     "pop_coverage":0.1,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.3913494852
+    "mean_log_playcount":16.3920955732
   },
   {
     "genre":"rock",
@@ -4941,7 +4941,7 @@
     "diversity":2.0832955837,
     "pop_coverage":0.4,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.7092062599
+    "mean_log_playcount":16.7102007206
   },
   {
     "genre":"rock",
@@ -4953,7 +4953,7 @@
     "diversity":0.9261863828,
     "pop_coverage":0.2,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.2841245449
+    "mean_log_playcount":16.2848865218
   },
   {
     "genre":"rock",
@@ -4965,7 +4965,7 @@
     "diversity":0.7257190347,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.3913494852
+    "mean_log_playcount":16.3920955732
   },
   {
     "genre":"rock",
@@ -5145,7 +5145,7 @@
     "diversity":2.2392866611,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0522803225
+    "mean_log_playcount":16.0533092991
   },
   {
     "genre":"rock",
@@ -5157,7 +5157,7 @@
     "diversity":2.2392866611,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0522803225
+    "mean_log_playcount":16.0533092991
   },
   {
     "genre":"rock",
@@ -5169,7 +5169,7 @@
     "diversity":2.2392866611,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0522803225
+    "mean_log_playcount":16.0533092991
   },
   {
     "genre":"rock",
@@ -5181,7 +5181,7 @@
     "diversity":2.2392866611,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0522803225
+    "mean_log_playcount":16.0533092991
   },
   {
     "genre":"rock",
@@ -5193,7 +5193,7 @@
     "diversity":2.8234484196,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.9932035139
+    "mean_log_playcount":14.9940487
   },
   {
     "genre":"rock",
@@ -5205,7 +5205,7 @@
     "diversity":2.2392866611,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0522803225
+    "mean_log_playcount":16.0533092991
   },
   {
     "genre":"rock",
@@ -5217,7 +5217,7 @@
     "diversity":2.2392866611,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0522803225
+    "mean_log_playcount":16.0533092991
   },
   {
     "genre":"rock",
@@ -5229,7 +5229,7 @@
     "diversity":2.2392866611,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0522803225
+    "mean_log_playcount":16.0533092991
   },
   {
     "genre":"rock",
@@ -5241,7 +5241,7 @@
     "diversity":2.2392866611,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0522803225
+    "mean_log_playcount":16.0533092991
   },
   {
     "genre":"rock",
@@ -5253,7 +5253,7 @@
     "diversity":2.3275005817,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.8632887501
+    "mean_log_playcount":15.8642663332
   },
   {
     "genre":"rock",
@@ -5265,7 +5265,7 @@
     "diversity":1.0607603788,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.5180229789
+    "mean_log_playcount":16.519096847
   },
   {
     "genre":"rock",
@@ -5325,7 +5325,7 @@
     "diversity":1.1641899347,
     "pop_coverage":0.4,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.728914009
+    "mean_log_playcount":16.7300032248
   },
   {
     "genre":"rock",
@@ -5337,7 +5337,7 @@
     "diversity":1.0853762627,
     "pop_coverage":0.3,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.5833504345
+    "mean_log_playcount":16.5843447732
   },
   {
     "genre":"rock",
@@ -5349,7 +5349,7 @@
     "diversity":1.0607603788,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.5180229789
+    "mean_log_playcount":16.519096847
   },
   {
     "genre":"rock",
@@ -5361,7 +5361,7 @@
     "diversity":0.4518347979,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.9740648751
+    "mean_log_playcount":15.9750281914
   },
   {
     "genre":"rock",
@@ -5445,7 +5445,7 @@
     "diversity":1.0607603788,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.5180229789
+    "mean_log_playcount":16.519096847
   },
   {
     "genre":"rock",
@@ -5457,7 +5457,7 @@
     "diversity":1.0410193205,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":17.0619810827
+    "mean_log_playcount":17.0631655026
   },
   {
     "genre":"rock",
@@ -5505,7 +5505,7 @@
     "diversity":1.1902679205,
     "pop_coverage":0.4,
     "lyric_coverage":0.8,
-    "mean_log_playcount":16.728914009
+    "mean_log_playcount":16.7300032248
   },
   {
     "genre":"rock",
@@ -5517,7 +5517,7 @@
     "diversity":1.0410193205,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":17.0619810827
+    "mean_log_playcount":17.0631655026
   },
   {
     "genre":"rock",
@@ -5565,7 +5565,7 @@
     "diversity":1.195691824,
     "pop_coverage":0.4,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.728914009
+    "mean_log_playcount":16.7300032248
   },
   {
     "genre":"rock",
@@ -5577,7 +5577,7 @@
     "diversity":1.195691824,
     "pop_coverage":0.4,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.728914009
+    "mean_log_playcount":16.7300032248
   },
   {
     "genre":"rock",
@@ -5589,7 +5589,7 @@
     "diversity":1.1060714722,
     "pop_coverage":0.3,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.5833504345
+    "mean_log_playcount":16.5843447732
   },
   {
     "genre":"rock",
@@ -5601,7 +5601,7 @@
     "diversity":1.0410193205,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":17.0619810827
+    "mean_log_playcount":17.0631655026
   },
   {
     "genre":"rock",
@@ -5769,7 +5769,7 @@
     "diversity":2.5142834187,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.7814135834
+    "mean_log_playcount":16.7822672508
   },
   {
     "genre":"rock",
@@ -5781,7 +5781,7 @@
     "diversity":2.5142831802,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.7814135834
+    "mean_log_playcount":16.7822672508
   },
   {
     "genre":"rock",
@@ -5793,7 +5793,7 @@
     "diversity":2.5142831802,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.7814135834
+    "mean_log_playcount":16.7822672508
   },
   {
     "genre":"rock",
@@ -5805,7 +5805,7 @@
     "diversity":2.5142831802,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.7814135834
+    "mean_log_playcount":16.7822672508
   },
   {
     "genre":"rock",
@@ -5817,7 +5817,7 @@
     "diversity":2.6290893555,
     "pop_coverage":1.0,
     "lyric_coverage":0.8,
-    "mean_log_playcount":16.138266286
+    "mean_log_playcount":16.1389450252
   },
   {
     "genre":"rock",
@@ -5829,7 +5829,7 @@
     "diversity":2.5142834187,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.7814135834
+    "mean_log_playcount":16.7822672508
   },
   {
     "genre":"rock",
@@ -5841,7 +5841,7 @@
     "diversity":2.5142831802,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.7814135834
+    "mean_log_playcount":16.7822672508
   },
   {
     "genre":"rock",
@@ -5853,7 +5853,7 @@
     "diversity":2.5142831802,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.7814135834
+    "mean_log_playcount":16.7822672508
   },
   {
     "genre":"rock",
@@ -5865,7 +5865,7 @@
     "diversity":2.5142831802,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.7814135834
+    "mean_log_playcount":16.7822672508
   },
   {
     "genre":"rock",
@@ -5877,7 +5877,7 @@
     "diversity":2.6626837254,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.5171740565
+    "mean_log_playcount":16.5179237197
   },
   {
     "genre":"rock",
@@ -5889,7 +5889,7 @@
     "diversity":0.6780461073,
     "pop_coverage":0.1,
     "lyric_coverage":0.9,
-    "mean_log_playcount":17.0799656834
+    "mean_log_playcount":17.0810285656
   },
   {
     "genre":"rock",
@@ -5949,7 +5949,7 @@
     "diversity":1.0982911587,
     "pop_coverage":0.2,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.8239431816
+    "mean_log_playcount":16.8250737708
   },
   {
     "genre":"rock",
@@ -5961,7 +5961,7 @@
     "diversity":1.0982911587,
     "pop_coverage":0.2,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.8239431816
+    "mean_log_playcount":16.8250737708
   },
   {
     "genre":"rock",
@@ -6129,7 +6129,7 @@
     "diversity":1.1156790257,
     "pop_coverage":0.2,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.8239431816
+    "mean_log_playcount":16.8250737708
   },
   {
     "genre":"rock",
@@ -6141,7 +6141,7 @@
     "diversity":1.1156790257,
     "pop_coverage":0.2,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.8239431816
+    "mean_log_playcount":16.8250737708
   },
   {
     "genre":"rock",
@@ -6189,7 +6189,7 @@
     "diversity":1.1156791449,
     "pop_coverage":0.2,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.8239431816
+    "mean_log_playcount":16.8250737708
   },
   {
     "genre":"rock",
@@ -6201,7 +6201,7 @@
     "diversity":1.1156790257,
     "pop_coverage":0.2,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.8239431816
+    "mean_log_playcount":16.8250737708
   },
   {
     "genre":"rock",
@@ -6393,7 +6393,7 @@
     "diversity":2.6431157589,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.328951596
+    "mean_log_playcount":14.3295567515
   },
   {
     "genre":"hip_hop_rap",
@@ -6405,7 +6405,7 @@
     "diversity":2.6431162357,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.328951596
+    "mean_log_playcount":14.3295567515
   },
   {
     "genre":"hip_hop_rap",
@@ -6417,7 +6417,7 @@
     "diversity":2.9206118584,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":13.6317536699
+    "mean_log_playcount":13.6322512674
   },
   {
     "genre":"hip_hop_rap",
@@ -6429,7 +6429,7 @@
     "diversity":3.1923274994,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":12.5332069387
+    "mean_log_playcount":12.5338206877
   },
   {
     "genre":"hip_hop_rap",
@@ -6441,7 +6441,7 @@
     "diversity":3.3974587917,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":12.074208429
+    "mean_log_playcount":12.0748731034
   },
   {
     "genre":"hip_hop_rap",
@@ -6453,7 +6453,7 @@
     "diversity":2.6431157589,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.328951596
+    "mean_log_playcount":14.3295567515
   },
   {
     "genre":"hip_hop_rap",
@@ -6465,7 +6465,7 @@
     "diversity":2.6431159973,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.328951596
+    "mean_log_playcount":14.3295567515
   },
   {
     "genre":"hip_hop_rap",
@@ -6477,7 +6477,7 @@
     "diversity":2.6431159973,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.328951596
+    "mean_log_playcount":14.3295567515
   },
   {
     "genre":"hip_hop_rap",
@@ -6489,7 +6489,7 @@
     "diversity":2.7229294777,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.2274874879
+    "mean_log_playcount":14.2279895845
   },
   {
     "genre":"hip_hop_rap",
@@ -6501,7 +6501,7 @@
     "diversity":3.1406459808,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":13.4704237344
+    "mean_log_playcount":13.4709766206
   },
   {
     "genre":"hip_hop_rap",
@@ -6513,7 +6513,7 @@
     "diversity":0.8787024021,
     "pop_coverage":0.1,
     "lyric_coverage":0.4,
-    "mean_log_playcount":14.4849724434
+    "mean_log_playcount":14.485692034
   },
   {
     "genre":"hip_hop_rap",
@@ -6573,7 +6573,7 @@
     "diversity":0.8787024021,
     "pop_coverage":0.1,
     "lyric_coverage":0.4,
-    "mean_log_playcount":14.4849724434
+    "mean_log_playcount":14.485692034
   },
   {
     "genre":"hip_hop_rap",
@@ -6585,7 +6585,7 @@
     "diversity":0.8787024021,
     "pop_coverage":0.1,
     "lyric_coverage":0.4,
-    "mean_log_playcount":14.4849724434
+    "mean_log_playcount":14.485692034
   },
   {
     "genre":"hip_hop_rap",
@@ -6597,7 +6597,7 @@
     "diversity":0.8787024021,
     "pop_coverage":0.1,
     "lyric_coverage":0.4,
-    "mean_log_playcount":14.4849724434
+    "mean_log_playcount":14.485692034
   },
   {
     "genre":"hip_hop_rap",
@@ -6753,7 +6753,7 @@
     "diversity":1.2388185263,
     "pop_coverage":0.2,
     "lyric_coverage":0.7,
-    "mean_log_playcount":14.277114347
+    "mean_log_playcount":14.2778103771
   },
   {
     "genre":"hip_hop_rap",
@@ -6765,7 +6765,7 @@
     "diversity":0.9003687501,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":14.4849724434
+    "mean_log_playcount":14.485692034
   },
   {
     "genre":"hip_hop_rap",
@@ -6813,7 +6813,7 @@
     "diversity":2.4633827209,
     "pop_coverage":0.5,
     "lyric_coverage":1.0,
-    "mean_log_playcount":13.7611348497
+    "mean_log_playcount":13.761829052
   },
   {
     "genre":"hip_hop_rap",
@@ -6825,7 +6825,7 @@
     "diversity":1.5238181353,
     "pop_coverage":0.3,
     "lyric_coverage":0.8,
-    "mean_log_playcount":14.0510567635
+    "mean_log_playcount":14.0517239644
   },
   {
     "genre":"hip_hop_rap",
@@ -6837,7 +6837,7 @@
     "diversity":0.9003687501,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":14.4849724434
+    "mean_log_playcount":14.485692034
   },
   {
     "genre":"hip_hop_rap",
@@ -6849,7 +6849,7 @@
     "diversity":0.9003687501,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":14.4849724434
+    "mean_log_playcount":14.485692034
   },
   {
     "genre":"hip_hop_rap",
@@ -7017,7 +7017,7 @@
     "diversity":2.083199501,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.2211908595
+    "mean_log_playcount":15.2225837301
   },
   {
     "genre":"hip_hop_rap",
@@ -7029,7 +7029,7 @@
     "diversity":2.083199501,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.2211908595
+    "mean_log_playcount":15.2225837301
   },
   {
     "genre":"hip_hop_rap",
@@ -7041,7 +7041,7 @@
     "diversity":2.083199501,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.2211908595
+    "mean_log_playcount":15.2225837301
   },
   {
     "genre":"hip_hop_rap",
@@ -7053,7 +7053,7 @@
     "diversity":2.083199501,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.2211908595
+    "mean_log_playcount":15.2225837301
   },
   {
     "genre":"hip_hop_rap",
@@ -7065,7 +7065,7 @@
     "diversity":1.9286251068,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.4660226345
+    "mean_log_playcount":14.4674199973
   },
   {
     "genre":"hip_hop_rap",
@@ -7077,7 +7077,7 @@
     "diversity":2.083199501,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.2211908595
+    "mean_log_playcount":15.2225837301
   },
   {
     "genre":"hip_hop_rap",
@@ -7089,7 +7089,7 @@
     "diversity":2.083199501,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.2211908595
+    "mean_log_playcount":15.2225837301
   },
   {
     "genre":"hip_hop_rap",
@@ -7101,7 +7101,7 @@
     "diversity":2.083199501,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.2211908595
+    "mean_log_playcount":15.2225837301
   },
   {
     "genre":"hip_hop_rap",
@@ -7113,7 +7113,7 @@
     "diversity":2.083199501,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.2211908595
+    "mean_log_playcount":15.2225837301
   },
   {
     "genre":"hip_hop_rap",
@@ -7125,7 +7125,7 @@
     "diversity":2.1865298748,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.7375822419
+    "mean_log_playcount":14.7388689525
   },
   {
     "genre":"hip_hop_rap",
@@ -7137,7 +7137,7 @@
     "diversity":0.9529622197,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.6464074285
+    "mean_log_playcount":15.6478037387
   },
   {
     "genre":"hip_hop_rap",
@@ -7197,7 +7197,7 @@
     "diversity":0.9529622197,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.6464074285
+    "mean_log_playcount":15.6478037387
   },
   {
     "genre":"hip_hop_rap",
@@ -7209,7 +7209,7 @@
     "diversity":0.9529622197,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.6464074285
+    "mean_log_playcount":15.6478037387
   },
   {
     "genre":"hip_hop_rap",
@@ -7221,7 +7221,7 @@
     "diversity":0.9529620409,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.6464074285
+    "mean_log_playcount":15.6478037387
   },
   {
     "genre":"hip_hop_rap",
@@ -7377,7 +7377,7 @@
     "diversity":1.787124753,
     "pop_coverage":0.5,
     "lyric_coverage":0.7,
-    "mean_log_playcount":15.4317199895
+    "mean_log_playcount":15.4334108052
   },
   {
     "genre":"hip_hop_rap",
@@ -7389,7 +7389,7 @@
     "diversity":0.9966858029,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.6464074285
+    "mean_log_playcount":15.6478037387
   },
   {
     "genre":"hip_hop_rap",
@@ -7437,7 +7437,7 @@
     "diversity":1.787124753,
     "pop_coverage":0.5,
     "lyric_coverage":0.7,
-    "mean_log_playcount":15.4317199895
+    "mean_log_playcount":15.4334108052
   },
   {
     "genre":"hip_hop_rap",
@@ -7449,7 +7449,7 @@
     "diversity":1.787124753,
     "pop_coverage":0.5,
     "lyric_coverage":0.7,
-    "mean_log_playcount":15.4317199895
+    "mean_log_playcount":15.4334108052
   },
   {
     "genre":"hip_hop_rap",
@@ -7461,7 +7461,7 @@
     "diversity":1.1841909885,
     "pop_coverage":0.3,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.7376200735
+    "mean_log_playcount":15.7392007031
   },
   {
     "genre":"hip_hop_rap",
@@ -7641,7 +7641,7 @@
     "diversity":2.7025961876,
     "pop_coverage":0.9,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.0641033146
+    "mean_log_playcount":15.0651688823
   },
   {
     "genre":"hip_hop_rap",
@@ -7653,7 +7653,7 @@
     "diversity":2.7025961876,
     "pop_coverage":0.9,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.0641033146
+    "mean_log_playcount":15.0651688823
   },
   {
     "genre":"hip_hop_rap",
@@ -7665,7 +7665,7 @@
     "diversity":2.7025961876,
     "pop_coverage":0.9,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.0641033146
+    "mean_log_playcount":15.0651688823
   },
   {
     "genre":"hip_hop_rap",
@@ -7677,7 +7677,7 @@
     "diversity":2.7025961876,
     "pop_coverage":0.9,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.0641033146
+    "mean_log_playcount":15.0651688823
   },
   {
     "genre":"hip_hop_rap",
@@ -7689,7 +7689,7 @@
     "diversity":2.7025959492,
     "pop_coverage":0.9,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.0641033146
+    "mean_log_playcount":15.0651688823
   },
   {
     "genre":"hip_hop_rap",
@@ -7701,7 +7701,7 @@
     "diversity":2.436216116,
     "pop_coverage":0.8,
     "lyric_coverage":0.8,
-    "mean_log_playcount":15.096715456
+    "mean_log_playcount":15.0977128021
   },
   {
     "genre":"hip_hop_rap",
@@ -7713,7 +7713,7 @@
     "diversity":2.436216116,
     "pop_coverage":0.8,
     "lyric_coverage":0.8,
-    "mean_log_playcount":15.096715456
+    "mean_log_playcount":15.0977128021
   },
   {
     "genre":"hip_hop_rap",
@@ -7725,7 +7725,7 @@
     "diversity":2.436216116,
     "pop_coverage":0.8,
     "lyric_coverage":0.8,
-    "mean_log_playcount":15.096715456
+    "mean_log_playcount":15.0977128021
   },
   {
     "genre":"hip_hop_rap",
@@ -7737,7 +7737,7 @@
     "diversity":2.436216116,
     "pop_coverage":0.8,
     "lyric_coverage":0.8,
-    "mean_log_playcount":15.096715456
+    "mean_log_playcount":15.0977128021
   },
   {
     "genre":"hip_hop_rap",
@@ -7749,7 +7749,7 @@
     "diversity":2.4362163544,
     "pop_coverage":0.8,
     "lyric_coverage":0.8,
-    "mean_log_playcount":15.096715456
+    "mean_log_playcount":15.0977128021
   },
   {
     "genre":"hip_hop_rap",
@@ -7761,7 +7761,7 @@
     "diversity":0.8942110538,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.8871140875
+    "mean_log_playcount":15.8886234912
   },
   {
     "genre":"hip_hop_rap",
@@ -7821,7 +7821,7 @@
     "diversity":0.8942110538,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.8871140875
+    "mean_log_playcount":15.8886234912
   },
   {
     "genre":"hip_hop_rap",
@@ -7833,7 +7833,7 @@
     "diversity":0.8942110538,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.8871140875
+    "mean_log_playcount":15.8886234912
   },
   {
     "genre":"hip_hop_rap",
@@ -7845,7 +7845,7 @@
     "diversity":0.8942110538,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.8871140875
+    "mean_log_playcount":15.8886234912
   },
   {
     "genre":"hip_hop_rap",
@@ -8001,7 +8001,7 @@
     "diversity":0.9119294882,
     "pop_coverage":0.1,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.8871140875
+    "mean_log_playcount":15.8886234912
   },
   {
     "genre":"hip_hop_rap",
@@ -8061,7 +8061,7 @@
     "diversity":0.9119294882,
     "pop_coverage":0.1,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.8871140875
+    "mean_log_playcount":15.8886234912
   },
   {
     "genre":"hip_hop_rap",
@@ -8073,7 +8073,7 @@
     "diversity":0.9119295478,
     "pop_coverage":0.1,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.8871140875
+    "mean_log_playcount":15.8886234912
   },
   {
     "genre":"hip_hop_rap",
@@ -8265,7 +8265,7 @@
     "diversity":3.2601792812,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":13.8793297689
+    "mean_log_playcount":13.8804236958
   },
   {
     "genre":"hip_hop_rap",
@@ -8277,7 +8277,7 @@
     "diversity":2.7638223171,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":13.2672217589
+    "mean_log_playcount":13.2680925334
   },
   {
     "genre":"hip_hop_rap",
@@ -8289,7 +8289,7 @@
     "diversity":2.8418545723,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":12.9895376691
+    "mean_log_playcount":12.9904085201
   },
   {
     "genre":"hip_hop_rap",
@@ -8301,7 +8301,7 @@
     "diversity":2.5276768208,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":12.8827464898
+    "mean_log_playcount":12.8835679501
   },
   {
     "genre":"hip_hop_rap",
@@ -8313,7 +8313,7 @@
     "diversity":2.5276768208,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":12.8827464898
+    "mean_log_playcount":12.8835679501
   },
   {
     "genre":"hip_hop_rap",
@@ -8325,7 +8325,7 @@
     "diversity":3.2601792812,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":13.8793297689
+    "mean_log_playcount":13.8804236958
   },
   {
     "genre":"hip_hop_rap",
@@ -8337,7 +8337,7 @@
     "diversity":3.2601792812,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":13.8793297689
+    "mean_log_playcount":13.8804236958
   },
   {
     "genre":"hip_hop_rap",
@@ -8349,7 +8349,7 @@
     "diversity":3.2601792812,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":13.8793297689
+    "mean_log_playcount":13.8804236958
   },
   {
     "genre":"hip_hop_rap",
@@ -8361,7 +8361,7 @@
     "diversity":3.1614630222,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":13.5262305549
+    "mean_log_playcount":13.5272065007
   },
   {
     "genre":"hip_hop_rap",
@@ -8373,7 +8373,7 @@
     "diversity":2.9713096619,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":13.1207480396
+    "mean_log_playcount":13.1216706222
   },
   {
     "genre":"hip_hop_rap",
@@ -8385,7 +8385,7 @@
     "diversity":0.9747599363,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":12.8118295189
+    "mean_log_playcount":12.8121624814
   },
   {
     "genre":"hip_hop_rap",
@@ -8397,7 +8397,7 @@
     "diversity":0.7917138934,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":14.100684237
+    "mean_log_playcount":14.1008849698
   },
   {
     "genre":"hip_hop_rap",
@@ -8445,7 +8445,7 @@
     "diversity":0.9747598171,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":12.8118295189
+    "mean_log_playcount":12.8121624814
   },
   {
     "genre":"hip_hop_rap",
@@ -8457,7 +8457,7 @@
     "diversity":0.9747597575,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":12.8118295189
+    "mean_log_playcount":12.8121624814
   },
   {
     "genre":"hip_hop_rap",
@@ -8469,7 +8469,7 @@
     "diversity":0.7917138934,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":14.100684237
+    "mean_log_playcount":14.1008849698
   },
   {
     "genre":"hip_hop_rap",
@@ -8625,7 +8625,7 @@
     "diversity":2.3127708435,
     "pop_coverage":0.7,
     "lyric_coverage":1.0,
-    "mean_log_playcount":13.2036632073
+    "mean_log_playcount":13.2044551005
   },
   {
     "genre":"hip_hop_rap",
@@ -8637,7 +8637,7 @@
     "diversity":1.4880660772,
     "pop_coverage":0.4,
     "lyric_coverage":0.8,
-    "mean_log_playcount":12.5521444267
+    "mean_log_playcount":12.5527221287
   },
   {
     "genre":"hip_hop_rap",
@@ -8649,7 +8649,7 @@
     "diversity":0.9821490049,
     "pop_coverage":0.2,
     "lyric_coverage":0.7,
-    "mean_log_playcount":12.8118295189
+    "mean_log_playcount":12.8121624814
   },
   {
     "genre":"hip_hop_rap",
@@ -8685,7 +8685,7 @@
     "diversity":1.6039682627,
     "pop_coverage":0.3,
     "lyric_coverage":0.7,
-    "mean_log_playcount":13.7821680117
+    "mean_log_playcount":13.7828663519
   },
   {
     "genre":"hip_hop_rap",
@@ -8697,7 +8697,7 @@
     "diversity":0.9821490645,
     "pop_coverage":0.2,
     "lyric_coverage":0.7,
-    "mean_log_playcount":12.8118295189
+    "mean_log_playcount":12.8121624814
   },
   {
     "genre":"hip_hop_rap",
@@ -8709,7 +8709,7 @@
     "diversity":0.9821490049,
     "pop_coverage":0.2,
     "lyric_coverage":0.7,
-    "mean_log_playcount":12.8118295189
+    "mean_log_playcount":12.8121624814
   },
   {
     "genre":"hip_hop_rap",
@@ -8721,7 +8721,7 @@
     "diversity":0.8050127625,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":14.100684237
+    "mean_log_playcount":14.1008849698
   },
   {
     "genre":"hip_hop_rap",
@@ -8889,7 +8889,7 @@
     "diversity":3.0821976662,
     "pop_coverage":1.0,
     "lyric_coverage":0.0,
-    "mean_log_playcount":14.8201667646
+    "mean_log_playcount":14.8210452494
   },
   {
     "genre":"hip_hop_rap",
@@ -8901,7 +8901,7 @@
     "diversity":3.0457015038,
     "pop_coverage":1.0,
     "lyric_coverage":0.0,
-    "mean_log_playcount":14.7591905812
+    "mean_log_playcount":14.7601624304
   },
   {
     "genre":"hip_hop_rap",
@@ -8913,7 +8913,7 @@
     "diversity":3.0769195557,
     "pop_coverage":1.0,
     "lyric_coverage":0.0,
-    "mean_log_playcount":14.6101251672
+    "mean_log_playcount":14.6110915256
   },
   {
     "genre":"hip_hop_rap",
@@ -8925,7 +8925,7 @@
     "diversity":3.1878359318,
     "pop_coverage":1.0,
     "lyric_coverage":0.0,
-    "mean_log_playcount":13.7101517177
+    "mean_log_playcount":13.7109985634
   },
   {
     "genre":"hip_hop_rap",
@@ -8937,7 +8937,7 @@
     "diversity":3.3769347668,
     "pop_coverage":1.0,
     "lyric_coverage":0.0,
-    "mean_log_playcount":13.0124644448
+    "mean_log_playcount":13.0130314767
   },
   {
     "genre":"hip_hop_rap",
@@ -8949,7 +8949,7 @@
     "diversity":3.0821976662,
     "pop_coverage":1.0,
     "lyric_coverage":0.0,
-    "mean_log_playcount":14.8201667646
+    "mean_log_playcount":14.8210452494
   },
   {
     "genre":"hip_hop_rap",
@@ -8961,7 +8961,7 @@
     "diversity":3.0457015038,
     "pop_coverage":1.0,
     "lyric_coverage":0.0,
-    "mean_log_playcount":14.7591905812
+    "mean_log_playcount":14.7601624304
   },
   {
     "genre":"hip_hop_rap",
@@ -8973,7 +8973,7 @@
     "diversity":3.0457015038,
     "pop_coverage":1.0,
     "lyric_coverage":0.0,
-    "mean_log_playcount":14.7591905812
+    "mean_log_playcount":14.7601624304
   },
   {
     "genre":"hip_hop_rap",
@@ -8985,7 +8985,7 @@
     "diversity":3.0769195557,
     "pop_coverage":1.0,
     "lyric_coverage":0.0,
-    "mean_log_playcount":14.6101251672
+    "mean_log_playcount":14.6110915256
   },
   {
     "genre":"hip_hop_rap",
@@ -8997,7 +8997,7 @@
     "diversity":3.1526882648,
     "pop_coverage":1.0,
     "lyric_coverage":0.0,
-    "mean_log_playcount":14.1080740188
+    "mean_log_playcount":14.1089553498
   },
   {
     "genre":"hip_hop_rap",
@@ -9009,7 +9009,7 @@
     "diversity":1.069414854,
     "pop_coverage":0.1,
     "lyric_coverage":0.0,
-    "mean_log_playcount":13.1396274913
+    "mean_log_playcount":13.1402032955
   },
   {
     "genre":"hip_hop_rap",
@@ -9021,7 +9021,7 @@
     "diversity":1.069414854,
     "pop_coverage":0.1,
     "lyric_coverage":0.0,
-    "mean_log_playcount":13.1396274913
+    "mean_log_playcount":13.1402032955
   },
   {
     "genre":"hip_hop_rap",
@@ -9069,7 +9069,7 @@
     "diversity":1.069414854,
     "pop_coverage":0.1,
     "lyric_coverage":0.0,
-    "mean_log_playcount":13.1396274913
+    "mean_log_playcount":13.1402032955
   },
   {
     "genre":"hip_hop_rap",
@@ -9081,7 +9081,7 @@
     "diversity":1.069414854,
     "pop_coverage":0.1,
     "lyric_coverage":0.0,
-    "mean_log_playcount":13.1396274913
+    "mean_log_playcount":13.1402032955
   },
   {
     "genre":"hip_hop_rap",
@@ -9093,7 +9093,7 @@
     "diversity":1.0694149733,
     "pop_coverage":0.1,
     "lyric_coverage":0.0,
-    "mean_log_playcount":13.1396274913
+    "mean_log_playcount":13.1402032955
   },
   {
     "genre":"hip_hop_rap",
@@ -9249,7 +9249,7 @@
     "diversity":1.069414854,
     "pop_coverage":0.1,
     "lyric_coverage":0.0,
-    "mean_log_playcount":13.1396274913
+    "mean_log_playcount":13.1402032955
   },
   {
     "genre":"hip_hop_rap",
@@ -9261,7 +9261,7 @@
     "diversity":1.069414854,
     "pop_coverage":0.1,
     "lyric_coverage":0.0,
-    "mean_log_playcount":13.1396274913
+    "mean_log_playcount":13.1402032955
   },
   {
     "genre":"hip_hop_rap",
@@ -9309,7 +9309,7 @@
     "diversity":1.069414854,
     "pop_coverage":0.1,
     "lyric_coverage":0.0,
-    "mean_log_playcount":13.1396274913
+    "mean_log_playcount":13.1402032955
   },
   {
     "genre":"hip_hop_rap",
@@ -9321,7 +9321,7 @@
     "diversity":1.069414854,
     "pop_coverage":0.1,
     "lyric_coverage":0.0,
-    "mean_log_playcount":13.1396274913
+    "mean_log_playcount":13.1402032955
   },
   {
     "genre":"hip_hop_rap",
@@ -9333,7 +9333,7 @@
     "diversity":1.0694149733,
     "pop_coverage":0.1,
     "lyric_coverage":0.0,
-    "mean_log_playcount":13.1396274913
+    "mean_log_playcount":13.1402032955
   },
   {
     "genre":"hip_hop_rap",
@@ -9513,7 +9513,7 @@
     "diversity":2.6280670166,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.2716521423
+    "mean_log_playcount":15.2725829915
   },
   {
     "genre":"hip_hop_rap",
@@ -9525,7 +9525,7 @@
     "diversity":2.677400589,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.1382236032
+    "mean_log_playcount":15.1390552412
   },
   {
     "genre":"hip_hop_rap",
@@ -9537,7 +9537,7 @@
     "diversity":2.8100073338,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.007235827
+    "mean_log_playcount":15.0080672043
   },
   {
     "genre":"hip_hop_rap",
@@ -9549,7 +9549,7 @@
     "diversity":2.8319759369,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.8647034616
+    "mean_log_playcount":14.8655407138
   },
   {
     "genre":"hip_hop_rap",
@@ -9561,7 +9561,7 @@
     "diversity":2.3036839962,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.4899238391
+    "mean_log_playcount":14.4907126477
   },
   {
     "genre":"hip_hop_rap",
@@ -9573,7 +9573,7 @@
     "diversity":2.6280670166,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.2716521423
+    "mean_log_playcount":15.2725829915
   },
   {
     "genre":"hip_hop_rap",
@@ -9585,7 +9585,7 @@
     "diversity":2.6280670166,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.2716521423
+    "mean_log_playcount":15.2725829915
   },
   {
     "genre":"hip_hop_rap",
@@ -9597,7 +9597,7 @@
     "diversity":2.677400589,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.1382236032
+    "mean_log_playcount":15.1390552412
   },
   {
     "genre":"hip_hop_rap",
@@ -9609,7 +9609,7 @@
     "diversity":2.8100073338,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.007235827
+    "mean_log_playcount":15.0080672043
   },
   {
     "genre":"hip_hop_rap",
@@ -9621,7 +9621,7 @@
     "diversity":2.4211511612,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.7594436304
+    "mean_log_playcount":14.7602830743
   },
   {
     "genre":"hip_hop_rap",
@@ -9633,7 +9633,7 @@
     "diversity":1.1325598955,
     "pop_coverage":0.1,
     "lyric_coverage":0.5,
-    "mean_log_playcount":13.953725217
+    "mean_log_playcount":13.9544356285
   },
   {
     "genre":"hip_hop_rap",
@@ -9645,7 +9645,7 @@
     "diversity":1.1325598955,
     "pop_coverage":0.1,
     "lyric_coverage":0.5,
-    "mean_log_playcount":13.953725217
+    "mean_log_playcount":13.9544356285
   },
   {
     "genre":"hip_hop_rap",
@@ -9693,7 +9693,7 @@
     "diversity":1.3680399656,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":14.6462633683
+    "mean_log_playcount":14.6469063514
   },
   {
     "genre":"hip_hop_rap",
@@ -9705,7 +9705,7 @@
     "diversity":1.3680399656,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":14.6462633683
+    "mean_log_playcount":14.6469063514
   },
   {
     "genre":"hip_hop_rap",
@@ -9717,7 +9717,7 @@
     "diversity":1.3680399656,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":14.6462633683
+    "mean_log_playcount":14.6469063514
   },
   {
     "genre":"hip_hop_rap",
@@ -9729,7 +9729,7 @@
     "diversity":1.1325598955,
     "pop_coverage":0.1,
     "lyric_coverage":0.5,
-    "mean_log_playcount":13.953725217
+    "mean_log_playcount":13.9544356285
   },
   {
     "genre":"hip_hop_rap",
@@ -9813,7 +9813,7 @@
     "diversity":1.1325598955,
     "pop_coverage":0.1,
     "lyric_coverage":0.5,
-    "mean_log_playcount":13.953725217
+    "mean_log_playcount":13.9544356285
   },
   {
     "genre":"hip_hop_rap",
@@ -9825,7 +9825,7 @@
     "diversity":1.1325598955,
     "pop_coverage":0.1,
     "lyric_coverage":0.5,
-    "mean_log_playcount":13.953725217
+    "mean_log_playcount":13.9544356285
   },
   {
     "genre":"hip_hop_rap",
@@ -9837,7 +9837,7 @@
     "diversity":1.1325600147,
     "pop_coverage":0.1,
     "lyric_coverage":0.5,
-    "mean_log_playcount":13.953725217
+    "mean_log_playcount":13.9544356285
   },
   {
     "genre":"hip_hop_rap",
@@ -9873,7 +9873,7 @@
     "diversity":1.5165305138,
     "pop_coverage":0.3,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.778698924
+    "mean_log_playcount":14.7796708804
   },
   {
     "genre":"hip_hop_rap",
@@ -9885,7 +9885,7 @@
     "diversity":1.1661090851,
     "pop_coverage":0.1,
     "lyric_coverage":0.9,
-    "mean_log_playcount":13.953725217
+    "mean_log_playcount":13.9544356285
   },
   {
     "genre":"hip_hop_rap",
@@ -9897,7 +9897,7 @@
     "diversity":1.1661090851,
     "pop_coverage":0.1,
     "lyric_coverage":0.9,
-    "mean_log_playcount":13.953725217
+    "mean_log_playcount":13.9544356285
   },
   {
     "genre":"hip_hop_rap",
@@ -9933,7 +9933,7 @@
     "diversity":1.5165307522,
     "pop_coverage":0.3,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.778698924
+    "mean_log_playcount":14.7796708804
   },
   {
     "genre":"hip_hop_rap",
@@ -9945,7 +9945,7 @@
     "diversity":1.5165305138,
     "pop_coverage":0.3,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.778698924
+    "mean_log_playcount":14.7796708804
   },
   {
     "genre":"hip_hop_rap",
@@ -9957,7 +9957,7 @@
     "diversity":1.5165305138,
     "pop_coverage":0.3,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.778698924
+    "mean_log_playcount":14.7796708804
   },
   {
     "genre":"hip_hop_rap",
@@ -9969,7 +9969,7 @@
     "diversity":1.1499115229,
     "pop_coverage":0.1,
     "lyric_coverage":0.8,
-    "mean_log_playcount":13.953725217
+    "mean_log_playcount":13.9544356285
   },
   {
     "genre":"hip_hop_rap",
@@ -9981,7 +9981,7 @@
     "diversity":1.1499116421,
     "pop_coverage":0.1,
     "lyric_coverage":0.8,
-    "mean_log_playcount":13.953725217
+    "mean_log_playcount":13.9544356285
   },
   {
     "genre":"hip_hop_rap",
@@ -10137,7 +10137,7 @@
     "diversity":3.1766993999,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":12.6165830247
+    "mean_log_playcount":12.6174481203
   },
   {
     "genre":"hip_hop_rap",
@@ -10149,7 +10149,7 @@
     "diversity":3.1766993999,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":12.6165830247
+    "mean_log_playcount":12.6174481203
   },
   {
     "genre":"hip_hop_rap",
@@ -10161,7 +10161,7 @@
     "diversity":3.1766998768,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":12.6165830247
+    "mean_log_playcount":12.6174481203
   },
   {
     "genre":"hip_hop_rap",
@@ -10173,7 +10173,7 @@
     "diversity":3.1766993999,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":12.6165830247
+    "mean_log_playcount":12.6174481203
   },
   {
     "genre":"hip_hop_rap",
@@ -10185,7 +10185,7 @@
     "diversity":3.1766998768,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":12.6165830247
+    "mean_log_playcount":12.6174481203
   },
   {
     "genre":"hip_hop_rap",
@@ -10197,7 +10197,7 @@
     "diversity":3.1766993999,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":12.6165830247
+    "mean_log_playcount":12.6174481203
   },
   {
     "genre":"hip_hop_rap",
@@ -10209,7 +10209,7 @@
     "diversity":3.1766993999,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":12.6165830247
+    "mean_log_playcount":12.6174481203
   },
   {
     "genre":"hip_hop_rap",
@@ -10221,7 +10221,7 @@
     "diversity":3.1766993999,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":12.6165830247
+    "mean_log_playcount":12.6174481203
   },
   {
     "genre":"hip_hop_rap",
@@ -10233,7 +10233,7 @@
     "diversity":3.1766993999,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":12.6165830247
+    "mean_log_playcount":12.6174481203
   },
   {
     "genre":"hip_hop_rap",
@@ -10245,7 +10245,7 @@
     "diversity":3.1766993999,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":12.6165830247
+    "mean_log_playcount":12.6174481203
   },
   {
     "genre":"hip_hop_rap",
@@ -10317,7 +10317,7 @@
     "diversity":0.6208205223,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":10.2518530686
+    "mean_log_playcount":10.2533694761
   },
   {
     "genre":"hip_hop_rap",
@@ -10329,7 +10329,7 @@
     "diversity":0.6208205223,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":10.2518530686
+    "mean_log_playcount":10.2533694761
   },
   {
     "genre":"hip_hop_rap",
@@ -10341,7 +10341,7 @@
     "diversity":0.6208205223,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":10.2518530686
+    "mean_log_playcount":10.2533694761
   },
   {
     "genre":"hip_hop_rap",
@@ -10353,7 +10353,7 @@
     "diversity":0.6208205223,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":10.2518530686
+    "mean_log_playcount":10.2533694761
   },
   {
     "genre":"hip_hop_rap",
@@ -10497,7 +10497,7 @@
     "diversity":0.6208205819,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":10.2518530686
+    "mean_log_playcount":10.2533694761
   },
   {
     "genre":"hip_hop_rap",
@@ -10557,7 +10557,7 @@
     "diversity":1.2897770405,
     "pop_coverage":0.3,
     "lyric_coverage":0.8,
-    "mean_log_playcount":11.9755153441
+    "mean_log_playcount":11.9767608698
   },
   {
     "genre":"hip_hop_rap",
@@ -10569,7 +10569,7 @@
     "diversity":1.2897769213,
     "pop_coverage":0.3,
     "lyric_coverage":0.8,
-    "mean_log_playcount":11.9755153441
+    "mean_log_playcount":11.9767608698
   },
   {
     "genre":"hip_hop_rap",
@@ -10581,7 +10581,7 @@
     "diversity":1.0225632191,
     "pop_coverage":0.2,
     "lyric_coverage":0.7,
-    "mean_log_playcount":11.2896467141
+    "mean_log_playcount":11.2909227889
   },
   {
     "genre":"hip_hop_rap",
@@ -10593,7 +10593,7 @@
     "diversity":0.6208205819,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":10.2518530686
+    "mean_log_playcount":10.2533694761
   },
   {
     "genre":"hip_hop_rap",
@@ -10605,7 +10605,7 @@
     "diversity":0.6208205819,
     "pop_coverage":0.1,
     "lyric_coverage":0.6,
-    "mean_log_playcount":10.2518530686
+    "mean_log_playcount":10.2533694761
   },
   {
     "genre":"hip_hop_rap",
@@ -10761,7 +10761,7 @@
     "diversity":2.5645139217,
     "pop_coverage":0.9,
     "lyric_coverage":0.8,
-    "mean_log_playcount":15.3958326378
+    "mean_log_playcount":15.396888959
   },
   {
     "genre":"hip_hop_rap",
@@ -10773,7 +10773,7 @@
     "diversity":2.5645139217,
     "pop_coverage":0.9,
     "lyric_coverage":0.8,
-    "mean_log_playcount":15.3958326378
+    "mean_log_playcount":15.396888959
   },
   {
     "genre":"hip_hop_rap",
@@ -10785,7 +10785,7 @@
     "diversity":2.5645139217,
     "pop_coverage":0.9,
     "lyric_coverage":0.8,
-    "mean_log_playcount":15.3958326378
+    "mean_log_playcount":15.396888959
   },
   {
     "genre":"hip_hop_rap",
@@ -10797,7 +10797,7 @@
     "diversity":2.5645141602,
     "pop_coverage":0.9,
     "lyric_coverage":0.8,
-    "mean_log_playcount":15.3958326378
+    "mean_log_playcount":15.396888959
   },
   {
     "genre":"hip_hop_rap",
@@ -10809,7 +10809,7 @@
     "diversity":2.5645139217,
     "pop_coverage":0.9,
     "lyric_coverage":0.8,
-    "mean_log_playcount":15.3958326378
+    "mean_log_playcount":15.396888959
   },
   {
     "genre":"hip_hop_rap",
@@ -10821,7 +10821,7 @@
     "diversity":2.3003454208,
     "pop_coverage":0.8,
     "lyric_coverage":0.7,
-    "mean_log_playcount":15.3494238475
+    "mean_log_playcount":15.3503915195
   },
   {
     "genre":"hip_hop_rap",
@@ -10833,7 +10833,7 @@
     "diversity":2.3003454208,
     "pop_coverage":0.8,
     "lyric_coverage":0.7,
-    "mean_log_playcount":15.3494238475
+    "mean_log_playcount":15.3503915195
   },
   {
     "genre":"hip_hop_rap",
@@ -10845,7 +10845,7 @@
     "diversity":2.3003454208,
     "pop_coverage":0.8,
     "lyric_coverage":0.7,
-    "mean_log_playcount":15.3494238475
+    "mean_log_playcount":15.3503915195
   },
   {
     "genre":"hip_hop_rap",
@@ -10857,7 +10857,7 @@
     "diversity":2.3003454208,
     "pop_coverage":0.8,
     "lyric_coverage":0.7,
-    "mean_log_playcount":15.3494238475
+    "mean_log_playcount":15.3503915195
   },
   {
     "genre":"hip_hop_rap",
@@ -10869,7 +10869,7 @@
     "diversity":2.3003454208,
     "pop_coverage":0.8,
     "lyric_coverage":0.7,
-    "mean_log_playcount":15.3494238475
+    "mean_log_playcount":15.3503915195
   },
   {
     "genre":"hip_hop_rap",
@@ -10941,7 +10941,7 @@
     "diversity":1.0457991362,
     "pop_coverage":0.2,
     "lyric_coverage":0.5,
-    "mean_log_playcount":15.6887329882
+    "mean_log_playcount":15.6897241896
   },
   {
     "genre":"hip_hop_rap",
@@ -10953,7 +10953,7 @@
     "diversity":1.0457991362,
     "pop_coverage":0.2,
     "lyric_coverage":0.5,
-    "mean_log_playcount":15.6887329882
+    "mean_log_playcount":15.6897241896
   },
   {
     "genre":"hip_hop_rap",
@@ -10965,7 +10965,7 @@
     "diversity":1.007368207,
     "pop_coverage":0.1,
     "lyric_coverage":0.4,
-    "mean_log_playcount":14.5850264747
+    "mean_log_playcount":14.585896056
   },
   {
     "genre":"hip_hop_rap",
@@ -11181,7 +11181,7 @@
     "diversity":2.1181981564,
     "pop_coverage":0.5,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.5245499889
+    "mean_log_playcount":15.5255890413
   },
   {
     "genre":"hip_hop_rap",
@@ -11193,7 +11193,7 @@
     "diversity":1.396274209,
     "pop_coverage":0.4,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.1592974071
+    "mean_log_playcount":15.1604199834
   },
   {
     "genre":"hip_hop_rap",
@@ -11205,7 +11205,7 @@
     "diversity":1.0577054024,
     "pop_coverage":0.2,
     "lyric_coverage":0.5,
-    "mean_log_playcount":14.5109834598
+    "mean_log_playcount":14.5117917167
   },
   {
     "genre":"hip_hop_rap",
@@ -11385,7 +11385,7 @@
     "diversity":2.7516124249,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.7157873193
+    "mean_log_playcount":14.7166735907
   },
   {
     "genre":"hip_hop_rap",
@@ -11397,7 +11397,7 @@
     "diversity":2.7134408951,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.5462279631
+    "mean_log_playcount":14.5470809538
   },
   {
     "genre":"hip_hop_rap",
@@ -11409,7 +11409,7 @@
     "diversity":2.7134411335,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.5462279631
+    "mean_log_playcount":14.5470809538
   },
   {
     "genre":"hip_hop_rap",
@@ -11421,7 +11421,7 @@
     "diversity":2.6391217709,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.4397277599
+    "mean_log_playcount":14.440567547
   },
   {
     "genre":"hip_hop_rap",
@@ -11433,7 +11433,7 @@
     "diversity":2.1138997078,
     "pop_coverage":1.0,
     "lyric_coverage":0.8,
-    "mean_log_playcount":13.6855783419
+    "mean_log_playcount":13.686375026
   },
   {
     "genre":"hip_hop_rap",
@@ -11445,7 +11445,7 @@
     "diversity":2.7516124249,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.7157873193
+    "mean_log_playcount":14.7166735907
   },
   {
     "genre":"hip_hop_rap",
@@ -11457,7 +11457,7 @@
     "diversity":2.7516124249,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.7157873193
+    "mean_log_playcount":14.7166735907
   },
   {
     "genre":"hip_hop_rap",
@@ -11469,7 +11469,7 @@
     "diversity":2.7134408951,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.5462279631
+    "mean_log_playcount":14.5470809538
   },
   {
     "genre":"hip_hop_rap",
@@ -11481,7 +11481,7 @@
     "diversity":2.7134411335,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.5462279631
+    "mean_log_playcount":14.5470809538
   },
   {
     "genre":"hip_hop_rap",
@@ -11493,7 +11493,7 @@
     "diversity":2.463083744,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.1492068092
+    "mean_log_playcount":14.1500627792
   },
   {
     "genre":"hip_hop_rap",
@@ -11505,7 +11505,7 @@
     "diversity":0.9237719774,
     "pop_coverage":0.1,
     "lyric_coverage":0.3,
-    "mean_log_playcount":13.4921087302
+    "mean_log_playcount":13.4926544004
   },
   {
     "genre":"hip_hop_rap",
@@ -11517,7 +11517,7 @@
     "diversity":0.9237720966,
     "pop_coverage":0.1,
     "lyric_coverage":0.3,
-    "mean_log_playcount":13.4921087302
+    "mean_log_playcount":13.4926544004
   },
   {
     "genre":"hip_hop_rap",
@@ -11565,7 +11565,7 @@
     "diversity":0.9237719774,
     "pop_coverage":0.1,
     "lyric_coverage":0.3,
-    "mean_log_playcount":13.4921087302
+    "mean_log_playcount":13.4926544004
   },
   {
     "genre":"hip_hop_rap",
@@ -11577,7 +11577,7 @@
     "diversity":0.9237720966,
     "pop_coverage":0.1,
     "lyric_coverage":0.3,
-    "mean_log_playcount":13.4921087302
+    "mean_log_playcount":13.4926544004
   },
   {
     "genre":"hip_hop_rap",
@@ -11589,7 +11589,7 @@
     "diversity":0.9237720966,
     "pop_coverage":0.1,
     "lyric_coverage":0.3,
-    "mean_log_playcount":13.4921087302
+    "mean_log_playcount":13.4926544004
   },
   {
     "genre":"hip_hop_rap",
@@ -11745,7 +11745,7 @@
     "diversity":2.4568772316,
     "pop_coverage":0.5,
     "lyric_coverage":0.8,
-    "mean_log_playcount":14.8283556552
+    "mean_log_playcount":14.8293076908
   },
   {
     "genre":"hip_hop_rap",
@@ -11757,7 +11757,7 @@
     "diversity":0.9441338181,
     "pop_coverage":0.1,
     "lyric_coverage":0.4,
-    "mean_log_playcount":13.4921087302
+    "mean_log_playcount":13.4926544004
   },
   {
     "genre":"hip_hop_rap",
@@ -11769,7 +11769,7 @@
     "diversity":0.9441339374,
     "pop_coverage":0.1,
     "lyric_coverage":0.4,
-    "mean_log_playcount":13.4921087302
+    "mean_log_playcount":13.4926544004
   },
   {
     "genre":"hip_hop_rap",
@@ -11805,7 +11805,7 @@
     "diversity":2.4005234241,
     "pop_coverage":0.5,
     "lyric_coverage":0.7,
-    "mean_log_playcount":14.8283556552
+    "mean_log_playcount":14.8293076908
   },
   {
     "genre":"hip_hop_rap",
@@ -11817,7 +11817,7 @@
     "diversity":1.1332007647,
     "pop_coverage":0.2,
     "lyric_coverage":0.5,
-    "mean_log_playcount":14.1317184201
+    "mean_log_playcount":14.1324063403
   },
   {
     "genre":"hip_hop_rap",
@@ -11829,7 +11829,7 @@
     "diversity":0.9441339374,
     "pop_coverage":0.1,
     "lyric_coverage":0.4,
-    "mean_log_playcount":13.4921087302
+    "mean_log_playcount":13.4926544004
   },
   {
     "genre":"hip_hop_rap",
@@ -12009,7 +12009,7 @@
     "diversity":2.3737728596,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.1027339196
+    "mean_log_playcount":15.1040038541
   },
   {
     "genre":"hip_hop_rap",
@@ -12021,7 +12021,7 @@
     "diversity":2.3737728596,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.1027339196
+    "mean_log_playcount":15.1040038541
   },
   {
     "genre":"hip_hop_rap",
@@ -12033,7 +12033,7 @@
     "diversity":2.8342511654,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.9127222134
+    "mean_log_playcount":14.9139570805
   },
   {
     "genre":"hip_hop_rap",
@@ -12045,7 +12045,7 @@
     "diversity":3.209420681,
     "pop_coverage":1.0,
     "lyric_coverage":0.8,
-    "mean_log_playcount":14.2243903693
+    "mean_log_playcount":14.2257350387
   },
   {
     "genre":"hip_hop_rap",
@@ -12057,7 +12057,7 @@
     "diversity":3.3595950603,
     "pop_coverage":1.0,
     "lyric_coverage":0.6,
-    "mean_log_playcount":13.7432926003
+    "mean_log_playcount":13.7445149042
   },
   {
     "genre":"hip_hop_rap",
@@ -12069,7 +12069,7 @@
     "diversity":2.3737728596,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.1027339196
+    "mean_log_playcount":15.1040038541
   },
   {
     "genre":"hip_hop_rap",
@@ -12081,7 +12081,7 @@
     "diversity":2.3737728596,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.1027339196
+    "mean_log_playcount":15.1040038541
   },
   {
     "genre":"hip_hop_rap",
@@ -12093,7 +12093,7 @@
     "diversity":2.3737728596,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.1027339196
+    "mean_log_playcount":15.1040038541
   },
   {
     "genre":"hip_hop_rap",
@@ -12105,7 +12105,7 @@
     "diversity":2.3737728596,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.1027339196
+    "mean_log_playcount":15.1040038541
   },
   {
     "genre":"hip_hop_rap",
@@ -12117,7 +12117,7 @@
     "diversity":2.7073726654,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.3523430359
+    "mean_log_playcount":14.3536926332
   },
   {
     "genre":"hip_hop_rap",
@@ -12189,7 +12189,7 @@
     "diversity":2.2922341824,
     "pop_coverage":0.6,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.030694829
+    "mean_log_playcount":15.03195492
   },
   {
     "genre":"hip_hop_rap",
@@ -12201,7 +12201,7 @@
     "diversity":2.2568106651,
     "pop_coverage":0.5,
     "lyric_coverage":0.5,
-    "mean_log_playcount":14.9690734909
+    "mean_log_playcount":14.9704237402
   },
   {
     "genre":"hip_hop_rap",
@@ -12213,7 +12213,7 @@
     "diversity":1.6244311333,
     "pop_coverage":0.2,
     "lyric_coverage":0.5,
-    "mean_log_playcount":14.9906808808
+    "mean_log_playcount":14.992286195
   },
   {
     "genre":"hip_hop_rap",
@@ -12369,7 +12369,7 @@
     "diversity":2.0421259403,
     "pop_coverage":0.4,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.4030423053
+    "mean_log_playcount":15.404479418
   },
   {
     "genre":"hip_hop_rap",
@@ -12429,7 +12429,7 @@
     "diversity":2.4081304073,
     "pop_coverage":0.7,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.1129290281
+    "mean_log_playcount":15.1141563659
   },
   {
     "genre":"hip_hop_rap",
@@ -12441,7 +12441,7 @@
     "diversity":1.949103117,
     "pop_coverage":0.3,
     "lyric_coverage":0.8,
-    "mean_log_playcount":15.7891555373
+    "mean_log_playcount":15.7903195065
   },
   {
     "genre":"hip_hop_rap",
@@ -12453,7 +12453,7 @@
     "diversity":1.3933987617,
     "pop_coverage":0.1,
     "lyric_coverage":0.7,
-    "mean_log_playcount":15.7228449972
+    "mean_log_playcount":15.7242740929
   },
   {
     "genre":"hip_hop_rap",
@@ -12633,7 +12633,7 @@
     "diversity":2.9010820389,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.3350436645
+    "mean_log_playcount":16.3367828992
   },
   {
     "genre":"pop",
@@ -12645,7 +12645,7 @@
     "diversity":2.930741787,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.3121572531
+    "mean_log_playcount":16.3138796166
   },
   {
     "genre":"pop",
@@ -12657,7 +12657,7 @@
     "diversity":2.930741787,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.3121572531
+    "mean_log_playcount":16.3138796166
   },
   {
     "genre":"pop",
@@ -12669,7 +12669,7 @@
     "diversity":2.8299767971,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0353412883
+    "mean_log_playcount":16.0370468513
   },
   {
     "genre":"pop",
@@ -12681,7 +12681,7 @@
     "diversity":3.0793128014,
     "pop_coverage":1.0,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.1020565931
+    "mean_log_playcount":15.1036825468
   },
   {
     "genre":"pop",
@@ -12693,7 +12693,7 @@
     "diversity":2.9010820389,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.3350436645
+    "mean_log_playcount":16.3367828992
   },
   {
     "genre":"pop",
@@ -12705,7 +12705,7 @@
     "diversity":2.9010820389,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.3350436645
+    "mean_log_playcount":16.3367828992
   },
   {
     "genre":"pop",
@@ -12717,7 +12717,7 @@
     "diversity":2.930741787,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.3121572531
+    "mean_log_playcount":16.3138796166
   },
   {
     "genre":"pop",
@@ -12729,7 +12729,7 @@
     "diversity":2.930741787,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.3121572531
+    "mean_log_playcount":16.3138796166
   },
   {
     "genre":"pop",
@@ -12741,7 +12741,7 @@
     "diversity":2.6528000832,
     "pop_coverage":1.0,
     "lyric_coverage":0.8,
-    "mean_log_playcount":15.4875632923
+    "mean_log_playcount":15.4892290945
   },
   {
     "genre":"pop",
@@ -12753,7 +12753,7 @@
     "diversity":1.2763943672,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.7244017514
+    "mean_log_playcount":16.7260632677
   },
   {
     "genre":"pop",
@@ -12813,7 +12813,7 @@
     "diversity":1.2763943672,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.7244017514
+    "mean_log_playcount":16.7260632677
   },
   {
     "genre":"pop",
@@ -12825,7 +12825,7 @@
     "diversity":1.2763943672,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.7244017514
+    "mean_log_playcount":16.7260632677
   },
   {
     "genre":"pop",
@@ -12837,7 +12837,7 @@
     "diversity":1.2763943672,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.7244017514
+    "mean_log_playcount":16.7260632677
   },
   {
     "genre":"pop",
@@ -12993,7 +12993,7 @@
     "diversity":0.6659894586,
     "pop_coverage":0.1,
     "lyric_coverage":0.8,
-    "mean_log_playcount":16.902142618
+    "mean_log_playcount":16.9039247423
   },
   {
     "genre":"pop",
@@ -13005,7 +13005,7 @@
     "diversity":0.6659894586,
     "pop_coverage":0.1,
     "lyric_coverage":0.8,
-    "mean_log_playcount":16.902142618
+    "mean_log_playcount":16.9039247423
   },
   {
     "genre":"pop",
@@ -13053,7 +13053,7 @@
     "diversity":1.2838846445,
     "pop_coverage":0.2,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.7244017514
+    "mean_log_playcount":16.7260632677
   },
   {
     "genre":"pop",
@@ -13065,7 +13065,7 @@
     "diversity":1.2838846445,
     "pop_coverage":0.2,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.7244017514
+    "mean_log_playcount":16.7260632677
   },
   {
     "genre":"pop",
@@ -13077,7 +13077,7 @@
     "diversity":0.641243577,
     "pop_coverage":0.1,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.902142618
+    "mean_log_playcount":16.9039247423
   },
   {
     "genre":"pop",
@@ -13257,7 +13257,7 @@
     "diversity":2.2325825691,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.131021905
+    "mean_log_playcount":16.1323053902
   },
   {
     "genre":"pop",
@@ -13269,7 +13269,7 @@
     "diversity":2.131626606,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.9626652068
+    "mean_log_playcount":15.9639294273
   },
   {
     "genre":"pop",
@@ -13281,7 +13281,7 @@
     "diversity":2.131626606,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.9626652068
+    "mean_log_playcount":15.9639294273
   },
   {
     "genre":"pop",
@@ -13293,7 +13293,7 @@
     "diversity":2.131626606,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.9626652068
+    "mean_log_playcount":15.9639294273
   },
   {
     "genre":"pop",
@@ -13305,7 +13305,7 @@
     "diversity":2.471832037,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.341076265
+    "mean_log_playcount":15.3420453455
   },
   {
     "genre":"pop",
@@ -13317,7 +13317,7 @@
     "diversity":2.2325825691,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.131021905
+    "mean_log_playcount":16.1323053902
   },
   {
     "genre":"pop",
@@ -13329,7 +13329,7 @@
     "diversity":2.131626606,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.9626652068
+    "mean_log_playcount":15.9639294273
   },
   {
     "genre":"pop",
@@ -13341,7 +13341,7 @@
     "diversity":2.131626606,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.9626652068
+    "mean_log_playcount":15.9639294273
   },
   {
     "genre":"pop",
@@ -13353,7 +13353,7 @@
     "diversity":2.1316263676,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.9626652068
+    "mean_log_playcount":15.9639294273
   },
   {
     "genre":"pop",
@@ -13365,7 +13365,7 @@
     "diversity":2.5122745037,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.6443995082
+    "mean_log_playcount":15.6455137762
   },
   {
     "genre":"pop",
@@ -13377,7 +13377,7 @@
     "diversity":1.2989685535,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.3526974571
+    "mean_log_playcount":15.3534742597
   },
   {
     "genre":"pop",
@@ -13389,7 +13389,7 @@
     "diversity":1.2989685535,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.3526974571
+    "mean_log_playcount":15.3534742597
   },
   {
     "genre":"pop",
@@ -13437,7 +13437,7 @@
     "diversity":1.2989685535,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.3526974571
+    "mean_log_playcount":15.3534742597
   },
   {
     "genre":"pop",
@@ -13449,7 +13449,7 @@
     "diversity":1.2989685535,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.3526974571
+    "mean_log_playcount":15.3534742597
   },
   {
     "genre":"pop",
@@ -13461,7 +13461,7 @@
     "diversity":1.2989685535,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.3526974571
+    "mean_log_playcount":15.3534742597
   },
   {
     "genre":"pop",
@@ -13617,7 +13617,7 @@
     "diversity":1.660338521,
     "pop_coverage":0.4,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.7359748305
+    "mean_log_playcount":15.7368732559
   },
   {
     "genre":"pop",
@@ -13629,7 +13629,7 @@
     "diversity":1.3090769053,
     "pop_coverage":0.2,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.3526974571
+    "mean_log_playcount":15.3534742597
   },
   {
     "genre":"pop",
@@ -13641,7 +13641,7 @@
     "diversity":1.3090769053,
     "pop_coverage":0.2,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.3526974571
+    "mean_log_playcount":15.3534742597
   },
   {
     "genre":"pop",
@@ -13677,7 +13677,7 @@
     "diversity":1.8813900948,
     "pop_coverage":0.5,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.8116379685
+    "mean_log_playcount":15.8128500959
   },
   {
     "genre":"pop",
@@ -13689,7 +13689,7 @@
     "diversity":1.5093215704,
     "pop_coverage":0.3,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.5740548186
+    "mean_log_playcount":15.574922975
   },
   {
     "genre":"pop",
@@ -13701,7 +13701,7 @@
     "diversity":1.3304914236,
     "pop_coverage":0.2,
     "lyric_coverage":0.8,
-    "mean_log_playcount":15.3526974571
+    "mean_log_playcount":15.3534742597
   },
   {
     "genre":"pop",
@@ -13881,7 +13881,7 @@
     "diversity":2.0151557922,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.4214307316
+    "mean_log_playcount":16.4228740406
   },
   {
     "genre":"pop",
@@ -13893,7 +13893,7 @@
     "diversity":2.0151557922,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.4214307316
+    "mean_log_playcount":16.4228740406
   },
   {
     "genre":"pop",
@@ -13905,7 +13905,7 @@
     "diversity":2.0151557922,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.4214307316
+    "mean_log_playcount":16.4228740406
   },
   {
     "genre":"pop",
@@ -13917,7 +13917,7 @@
     "diversity":2.275135994,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.2141687518
+    "mean_log_playcount":16.2156558445
   },
   {
     "genre":"pop",
@@ -13929,7 +13929,7 @@
     "diversity":2.2497990131,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.9832725537
+    "mean_log_playcount":15.9848739259
   },
   {
     "genre":"pop",
@@ -13941,7 +13941,7 @@
     "diversity":2.0151557922,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.4214307316
+    "mean_log_playcount":16.4228740406
   },
   {
     "genre":"pop",
@@ -13953,7 +13953,7 @@
     "diversity":2.0151557922,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.4214307316
+    "mean_log_playcount":16.4228740406
   },
   {
     "genre":"pop",
@@ -13965,7 +13965,7 @@
     "diversity":2.0151557922,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.4214307316
+    "mean_log_playcount":16.4228740406
   },
   {
     "genre":"pop",
@@ -13977,7 +13977,7 @@
     "diversity":2.0151557922,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.4214307316
+    "mean_log_playcount":16.4228740406
   },
   {
     "genre":"pop",
@@ -13989,7 +13989,7 @@
     "diversity":2.4351534843,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0829719126
+    "mean_log_playcount":16.0845400465
   },
   {
     "genre":"pop",
@@ -14001,7 +14001,7 @@
     "diversity":1.0634541512,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.8027158798
+    "mean_log_playcount":16.8042262949
   },
   {
     "genre":"pop",
@@ -14061,7 +14061,7 @@
     "diversity":1.0634541512,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.8027158798
+    "mean_log_playcount":16.8042262949
   },
   {
     "genre":"pop",
@@ -14073,7 +14073,7 @@
     "diversity":1.0634541512,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.8027158798
+    "mean_log_playcount":16.8042262949
   },
   {
     "genre":"pop",
@@ -14085,7 +14085,7 @@
     "diversity":1.0634541512,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.8027158798
+    "mean_log_playcount":16.8042262949
   },
   {
     "genre":"pop",
@@ -14241,7 +14241,7 @@
     "diversity":1.2555209398,
     "pop_coverage":0.3,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.6113332031
+    "mean_log_playcount":16.6129902076
   },
   {
     "genre":"pop",
@@ -14253,7 +14253,7 @@
     "diversity":1.0571700335,
     "pop_coverage":0.2,
     "lyric_coverage":0.8,
-    "mean_log_playcount":16.8027158798
+    "mean_log_playcount":16.8042262949
   },
   {
     "genre":"pop",
@@ -14301,7 +14301,7 @@
     "diversity":1.52493155,
     "pop_coverage":0.4,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.5966167136
+    "mean_log_playcount":16.5982899272
   },
   {
     "genre":"pop",
@@ -14313,7 +14313,7 @@
     "diversity":1.2555209398,
     "pop_coverage":0.3,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.6113332031
+    "mean_log_playcount":16.6129902076
   },
   {
     "genre":"pop",
@@ -14325,7 +14325,7 @@
     "diversity":1.0571700335,
     "pop_coverage":0.2,
     "lyric_coverage":0.8,
-    "mean_log_playcount":16.8027158798
+    "mean_log_playcount":16.8042262949
   },
   {
     "genre":"pop",
@@ -14337,7 +14337,7 @@
     "diversity":0.8354976177,
     "pop_coverage":0.1,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.4951036697
+    "mean_log_playcount":16.496695361
   },
   {
     "genre":"pop",
@@ -14505,7 +14505,7 @@
     "diversity":4.5166683197,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.212887171
+    "mean_log_playcount":16.2136525233
   },
   {
     "genre":"pop",
@@ -14517,7 +14517,7 @@
     "diversity":4.5166683197,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.212887171
+    "mean_log_playcount":16.2136525233
   },
   {
     "genre":"pop",
@@ -14529,7 +14529,7 @@
     "diversity":4.5166687965,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.212887171
+    "mean_log_playcount":16.2136525233
   },
   {
     "genre":"pop",
@@ -14541,7 +14541,7 @@
     "diversity":4.4811034203,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.1244821131
+    "mean_log_playcount":16.1252622825
   },
   {
     "genre":"pop",
@@ -14553,7 +14553,7 @@
     "diversity":3.5843279362,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.6184286724
+    "mean_log_playcount":15.6192355721
   },
   {
     "genre":"pop",
@@ -14565,7 +14565,7 @@
     "diversity":4.5166683197,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.212887171
+    "mean_log_playcount":16.2136525233
   },
   {
     "genre":"pop",
@@ -14577,7 +14577,7 @@
     "diversity":4.5166683197,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.212887171
+    "mean_log_playcount":16.2136525233
   },
   {
     "genre":"pop",
@@ -14589,7 +14589,7 @@
     "diversity":4.5166687965,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.212887171
+    "mean_log_playcount":16.2136525233
   },
   {
     "genre":"pop",
@@ -14601,7 +14601,7 @@
     "diversity":4.5166687965,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.212887171
+    "mean_log_playcount":16.2136525233
   },
   {
     "genre":"pop",
@@ -14613,7 +14613,7 @@
     "diversity":4.3365192413,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.8442425671
+    "mean_log_playcount":15.8450367164
   },
   {
     "genre":"pop",
@@ -14625,7 +14625,7 @@
     "diversity":0.9757570028,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.9405216722
+    "mean_log_playcount":16.9411216649
   },
   {
     "genre":"pop",
@@ -14685,7 +14685,7 @@
     "diversity":0.9757570624,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.9405216722
+    "mean_log_playcount":16.9411216649
   },
   {
     "genre":"pop",
@@ -14697,7 +14697,7 @@
     "diversity":0.9757570624,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.9405216722
+    "mean_log_playcount":16.9411216649
   },
   {
     "genre":"pop",
@@ -14709,7 +14709,7 @@
     "diversity":0.9757570028,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.9405216722
+    "mean_log_playcount":16.9411216649
   },
   {
     "genre":"pop",
@@ -14805,7 +14805,7 @@
     "diversity":0.9757570028,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.9405216722
+    "mean_log_playcount":16.9411216649
   },
   {
     "genre":"pop",
@@ -14865,7 +14865,7 @@
     "diversity":1.0152555704,
     "pop_coverage":0.2,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.9405216722
+    "mean_log_playcount":16.9411216649
   },
   {
     "genre":"pop",
@@ -14877,7 +14877,7 @@
     "diversity":1.0152556896,
     "pop_coverage":0.2,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.9405216722
+    "mean_log_playcount":16.9411216649
   },
   {
     "genre":"pop",
@@ -14925,7 +14925,7 @@
     "diversity":0.9912155867,
     "pop_coverage":0.2,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.9405216722
+    "mean_log_playcount":16.9411216649
   },
   {
     "genre":"pop",
@@ -14937,7 +14937,7 @@
     "diversity":0.9912155867,
     "pop_coverage":0.2,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.9405216722
+    "mean_log_playcount":16.9411216649
   },
   {
     "genre":"pop",
@@ -14949,7 +14949,7 @@
     "diversity":0.9912155867,
     "pop_coverage":0.2,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.9405216722
+    "mean_log_playcount":16.9411216649
   },
   {
     "genre":"pop",
@@ -15129,7 +15129,7 @@
     "diversity":2.9073343277,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.5976684679
+    "mean_log_playcount":15.5992190357
   },
   {
     "genre":"pop",
@@ -15141,7 +15141,7 @@
     "diversity":2.94085145,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.496545325
+    "mean_log_playcount":15.49800769
   },
   {
     "genre":"pop",
@@ -15153,7 +15153,7 @@
     "diversity":2.9408512115,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.496545325
+    "mean_log_playcount":15.49800769
   },
   {
     "genre":"pop",
@@ -15165,7 +15165,7 @@
     "diversity":2.9432451725,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.220250373
+    "mean_log_playcount":15.2215485903
   },
   {
     "genre":"pop",
@@ -15177,7 +15177,7 @@
     "diversity":2.927765131,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.1484711291
+    "mean_log_playcount":15.149726765
   },
   {
     "genre":"pop",
@@ -15189,7 +15189,7 @@
     "diversity":2.9073343277,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.5976684679
+    "mean_log_playcount":15.5992190357
   },
   {
     "genre":"pop",
@@ -15201,7 +15201,7 @@
     "diversity":2.94085145,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.496545325
+    "mean_log_playcount":15.49800769
   },
   {
     "genre":"pop",
@@ -15213,7 +15213,7 @@
     "diversity":2.94085145,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.496545325
+    "mean_log_playcount":15.49800769
   },
   {
     "genre":"pop",
@@ -15225,7 +15225,7 @@
     "diversity":2.9408512115,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.496545325
+    "mean_log_playcount":15.49800769
   },
   {
     "genre":"pop",
@@ -15237,7 +15237,7 @@
     "diversity":2.963054657,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.418130645
+    "mean_log_playcount":15.4195332683
   },
   {
     "genre":"pop",
@@ -15249,7 +15249,7 @@
     "diversity":1.4563715458,
     "pop_coverage":0.2,
     "lyric_coverage":0.8,
-    "mean_log_playcount":15.1613638905
+    "mean_log_playcount":15.1627369415
   },
   {
     "genre":"pop",
@@ -15309,7 +15309,7 @@
     "diversity":1.4563715458,
     "pop_coverage":0.2,
     "lyric_coverage":0.8,
-    "mean_log_playcount":15.1613638905
+    "mean_log_playcount":15.1627369415
   },
   {
     "genre":"pop",
@@ -15321,7 +15321,7 @@
     "diversity":1.4563715458,
     "pop_coverage":0.2,
     "lyric_coverage":0.8,
-    "mean_log_playcount":15.1613638905
+    "mean_log_playcount":15.1627369415
   },
   {
     "genre":"pop",
@@ -15333,7 +15333,7 @@
     "diversity":1.4563717842,
     "pop_coverage":0.2,
     "lyric_coverage":0.8,
-    "mean_log_playcount":15.1613638905
+    "mean_log_playcount":15.1627369415
   },
   {
     "genre":"pop",
@@ -15489,7 +15489,7 @@
     "diversity":1.4781489372,
     "pop_coverage":0.2,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.1613638905
+    "mean_log_playcount":15.1627369415
   },
   {
     "genre":"pop",
@@ -15549,7 +15549,7 @@
     "diversity":2.0108942986,
     "pop_coverage":0.3,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.3736958264
+    "mean_log_playcount":15.3753577107
   },
   {
     "genre":"pop",
@@ -15561,7 +15561,7 @@
     "diversity":1.4781490564,
     "pop_coverage":0.2,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.1613638905
+    "mean_log_playcount":15.1627369415
   },
   {
     "genre":"pop",
@@ -15573,7 +15573,7 @@
     "diversity":1.4781490564,
     "pop_coverage":0.2,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.1613638905
+    "mean_log_playcount":15.1627369415
   },
   {
     "genre":"pop",
@@ -15753,7 +15753,7 @@
     "diversity":2.0398199558,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.3625160729
+    "mean_log_playcount":15.3636782668
   },
   {
     "genre":"pop",
@@ -15765,7 +15765,7 @@
     "diversity":2.0398199558,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.3625160729
+    "mean_log_playcount":15.3636782668
   },
   {
     "genre":"pop",
@@ -15777,7 +15777,7 @@
     "diversity":2.0398199558,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.3625160729
+    "mean_log_playcount":15.3636782668
   },
   {
     "genre":"pop",
@@ -15789,7 +15789,7 @@
     "diversity":2.0398199558,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.3625160729
+    "mean_log_playcount":15.3636782668
   },
   {
     "genre":"pop",
@@ -15801,7 +15801,7 @@
     "diversity":1.9029533863,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.0793681607
+    "mean_log_playcount":15.0803675889
   },
   {
     "genre":"pop",
@@ -15813,7 +15813,7 @@
     "diversity":2.0398199558,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.3625160729
+    "mean_log_playcount":15.3636782668
   },
   {
     "genre":"pop",
@@ -15825,7 +15825,7 @@
     "diversity":2.0398199558,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.3625160729
+    "mean_log_playcount":15.3636782668
   },
   {
     "genre":"pop",
@@ -15837,7 +15837,7 @@
     "diversity":2.0398199558,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.3625160729
+    "mean_log_playcount":15.3636782668
   },
   {
     "genre":"pop",
@@ -15849,7 +15849,7 @@
     "diversity":2.0398199558,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.3625160729
+    "mean_log_playcount":15.3636782668
   },
   {
     "genre":"pop",
@@ -15861,7 +15861,7 @@
     "diversity":1.9029533863,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.0793681607
+    "mean_log_playcount":15.0803675889
   },
   {
     "genre":"pop",
@@ -15873,7 +15873,7 @@
     "diversity":1.0702770948,
     "pop_coverage":0.1,
     "lyric_coverage":0.8,
-    "mean_log_playcount":15.7205403775
+    "mean_log_playcount":15.7214745193
   },
   {
     "genre":"pop",
@@ -15933,7 +15933,7 @@
     "diversity":1.3190358877,
     "pop_coverage":0.2,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0936263256
+    "mean_log_playcount":16.0946077371
   },
   {
     "genre":"pop",
@@ -15945,7 +15945,7 @@
     "diversity":1.3190358877,
     "pop_coverage":0.2,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0936263256
+    "mean_log_playcount":16.0946077371
   },
   {
     "genre":"pop",
@@ -16113,7 +16113,7 @@
     "diversity":1.5252537727,
     "pop_coverage":0.3,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.7083579652
+    "mean_log_playcount":15.7097169719
   },
   {
     "genre":"pop",
@@ -16125,7 +16125,7 @@
     "diversity":1.0757917166,
     "pop_coverage":0.1,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.7205403775
+    "mean_log_playcount":15.7214745193
   },
   {
     "genre":"pop",
@@ -16173,7 +16173,7 @@
     "diversity":1.6707005501,
     "pop_coverage":0.4,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.8979465423
+    "mean_log_playcount":15.8992229676
   },
   {
     "genre":"pop",
@@ -16185,7 +16185,7 @@
     "diversity":1.3081461191,
     "pop_coverage":0.2,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.6301896743
+    "mean_log_playcount":15.6314684769
   },
   {
     "genre":"pop",
@@ -16197,7 +16197,7 @@
     "diversity":1.0632863045,
     "pop_coverage":0.1,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.7205403775
+    "mean_log_playcount":15.7214745193
   },
   {
     "genre":"pop",
@@ -16377,7 +16377,7 @@
     "diversity":2.6828813553,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.5630265285
+    "mean_log_playcount":15.5639224235
   },
   {
     "genre":"pop",
@@ -16389,7 +16389,7 @@
     "diversity":2.6828813553,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.5630265285
+    "mean_log_playcount":15.5639224235
   },
   {
     "genre":"pop",
@@ -16401,7 +16401,7 @@
     "diversity":2.6828815937,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.5630265285
+    "mean_log_playcount":15.5639224235
   },
   {
     "genre":"pop",
@@ -16413,7 +16413,7 @@
     "diversity":2.6828815937,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.5630265285
+    "mean_log_playcount":15.5639224235
   },
   {
     "genre":"pop",
@@ -16425,7 +16425,7 @@
     "diversity":2.4555649757,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.0593753477
+    "mean_log_playcount":15.060200308
   },
   {
     "genre":"pop",
@@ -16437,7 +16437,7 @@
     "diversity":2.6828813553,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.5630265285
+    "mean_log_playcount":15.5639224235
   },
   {
     "genre":"pop",
@@ -16449,7 +16449,7 @@
     "diversity":2.6828813553,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.5630265285
+    "mean_log_playcount":15.5639224235
   },
   {
     "genre":"pop",
@@ -16461,7 +16461,7 @@
     "diversity":2.6828815937,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.5630265285
+    "mean_log_playcount":15.5639224235
   },
   {
     "genre":"pop",
@@ -16473,7 +16473,7 @@
     "diversity":2.6828815937,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.5630265285
+    "mean_log_playcount":15.5639224235
   },
   {
     "genre":"pop",
@@ -16485,7 +16485,7 @@
     "diversity":2.5804781914,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.2019260286
+    "mean_log_playcount":15.2028097311
   },
   {
     "genre":"pop",
@@ -16497,7 +16497,7 @@
     "diversity":1.2591077089,
     "pop_coverage":0.2,
     "lyric_coverage":0.8,
-    "mean_log_playcount":16.0073401744
+    "mean_log_playcount":16.0083539696
   },
   {
     "genre":"pop",
@@ -16557,7 +16557,7 @@
     "diversity":1.9576202631,
     "pop_coverage":0.5,
     "lyric_coverage":0.9,
-    "mean_log_playcount":16.0436621438
+    "mean_log_playcount":16.0446214326
   },
   {
     "genre":"pop",
@@ -16569,7 +16569,7 @@
     "diversity":1.7718762159,
     "pop_coverage":0.4,
     "lyric_coverage":0.8,
-    "mean_log_playcount":16.2648524771
+    "mean_log_playcount":16.2658822828
   },
   {
     "genre":"pop",
@@ -16581,7 +16581,7 @@
     "diversity":0.8744099736,
     "pop_coverage":0.1,
     "lyric_coverage":0.8,
-    "mean_log_playcount":16.1655928844
+    "mean_log_playcount":16.1667498059
   },
   {
     "genre":"pop",
@@ -16737,7 +16737,7 @@
     "diversity":1.0665273666,
     "pop_coverage":0.2,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.9329285031
+    "mean_log_playcount":15.9338892694
   },
   {
     "genre":"pop",
@@ -16797,7 +16797,7 @@
     "diversity":2.0699632168,
     "pop_coverage":0.6,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.0407673467
+    "mean_log_playcount":16.0417689803
   },
   {
     "genre":"pop",
@@ -16809,7 +16809,7 @@
     "diversity":1.4230391979,
     "pop_coverage":0.3,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.297939008
+    "mean_log_playcount":16.2989264418
   },
   {
     "genre":"pop",
@@ -17001,7 +17001,7 @@
     "diversity":2.832722187,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.5963333506
+    "mean_log_playcount":15.5976479229
   },
   {
     "genre":"pop",
@@ -17013,7 +17013,7 @@
     "diversity":2.832722187,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.5963333506
+    "mean_log_playcount":15.5976479229
   },
   {
     "genre":"pop",
@@ -17025,7 +17025,7 @@
     "diversity":2.832722187,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.5963333506
+    "mean_log_playcount":15.5976479229
   },
   {
     "genre":"pop",
@@ -17037,7 +17037,7 @@
     "diversity":2.7226166725,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.3666461488
+    "mean_log_playcount":15.3679234824
   },
   {
     "genre":"pop",
@@ -17049,7 +17049,7 @@
     "diversity":2.2688863277,
     "pop_coverage":1.0,
     "lyric_coverage":0.8,
-    "mean_log_playcount":13.8701248764
+    "mean_log_playcount":13.8720893741
   },
   {
     "genre":"pop",
@@ -17061,7 +17061,7 @@
     "diversity":2.832722187,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.5963333506
+    "mean_log_playcount":15.5976479229
   },
   {
     "genre":"pop",
@@ -17073,7 +17073,7 @@
     "diversity":2.832722187,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.5963333506
+    "mean_log_playcount":15.5976479229
   },
   {
     "genre":"pop",
@@ -17085,7 +17085,7 @@
     "diversity":2.832722187,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.5963333506
+    "mean_log_playcount":15.5976479229
   },
   {
     "genre":"pop",
@@ -17097,7 +17097,7 @@
     "diversity":2.7226166725,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.3666461488
+    "mean_log_playcount":15.3679234824
   },
   {
     "genre":"pop",
@@ -17109,7 +17109,7 @@
     "diversity":2.3963537216,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.1662741098
+    "mean_log_playcount":14.1673222173
   },
   {
     "genre":"pop",
@@ -17121,7 +17121,7 @@
     "diversity":0.5536547899,
     "pop_coverage":0.1,
     "lyric_coverage":0.3,
-    "mean_log_playcount":15.2293544225
+    "mean_log_playcount":15.2303053945
   },
   {
     "genre":"pop",
@@ -17181,7 +17181,7 @@
     "diversity":1.6243318319,
     "pop_coverage":0.4,
     "lyric_coverage":0.5,
-    "mean_log_playcount":15.2055914233
+    "mean_log_playcount":15.2069373445
   },
   {
     "genre":"pop",
@@ -17193,7 +17193,7 @@
     "diversity":1.3385308981,
     "pop_coverage":0.3,
     "lyric_coverage":0.4,
-    "mean_log_playcount":15.2159273959
+    "mean_log_playcount":15.2172850877
   },
   {
     "genre":"pop",
@@ -17205,7 +17205,7 @@
     "diversity":0.9271919131,
     "pop_coverage":0.2,
     "lyric_coverage":0.4,
-    "mean_log_playcount":14.9247112448
+    "mean_log_playcount":14.9256280071
   },
   {
     "genre":"pop",
@@ -17361,7 +17361,7 @@
     "diversity":0.9676893353,
     "pop_coverage":0.2,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.9247112448
+    "mean_log_playcount":14.9256280071
   },
   {
     "genre":"pop",
@@ -17373,7 +17373,7 @@
     "diversity":0.9676893353,
     "pop_coverage":0.2,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.9247112448
+    "mean_log_playcount":14.9256280071
   },
   {
     "genre":"pop",
@@ -17421,7 +17421,7 @@
     "diversity":1.8268971443,
     "pop_coverage":0.5,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.2036128513
+    "mean_log_playcount":15.2048122476
   },
   {
     "genre":"pop",
@@ -17433,7 +17433,7 @@
     "diversity":0.9698187113,
     "pop_coverage":0.2,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.9247112448
+    "mean_log_playcount":14.9256280071
   },
   {
     "genre":"pop",
@@ -17445,7 +17445,7 @@
     "diversity":0.9698186517,
     "pop_coverage":0.2,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.9247112448
+    "mean_log_playcount":14.9256280071
   },
   {
     "genre":"pop",
@@ -17625,7 +17625,7 @@
     "diversity":2.9634673595,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.0132616052
+    "mean_log_playcount":16.0148019664
   },
   {
     "genre":"pop",
@@ -17637,7 +17637,7 @@
     "diversity":2.9634673595,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.0132616052
+    "mean_log_playcount":16.0148019664
   },
   {
     "genre":"pop",
@@ -17649,7 +17649,7 @@
     "diversity":2.9634673595,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.0132616052
+    "mean_log_playcount":16.0148019664
   },
   {
     "genre":"pop",
@@ -17661,7 +17661,7 @@
     "diversity":2.9157981873,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.7799107539
+    "mean_log_playcount":15.7813499667
   },
   {
     "genre":"pop",
@@ -17673,7 +17673,7 @@
     "diversity":3.0609714985,
     "pop_coverage":1.0,
     "lyric_coverage":0.8,
-    "mean_log_playcount":15.2286963587
+    "mean_log_playcount":15.2298994725
   },
   {
     "genre":"pop",
@@ -17685,7 +17685,7 @@
     "diversity":2.9634673595,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.0132616052
+    "mean_log_playcount":16.0148019664
   },
   {
     "genre":"pop",
@@ -17697,7 +17697,7 @@
     "diversity":2.9634673595,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.0132616052
+    "mean_log_playcount":16.0148019664
   },
   {
     "genre":"pop",
@@ -17709,7 +17709,7 @@
     "diversity":2.9634673595,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.0132616052
+    "mean_log_playcount":16.0148019664
   },
   {
     "genre":"pop",
@@ -17721,7 +17721,7 @@
     "diversity":2.8864040375,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.9051431094
+    "mean_log_playcount":15.9066159267
   },
   {
     "genre":"pop",
@@ -17733,7 +17733,7 @@
     "diversity":2.8143072128,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.3967951735
+    "mean_log_playcount":15.3980363228
   },
   {
     "genre":"pop",
@@ -17745,7 +17745,7 @@
     "diversity":1.1946052313,
     "pop_coverage":0.2,
     "lyric_coverage":0.5,
-    "mean_log_playcount":15.7053711209
+    "mean_log_playcount":15.7065861325
   },
   {
     "genre":"pop",
@@ -17805,7 +17805,7 @@
     "diversity":1.2409654856,
     "pop_coverage":0.3,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.9686153039
+    "mean_log_playcount":15.9699558753
   },
   {
     "genre":"pop",
@@ -17817,7 +17817,7 @@
     "diversity":1.1946053505,
     "pop_coverage":0.2,
     "lyric_coverage":0.5,
-    "mean_log_playcount":15.7053711209
+    "mean_log_playcount":15.7065861325
   },
   {
     "genre":"pop",
@@ -17985,7 +17985,7 @@
     "diversity":1.9989061356,
     "pop_coverage":0.5,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.8734436466
+    "mean_log_playcount":15.8746821029
   },
   {
     "genre":"pop",
@@ -17997,7 +17997,7 @@
     "diversity":1.1355099678,
     "pop_coverage":0.3,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.7594190743
+    "mean_log_playcount":15.7605890513
   },
   {
     "genre":"pop",
@@ -18045,7 +18045,7 @@
     "diversity":2.1954293251,
     "pop_coverage":0.6,
     "lyric_coverage":1.0,
-    "mean_log_playcount":16.0131032614
+    "mean_log_playcount":16.014434705
   },
   {
     "genre":"pop",
@@ -18057,7 +18057,7 @@
     "diversity":1.8262931108,
     "pop_coverage":0.4,
     "lyric_coverage":0.9,
-    "mean_log_playcount":15.7120580471
+    "mean_log_playcount":15.7130315696
   },
   {
     "genre":"pop",
@@ -18069,7 +18069,7 @@
     "diversity":0.893791616,
     "pop_coverage":0.1,
     "lyric_coverage":0.7,
-    "mean_log_playcount":14.6993409061
+    "mean_log_playcount":14.6999745498
   },
   {
     "genre":"pop",
@@ -18249,7 +18249,7 @@
     "diversity":1.9077848196,
     "pop_coverage":0.7,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.13009443
+    "mean_log_playcount":16.130819714
   },
   {
     "genre":"pop",
@@ -18261,7 +18261,7 @@
     "diversity":1.9077851772,
     "pop_coverage":0.7,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.13009443
+    "mean_log_playcount":16.130819714
   },
   {
     "genre":"pop",
@@ -18273,7 +18273,7 @@
     "diversity":1.9077851772,
     "pop_coverage":0.7,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.13009443
+    "mean_log_playcount":16.130819714
   },
   {
     "genre":"pop",
@@ -18285,7 +18285,7 @@
     "diversity":1.9077851772,
     "pop_coverage":0.7,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.13009443
+    "mean_log_playcount":16.130819714
   },
   {
     "genre":"pop",
@@ -18297,7 +18297,7 @@
     "diversity":1.9077848196,
     "pop_coverage":0.7,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.13009443
+    "mean_log_playcount":16.130819714
   },
   {
     "genre":"pop",
@@ -18309,7 +18309,7 @@
     "diversity":1.4429674149,
     "pop_coverage":0.6,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.0100251867
+    "mean_log_playcount":16.0107586863
   },
   {
     "genre":"pop",
@@ -18321,7 +18321,7 @@
     "diversity":1.4429674149,
     "pop_coverage":0.6,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.0100251867
+    "mean_log_playcount":16.0107586863
   },
   {
     "genre":"pop",
@@ -18333,7 +18333,7 @@
     "diversity":1.4429674149,
     "pop_coverage":0.6,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.0100251867
+    "mean_log_playcount":16.0107586863
   },
   {
     "genre":"pop",
@@ -18345,7 +18345,7 @@
     "diversity":1.4429671764,
     "pop_coverage":0.6,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.0100251867
+    "mean_log_playcount":16.0107586863
   },
   {
     "genre":"pop",
@@ -18357,7 +18357,7 @@
     "diversity":1.4429674149,
     "pop_coverage":0.6,
     "lyric_coverage":0.6,
-    "mean_log_playcount":16.0100251867
+    "mean_log_playcount":16.0107586863
   },
   {
     "genre":"pop",
@@ -18429,7 +18429,7 @@
     "diversity":0.7028138041,
     "pop_coverage":0.2,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.7138476631
+    "mean_log_playcount":16.7146473945
   },
   {
     "genre":"pop",
@@ -18441,7 +18441,7 @@
     "diversity":0.6090431809,
     "pop_coverage":0.1,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.7692026474
+    "mean_log_playcount":16.7698990342
   },
   {
     "genre":"pop",
@@ -18669,7 +18669,7 @@
     "diversity":0.7173184156,
     "pop_coverage":0.2,
     "lyric_coverage":0.8,
-    "mean_log_playcount":16.7138476631
+    "mean_log_playcount":16.7146473945
   },
   {
     "genre":"pop",
@@ -18681,7 +18681,7 @@
     "diversity":0.7173184752,
     "pop_coverage":0.2,
     "lyric_coverage":0.8,
-    "mean_log_playcount":16.7138476631
+    "mean_log_playcount":16.7146473945
   },
   {
     "genre":"pop",
@@ -18693,7 +18693,7 @@
     "diversity":0.6226887107,
     "pop_coverage":0.1,
     "lyric_coverage":0.7,
-    "mean_log_playcount":16.7692026474
+    "mean_log_playcount":16.7698990342
   },
   {
     "genre":"pop",
@@ -18873,7 +18873,7 @@
     "diversity":2.0733959675,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.4954719849
+    "mean_log_playcount":15.497981452
   },
   {
     "genre":"rnb",
@@ -18885,7 +18885,7 @@
     "diversity":2.252879858,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.4360713389
+    "mean_log_playcount":15.4385084842
   },
   {
     "genre":"rnb",
@@ -18897,7 +18897,7 @@
     "diversity":2.252879858,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.4360713389
+    "mean_log_playcount":15.4385084842
   },
   {
     "genre":"rnb",
@@ -18909,7 +18909,7 @@
     "diversity":2.2600541115,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.2743767705
+    "mean_log_playcount":15.2768311645
   },
   {
     "genre":"rnb",
@@ -18921,7 +18921,7 @@
     "diversity":2.2262980938,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.9111940044
+    "mean_log_playcount":14.9135499219
   },
   {
     "genre":"rnb",
@@ -18933,7 +18933,7 @@
     "diversity":2.0733959675,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.4954719849
+    "mean_log_playcount":15.497981452
   },
   {
     "genre":"rnb",
@@ -18945,7 +18945,7 @@
     "diversity":2.0733959675,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.4954719849
+    "mean_log_playcount":15.497981452
   },
   {
     "genre":"rnb",
@@ -18957,7 +18957,7 @@
     "diversity":2.0733959675,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.4954719849
+    "mean_log_playcount":15.497981452
   },
   {
     "genre":"rnb",
@@ -18969,7 +18969,7 @@
     "diversity":2.252879858,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.4360713389
+    "mean_log_playcount":15.4385084842
   },
   {
     "genre":"rnb",
@@ -18981,7 +18981,7 @@
     "diversity":2.7921504974,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.1896553802
+    "mean_log_playcount":15.1919369717
   },
   {
     "genre":"rnb",
@@ -18993,7 +18993,7 @@
     "diversity":0.896147728,
     "pop_coverage":0.1,
     "lyric_coverage":0.3,
-    "mean_log_playcount":13.8116169878
+    "mean_log_playcount":13.8117906477
   },
   {
     "genre":"rnb",
@@ -19053,7 +19053,7 @@
     "diversity":1.1099938154,
     "pop_coverage":0.2,
     "lyric_coverage":0.4,
-    "mean_log_playcount":14.1375086947
+    "mean_log_playcount":14.1415001904
   },
   {
     "genre":"rnb",
@@ -19065,7 +19065,7 @@
     "diversity":1.1099938154,
     "pop_coverage":0.2,
     "lyric_coverage":0.4,
-    "mean_log_playcount":14.1375086947
+    "mean_log_playcount":14.1415001904
   },
   {
     "genre":"rnb",
@@ -19077,7 +19077,7 @@
     "diversity":0.896147728,
     "pop_coverage":0.1,
     "lyric_coverage":0.3,
-    "mean_log_playcount":13.8116169878
+    "mean_log_playcount":13.8117906477
   },
   {
     "genre":"rnb",
@@ -19233,7 +19233,7 @@
     "diversity":1.1059163809,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":14.1375086947
+    "mean_log_playcount":14.1415001904
   },
   {
     "genre":"rnb",
@@ -19245,7 +19245,7 @@
     "diversity":1.1059163809,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":14.1375086947
+    "mean_log_playcount":14.1415001904
   },
   {
     "genre":"rnb",
@@ -19257,7 +19257,7 @@
     "diversity":0.9123476744,
     "pop_coverage":0.1,
     "lyric_coverage":0.5,
-    "mean_log_playcount":13.8116169878
+    "mean_log_playcount":13.8117906477
   },
   {
     "genre":"rnb",
@@ -19293,7 +19293,7 @@
     "diversity":1.3700959682,
     "pop_coverage":0.3,
     "lyric_coverage":0.7,
-    "mean_log_playcount":14.7862766789
+    "mean_log_playcount":14.7895673558
   },
   {
     "genre":"rnb",
@@ -19305,7 +19305,7 @@
     "diversity":1.1059163809,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":14.1375086947
+    "mean_log_playcount":14.1415001904
   },
   {
     "genre":"rnb",
@@ -19317,7 +19317,7 @@
     "diversity":1.1059163809,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":14.1375086947
+    "mean_log_playcount":14.1415001904
   },
   {
     "genre":"rnb",
@@ -19497,7 +19497,7 @@
     "diversity":4.2657270432,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.545320333
+    "mean_log_playcount":15.5470709273
   },
   {
     "genre":"rnb",
@@ -19509,7 +19509,7 @@
     "diversity":4.2657265663,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.545320333
+    "mean_log_playcount":15.5470709273
   },
   {
     "genre":"rnb",
@@ -19521,7 +19521,7 @@
     "diversity":4.2657265663,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.545320333
+    "mean_log_playcount":15.5470709273
   },
   {
     "genre":"rnb",
@@ -19533,7 +19533,7 @@
     "diversity":4.3804893494,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.4449727407
+    "mean_log_playcount":15.4465509268
   },
   {
     "genre":"rnb",
@@ -19545,7 +19545,7 @@
     "diversity":2.6939885616,
     "pop_coverage":1.0,
     "lyric_coverage":0.5,
-    "mean_log_playcount":14.4273870121
+    "mean_log_playcount":14.4287131698
   },
   {
     "genre":"rnb",
@@ -19557,7 +19557,7 @@
     "diversity":4.2657270432,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.545320333
+    "mean_log_playcount":15.5470709273
   },
   {
     "genre":"rnb",
@@ -19569,7 +19569,7 @@
     "diversity":4.2657270432,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.545320333
+    "mean_log_playcount":15.5470709273
   },
   {
     "genre":"rnb",
@@ -19581,7 +19581,7 @@
     "diversity":4.2657265663,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.545320333
+    "mean_log_playcount":15.5470709273
   },
   {
     "genre":"rnb",
@@ -19593,7 +19593,7 @@
     "diversity":4.2657265663,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.545320333
+    "mean_log_playcount":15.5470709273
   },
   {
     "genre":"rnb",
@@ -19605,7 +19605,7 @@
     "diversity":3.6466736794,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.4189529501
+    "mean_log_playcount":15.4205776808
   },
   {
     "genre":"rnb",
@@ -19617,7 +19617,7 @@
     "diversity":1.6199313402,
     "pop_coverage":0.2,
     "lyric_coverage":0.3,
-    "mean_log_playcount":15.0486052984
+    "mean_log_playcount":15.0497640237
   },
   {
     "genre":"rnb",
@@ -19677,7 +19677,7 @@
     "diversity":1.619931221,
     "pop_coverage":0.2,
     "lyric_coverage":0.3,
-    "mean_log_playcount":15.0486052984
+    "mean_log_playcount":15.0497640237
   },
   {
     "genre":"rnb",
@@ -19689,7 +19689,7 @@
     "diversity":1.619931221,
     "pop_coverage":0.2,
     "lyric_coverage":0.3,
-    "mean_log_playcount":15.0486052984
+    "mean_log_playcount":15.0497640237
   },
   {
     "genre":"rnb",
@@ -19701,7 +19701,7 @@
     "diversity":1.6199313402,
     "pop_coverage":0.2,
     "lyric_coverage":0.3,
-    "mean_log_playcount":15.0486052984
+    "mean_log_playcount":15.0497640237
   },
   {
     "genre":"rnb",
@@ -19857,7 +19857,7 @@
     "diversity":2.0965058804,
     "pop_coverage":0.4,
     "lyric_coverage":0.7,
-    "mean_log_playcount":15.2937311139
+    "mean_log_playcount":15.2952010354
   },
   {
     "genre":"rnb",
@@ -19869,7 +19869,7 @@
     "diversity":1.6136442423,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":15.0486052984
+    "mean_log_playcount":15.0497640237
   },
   {
     "genre":"rnb",
@@ -19917,7 +19917,7 @@
     "diversity":2.0965056419,
     "pop_coverage":0.4,
     "lyric_coverage":0.7,
-    "mean_log_playcount":15.2937311139
+    "mean_log_playcount":15.2952010354
   },
   {
     "genre":"rnb",
@@ -19929,7 +19929,7 @@
     "diversity":2.0965058804,
     "pop_coverage":0.4,
     "lyric_coverage":0.7,
-    "mean_log_playcount":15.2937311139
+    "mean_log_playcount":15.2952010354
   },
   {
     "genre":"rnb",
@@ -19941,7 +19941,7 @@
     "diversity":1.6180348396,
     "pop_coverage":0.2,
     "lyric_coverage":0.5,
-    "mean_log_playcount":15.0486052984
+    "mean_log_playcount":15.0497640237
   },
   {
     "genre":"rnb",
@@ -19953,7 +19953,7 @@
     "diversity":0.9081804752,
     "pop_coverage":0.1,
     "lyric_coverage":0.4,
-    "mean_log_playcount":13.934293982
+    "mean_log_playcount":13.9347636237
   },
   {
     "genre":"rnb",
@@ -20121,7 +20121,7 @@
     "diversity":2.1614031792,
     "pop_coverage":0.5,
     "lyric_coverage":0.5,
-    "mean_log_playcount":10.8031945377
+    "mean_log_playcount":10.8033293666
   },
   {
     "genre":"rnb",
@@ -20133,7 +20133,7 @@
     "diversity":2.1614031792,
     "pop_coverage":0.5,
     "lyric_coverage":0.5,
-    "mean_log_playcount":10.8031945377
+    "mean_log_playcount":10.8033293666
   },
   {
     "genre":"rnb",
@@ -20145,7 +20145,7 @@
     "diversity":2.1614031792,
     "pop_coverage":0.5,
     "lyric_coverage":0.5,
-    "mean_log_playcount":10.8031945377
+    "mean_log_playcount":10.8033293666
   },
   {
     "genre":"rnb",
@@ -20157,7 +20157,7 @@
     "diversity":2.1614031792,
     "pop_coverage":0.5,
     "lyric_coverage":0.5,
-    "mean_log_playcount":10.8031945377
+    "mean_log_playcount":10.8033293666
   },
   {
     "genre":"rnb",
@@ -20169,7 +20169,7 @@
     "diversity":2.1614031792,
     "pop_coverage":0.5,
     "lyric_coverage":0.5,
-    "mean_log_playcount":10.8031945377
+    "mean_log_playcount":10.8033293666
   },
   {
     "genre":"rnb",
@@ -20181,7 +20181,7 @@
     "diversity":1.9730584621,
     "pop_coverage":0.4,
     "lyric_coverage":0.4,
-    "mean_log_playcount":10.9249366359
+    "mean_log_playcount":10.9250720825
   },
   {
     "genre":"rnb",
@@ -20193,7 +20193,7 @@
     "diversity":1.9730582237,
     "pop_coverage":0.4,
     "lyric_coverage":0.4,
-    "mean_log_playcount":10.9249366359
+    "mean_log_playcount":10.9250720825
   },
   {
     "genre":"rnb",
@@ -20205,7 +20205,7 @@
     "diversity":1.9730582237,
     "pop_coverage":0.4,
     "lyric_coverage":0.4,
-    "mean_log_playcount":10.9249366359
+    "mean_log_playcount":10.9250720825
   },
   {
     "genre":"rnb",
@@ -20217,7 +20217,7 @@
     "diversity":1.9730582237,
     "pop_coverage":0.4,
     "lyric_coverage":0.4,
-    "mean_log_playcount":10.9249366359
+    "mean_log_playcount":10.9250720825
   },
   {
     "genre":"rnb",
@@ -20229,7 +20229,7 @@
     "diversity":1.9730584621,
     "pop_coverage":0.4,
     "lyric_coverage":0.4,
-    "mean_log_playcount":10.9249366359
+    "mean_log_playcount":10.9250720825
   },
   {
     "genre":"rnb",
@@ -20301,7 +20301,7 @@
     "diversity":1.8049445152,
     "pop_coverage":0.4,
     "lyric_coverage":0.5,
-    "mean_log_playcount":10.9249366359
+    "mean_log_playcount":10.9250720825
   },
   {
     "genre":"rnb",
@@ -20313,7 +20313,7 @@
     "diversity":1.6194149256,
     "pop_coverage":0.3,
     "lyric_coverage":0.5,
-    "mean_log_playcount":10.130135266
+    "mean_log_playcount":10.1302876609
   },
   {
     "genre":"rnb",
@@ -20325,7 +20325,7 @@
     "diversity":1.619415164,
     "pop_coverage":0.3,
     "lyric_coverage":0.5,
-    "mean_log_playcount":10.130135266
+    "mean_log_playcount":10.1302876609
   },
   {
     "genre":"rnb",
@@ -20481,7 +20481,7 @@
     "diversity":1.6960573196,
     "pop_coverage":0.3,
     "lyric_coverage":0.7,
-    "mean_log_playcount":10.130135266
+    "mean_log_playcount":10.1302876609
   },
   {
     "genre":"rnb",
@@ -20493,7 +20493,7 @@
     "diversity":1.6960570812,
     "pop_coverage":0.3,
     "lyric_coverage":0.7,
-    "mean_log_playcount":10.130135266
+    "mean_log_playcount":10.1302876609
   },
   {
     "genre":"rnb",
@@ -20541,7 +20541,7 @@
     "diversity":1.6460394859,
     "pop_coverage":0.3,
     "lyric_coverage":0.6,
-    "mean_log_playcount":10.130135266
+    "mean_log_playcount":10.1302876609
   },
   {
     "genre":"rnb",
@@ -20553,7 +20553,7 @@
     "diversity":1.6460394859,
     "pop_coverage":0.3,
     "lyric_coverage":0.6,
-    "mean_log_playcount":10.130135266
+    "mean_log_playcount":10.1302876609
   },
   {
     "genre":"rnb",
@@ -20565,7 +20565,7 @@
     "diversity":1.6460394859,
     "pop_coverage":0.3,
     "lyric_coverage":0.6,
-    "mean_log_playcount":10.130135266
+    "mean_log_playcount":10.1302876609
   },
   {
     "genre":"rnb",
@@ -20745,7 +20745,7 @@
     "diversity":2.394033432,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.1774089046
+    "mean_log_playcount":15.1791346241
   },
   {
     "genre":"rnb",
@@ -20757,7 +20757,7 @@
     "diversity":2.394033432,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.1774089046
+    "mean_log_playcount":15.1791346241
   },
   {
     "genre":"rnb",
@@ -20769,7 +20769,7 @@
     "diversity":2.4971549511,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.1014327202
+    "mean_log_playcount":15.1032813221
   },
   {
     "genre":"rnb",
@@ -20781,7 +20781,7 @@
     "diversity":2.2130990028,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.7252690629
+    "mean_log_playcount":14.7269371925
   },
   {
     "genre":"rnb",
@@ -20793,7 +20793,7 @@
     "diversity":2.3652553558,
     "pop_coverage":1.0,
     "lyric_coverage":0.6,
-    "mean_log_playcount":13.9728108205
+    "mean_log_playcount":13.9741680228
   },
   {
     "genre":"rnb",
@@ -20805,7 +20805,7 @@
     "diversity":2.394033432,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.1774089046
+    "mean_log_playcount":15.1791346241
   },
   {
     "genre":"rnb",
@@ -20817,7 +20817,7 @@
     "diversity":2.394033432,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.1774089046
+    "mean_log_playcount":15.1791346241
   },
   {
     "genre":"rnb",
@@ -20829,7 +20829,7 @@
     "diversity":2.394033432,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.1774089046
+    "mean_log_playcount":15.1791346241
   },
   {
     "genre":"rnb",
@@ -20841,7 +20841,7 @@
     "diversity":2.4971549511,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":15.1014327202
+    "mean_log_playcount":15.1032813221
   },
   {
     "genre":"rnb",
@@ -20850,10 +20850,10 @@
     "mode":"norm",
     "novelty":1.0,
     "coherence":0.2699342966,
-    "diversity":2.2082145214,
+    "diversity":2.208214283,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.4162116041
+    "mean_log_playcount":14.4177009711
   },
   {
     "genre":"rnb",
@@ -20865,7 +20865,7 @@
     "diversity":1.3239028454,
     "pop_coverage":0.2,
     "lyric_coverage":0.7,
-    "mean_log_playcount":14.1544752289
+    "mean_log_playcount":14.1556201505
   },
   {
     "genre":"rnb",
@@ -20877,7 +20877,7 @@
     "diversity":1.0469461679,
     "pop_coverage":0.1,
     "lyric_coverage":0.7,
-    "mean_log_playcount":14.7786570128
+    "mean_log_playcount":14.7797080163
   },
   {
     "genre":"rnb",
@@ -20925,7 +20925,7 @@
     "diversity":1.3239027262,
     "pop_coverage":0.2,
     "lyric_coverage":0.7,
-    "mean_log_playcount":14.1544752289
+    "mean_log_playcount":14.1556201505
   },
   {
     "genre":"rnb",
@@ -20937,7 +20937,7 @@
     "diversity":1.3239028454,
     "pop_coverage":0.2,
     "lyric_coverage":0.7,
-    "mean_log_playcount":14.1544752289
+    "mean_log_playcount":14.1556201505
   },
   {
     "genre":"rnb",
@@ -20949,7 +20949,7 @@
     "diversity":1.3239028454,
     "pop_coverage":0.2,
     "lyric_coverage":0.7,
-    "mean_log_playcount":14.1544752289
+    "mean_log_playcount":14.1556201505
   },
   {
     "genre":"rnb",
@@ -21105,7 +21105,7 @@
     "diversity":1.3553112745,
     "pop_coverage":0.2,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.1544752289
+    "mean_log_playcount":14.1556201505
   },
   {
     "genre":"rnb",
@@ -21117,7 +21117,7 @@
     "diversity":1.3553112745,
     "pop_coverage":0.2,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.1544752289
+    "mean_log_playcount":14.1556201505
   },
   {
     "genre":"rnb",
@@ -21165,7 +21165,7 @@
     "diversity":1.84976089,
     "pop_coverage":0.4,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.589413388
+    "mean_log_playcount":14.5909124312
   },
   {
     "genre":"rnb",
@@ -21177,7 +21177,7 @@
     "diversity":1.3553112745,
     "pop_coverage":0.2,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.1544752289
+    "mean_log_playcount":14.1556201505
   },
   {
     "genre":"rnb",
@@ -21189,7 +21189,7 @@
     "diversity":1.3553112745,
     "pop_coverage":0.2,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.1544752289
+    "mean_log_playcount":14.1556201505
   },
   {
     "genre":"rnb",
@@ -21369,7 +21369,7 @@
     "diversity":2.7388765812,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.6243807669
+    "mean_log_playcount":14.625589593
   },
   {
     "genre":"rnb",
@@ -21381,7 +21381,7 @@
     "diversity":2.7388765812,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.6243807669
+    "mean_log_playcount":14.625589593
   },
   {
     "genre":"rnb",
@@ -21393,7 +21393,7 @@
     "diversity":2.3442964554,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.3458976687
+    "mean_log_playcount":14.3471044239
   },
   {
     "genre":"rnb",
@@ -21405,7 +21405,7 @@
     "diversity":2.3697957993,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.214299154
+    "mean_log_playcount":14.215601407
   },
   {
     "genre":"rnb",
@@ -21417,7 +21417,7 @@
     "diversity":2.3917789459,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":13.8273323443
+    "mean_log_playcount":13.8284941013
   },
   {
     "genre":"rnb",
@@ -21429,7 +21429,7 @@
     "diversity":2.7388765812,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.6243807669
+    "mean_log_playcount":14.625589593
   },
   {
     "genre":"rnb",
@@ -21441,7 +21441,7 @@
     "diversity":2.7388765812,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.6243807669
+    "mean_log_playcount":14.625589593
   },
   {
     "genre":"rnb",
@@ -21453,7 +21453,7 @@
     "diversity":2.7388765812,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.6243807669
+    "mean_log_playcount":14.625589593
   },
   {
     "genre":"rnb",
@@ -21465,7 +21465,7 @@
     "diversity":2.3442964554,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.3458976687
+    "mean_log_playcount":14.3471044239
   },
   {
     "genre":"rnb",
@@ -21477,7 +21477,7 @@
     "diversity":2.4642336369,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.0200940014
+    "mean_log_playcount":14.0213597392
   },
   {
     "genre":"rnb",
@@ -21549,7 +21549,7 @@
     "diversity":0.9756734371,
     "pop_coverage":0.2,
     "lyric_coverage":0.6,
-    "mean_log_playcount":14.9025525764
+    "mean_log_playcount":14.9036634697
   },
   {
     "genre":"rnb",
@@ -21561,7 +21561,7 @@
     "diversity":0.7570555806,
     "pop_coverage":0.1,
     "lyric_coverage":0.5,
-    "mean_log_playcount":13.9207368646
+    "mean_log_playcount":13.9218362077
   },
   {
     "genre":"rnb",
@@ -21729,7 +21729,7 @@
     "diversity":0.7521125078,
     "pop_coverage":0.1,
     "lyric_coverage":1.0,
-    "mean_log_playcount":13.9207368646
+    "mean_log_playcount":13.9218362077
   },
   {
     "genre":"rnb",
@@ -21789,7 +21789,7 @@
     "diversity":1.6424483061,
     "pop_coverage":0.4,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.5567769211
+    "mean_log_playcount":14.5578166544
   },
   {
     "genre":"rnb",
@@ -21801,7 +21801,7 @@
     "diversity":0.7698940039,
     "pop_coverage":0.1,
     "lyric_coverage":0.8,
-    "mean_log_playcount":13.9207368646
+    "mean_log_playcount":13.9218362077
   },
   {
     "genre":"rnb",
@@ -21993,7 +21993,7 @@
     "diversity":3.14270401,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.6111307872
+    "mean_log_playcount":14.6123366955
   },
   {
     "genre":"rnb",
@@ -22005,7 +22005,7 @@
     "diversity":3.14270401,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.6111307872
+    "mean_log_playcount":14.6123366955
   },
   {
     "genre":"rnb",
@@ -22017,7 +22017,7 @@
     "diversity":3.14270401,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.6111307872
+    "mean_log_playcount":14.6123366955
   },
   {
     "genre":"rnb",
@@ -22029,7 +22029,7 @@
     "diversity":3.1427035332,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.6111307872
+    "mean_log_playcount":14.6123366955
   },
   {
     "genre":"rnb",
@@ -22041,7 +22041,7 @@
     "diversity":2.849627018,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.3210044859
+    "mean_log_playcount":14.3221772879
   },
   {
     "genre":"rnb",
@@ -22053,7 +22053,7 @@
     "diversity":3.14270401,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.6111307872
+    "mean_log_playcount":14.6123366955
   },
   {
     "genre":"rnb",
@@ -22065,7 +22065,7 @@
     "diversity":3.14270401,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.6111307872
+    "mean_log_playcount":14.6123366955
   },
   {
     "genre":"rnb",
@@ -22077,7 +22077,7 @@
     "diversity":3.14270401,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.6111307872
+    "mean_log_playcount":14.6123366955
   },
   {
     "genre":"rnb",
@@ -22089,7 +22089,7 @@
     "diversity":3.1427035332,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.6111307872
+    "mean_log_playcount":14.6123366955
   },
   {
     "genre":"rnb",
@@ -22101,7 +22101,7 @@
     "diversity":2.9709775448,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.4830605727
+    "mean_log_playcount":14.4842141056
   },
   {
     "genre":"rnb",
@@ -22113,7 +22113,7 @@
     "diversity":0.5515370965,
     "pop_coverage":0.1,
     "lyric_coverage":0.3,
-    "mean_log_playcount":13.5759466779
+    "mean_log_playcount":13.5767468954
   },
   {
     "genre":"rnb",
@@ -22173,7 +22173,7 @@
     "diversity":0.5515370965,
     "pop_coverage":0.1,
     "lyric_coverage":0.3,
-    "mean_log_playcount":13.5759466779
+    "mean_log_playcount":13.5767468954
   },
   {
     "genre":"rnb",
@@ -22185,7 +22185,7 @@
     "diversity":0.5515370965,
     "pop_coverage":0.1,
     "lyric_coverage":0.3,
-    "mean_log_playcount":13.5759466779
+    "mean_log_playcount":13.5767468954
   },
   {
     "genre":"rnb",
@@ -22353,7 +22353,7 @@
     "diversity":2.6354558468,
     "pop_coverage":0.6,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.9255606132
+    "mean_log_playcount":14.9266612818
   },
   {
     "genre":"rnb",
@@ -22365,7 +22365,7 @@
     "diversity":1.7737950087,
     "pop_coverage":0.3,
     "lyric_coverage":0.8,
-    "mean_log_playcount":14.2141209041
+    "mean_log_playcount":14.214980903
   },
   {
     "genre":"rnb",
@@ -22413,7 +22413,7 @@
     "diversity":2.2596945763,
     "pop_coverage":0.5,
     "lyric_coverage":0.7,
-    "mean_log_playcount":14.7763183075
+    "mean_log_playcount":14.7774250604
   },
   {
     "genre":"rnb",
@@ -22425,7 +22425,7 @@
     "diversity":1.7881919146,
     "pop_coverage":0.3,
     "lyric_coverage":0.5,
-    "mean_log_playcount":14.2141209041
+    "mean_log_playcount":14.214980903
   },
   {
     "genre":"rnb",
@@ -22437,7 +22437,7 @@
     "diversity":0.5439347029,
     "pop_coverage":0.1,
     "lyric_coverage":0.4,
-    "mean_log_playcount":13.5759466779
+    "mean_log_playcount":13.5767468954
   },
   {
     "genre":"rnb",
@@ -22617,7 +22617,7 @@
     "diversity":3.7704870701,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.9061619631
+    "mean_log_playcount":14.9067189517
   },
   {
     "genre":"rnb",
@@ -22629,7 +22629,7 @@
     "diversity":3.7704870701,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.9061619631
+    "mean_log_playcount":14.9067189517
   },
   {
     "genre":"rnb",
@@ -22641,7 +22641,7 @@
     "diversity":3.5800187588,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.7206388552
+    "mean_log_playcount":14.7212165553
   },
   {
     "genre":"rnb",
@@ -22653,7 +22653,7 @@
     "diversity":3.5938205719,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.348474047
+    "mean_log_playcount":14.348949702
   },
   {
     "genre":"rnb",
@@ -22665,7 +22665,7 @@
     "diversity":3.7170803547,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.3033545449
+    "mean_log_playcount":14.3037834705
   },
   {
     "genre":"rnb",
@@ -22677,7 +22677,7 @@
     "diversity":3.7704870701,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.9061619631
+    "mean_log_playcount":14.9067189517
   },
   {
     "genre":"rnb",
@@ -22689,7 +22689,7 @@
     "diversity":3.7704870701,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.9061619631
+    "mean_log_playcount":14.9067189517
   },
   {
     "genre":"rnb",
@@ -22701,7 +22701,7 @@
     "diversity":3.5800185204,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.7206388552
+    "mean_log_playcount":14.7212165553
   },
   {
     "genre":"rnb",
@@ -22713,7 +22713,7 @@
     "diversity":3.5800187588,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.7206388552
+    "mean_log_playcount":14.7212165553
   },
   {
     "genre":"rnb",
@@ -22725,7 +22725,7 @@
     "diversity":3.5938205719,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.348474047
+    "mean_log_playcount":14.348949702
   },
   {
     "genre":"rnb",
@@ -23241,7 +23241,7 @@
     "diversity":4.1998071671,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.4458177743
+    "mean_log_playcount":14.4464363241
   },
   {
     "genre":"rnb",
@@ -23253,7 +23253,7 @@
     "diversity":4.1998071671,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.4458177743
+    "mean_log_playcount":14.4464363241
   },
   {
     "genre":"rnb",
@@ -23265,7 +23265,7 @@
     "diversity":4.0989675522,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.3459117803
+    "mean_log_playcount":14.3465419881
   },
   {
     "genre":"rnb",
@@ -23277,7 +23277,7 @@
     "diversity":4.011267662,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.2043363298
+    "mean_log_playcount":14.2049337587
   },
   {
     "genre":"rnb",
@@ -23289,7 +23289,7 @@
     "diversity":3.9313416481,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":13.6008471021
+    "mean_log_playcount":13.6014304446
   },
   {
     "genre":"rnb",
@@ -23301,7 +23301,7 @@
     "diversity":4.1998071671,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.4458177743
+    "mean_log_playcount":14.4464363241
   },
   {
     "genre":"rnb",
@@ -23313,7 +23313,7 @@
     "diversity":4.1998071671,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.4458177743
+    "mean_log_playcount":14.4464363241
   },
   {
     "genre":"rnb",
@@ -23325,7 +23325,7 @@
     "diversity":4.1998071671,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.4458177743
+    "mean_log_playcount":14.4464363241
   },
   {
     "genre":"rnb",
@@ -23337,7 +23337,7 @@
     "diversity":4.0989675522,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.3459117803
+    "mean_log_playcount":14.3465419881
   },
   {
     "genre":"rnb",
@@ -23349,7 +23349,7 @@
     "diversity":4.011267662,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.2043363298
+    "mean_log_playcount":14.2049337587
   },
   {
     "genre":"rnb",
@@ -23361,7 +23361,7 @@
     "diversity":0.9561318159,
     "pop_coverage":0.2,
     "lyric_coverage":0.4,
-    "mean_log_playcount":13.987547744
+    "mean_log_playcount":13.9881204097
   },
   {
     "genre":"rnb",
@@ -23421,7 +23421,7 @@
     "diversity":0.9612810612,
     "pop_coverage":0.2,
     "lyric_coverage":0.4,
-    "mean_log_playcount":13.987547744
+    "mean_log_playcount":13.9881204097
   },
   {
     "genre":"rnb",
@@ -23433,7 +23433,7 @@
     "diversity":0.9612811804,
     "pop_coverage":0.2,
     "lyric_coverage":0.4,
-    "mean_log_playcount":13.987547744
+    "mean_log_playcount":13.9881204097
   },
   {
     "genre":"rnb",
@@ -23601,7 +23601,7 @@
     "diversity":3.3302602768,
     "pop_coverage":0.6,
     "lyric_coverage":0.8,
-    "mean_log_playcount":14.0801559367
+    "mean_log_playcount":14.080766036
   },
   {
     "genre":"rnb",
@@ -23613,7 +23613,7 @@
     "diversity":0.9803298712,
     "pop_coverage":0.2,
     "lyric_coverage":0.5,
-    "mean_log_playcount":13.987547744
+    "mean_log_playcount":13.9881204097
   },
   {
     "genre":"rnb",
@@ -23661,7 +23661,7 @@
     "diversity":3.2952313423,
     "pop_coverage":0.5,
     "lyric_coverage":0.7,
-    "mean_log_playcount":14.0789539756
+    "mean_log_playcount":14.0795817601
   },
   {
     "genre":"rnb",
@@ -23673,7 +23673,7 @@
     "diversity":1.9891123772,
     "pop_coverage":0.3,
     "lyric_coverage":0.5,
-    "mean_log_playcount":13.9702056069
+    "mean_log_playcount":13.9707044357
   },
   {
     "genre":"rnb",
@@ -23685,7 +23685,7 @@
     "diversity":0.96128124,
     "pop_coverage":0.2,
     "lyric_coverage":0.4,
-    "mean_log_playcount":13.987547744
+    "mean_log_playcount":13.9881204097
   },
   {
     "genre":"rnb",
@@ -23865,7 +23865,7 @@
     "diversity":2.0310525894,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.3879423257
+    "mean_log_playcount":14.3890653526
   },
   {
     "genre":"rnb",
@@ -23877,7 +23877,7 @@
     "diversity":2.0310525894,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.3879423257
+    "mean_log_playcount":14.3890653526
   },
   {
     "genre":"rnb",
@@ -23889,7 +23889,7 @@
     "diversity":2.4639844894,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.2973261906
+    "mean_log_playcount":14.2983614444
   },
   {
     "genre":"rnb",
@@ -23901,7 +23901,7 @@
     "diversity":2.5681900978,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.1099554915
+    "mean_log_playcount":14.1110587333
   },
   {
     "genre":"rnb",
@@ -23913,7 +23913,7 @@
     "diversity":2.7891597748,
     "pop_coverage":1.0,
     "lyric_coverage":0.9,
-    "mean_log_playcount":13.2105144884
+    "mean_log_playcount":13.2116642049
   },
   {
     "genre":"rnb",
@@ -23925,7 +23925,7 @@
     "diversity":2.0310525894,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.3879423257
+    "mean_log_playcount":14.3890653526
   },
   {
     "genre":"rnb",
@@ -23937,7 +23937,7 @@
     "diversity":2.0310525894,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.3879423257
+    "mean_log_playcount":14.3890653526
   },
   {
     "genre":"rnb",
@@ -23949,7 +23949,7 @@
     "diversity":2.0310525894,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.3879423257
+    "mean_log_playcount":14.3890653526
   },
   {
     "genre":"rnb",
@@ -23961,7 +23961,7 @@
     "diversity":2.4639847279,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.2973261906
+    "mean_log_playcount":14.2983614444
   },
   {
     "genre":"rnb",
@@ -23973,7 +23973,7 @@
     "diversity":2.4769411087,
     "pop_coverage":1.0,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.0974718402
+    "mean_log_playcount":14.098599176
   },
   {
     "genre":"rnb",
@@ -23985,7 +23985,7 @@
     "diversity":1.320936799,
     "pop_coverage":0.1,
     "lyric_coverage":0.9,
-    "mean_log_playcount":13.1435121571
+    "mean_log_playcount":13.1448212998
   },
   {
     "genre":"rnb",
@@ -23997,7 +23997,7 @@
     "diversity":1.3209366798,
     "pop_coverage":0.1,
     "lyric_coverage":0.9,
-    "mean_log_playcount":13.1435121571
+    "mean_log_playcount":13.1448212998
   },
   {
     "genre":"rnb",
@@ -24045,7 +24045,7 @@
     "diversity":1.6470162868,
     "pop_coverage":0.4,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.6014377095
+    "mean_log_playcount":14.6024010041
   },
   {
     "genre":"rnb",
@@ -24057,7 +24057,7 @@
     "diversity":1.5162671804,
     "pop_coverage":0.3,
     "lyric_coverage":0.9,
-    "mean_log_playcount":14.117861407
+    "mean_log_playcount":14.118971025
   },
   {
     "genre":"rnb",
@@ -24069,7 +24069,7 @@
     "diversity":1.320936799,
     "pop_coverage":0.1,
     "lyric_coverage":0.9,
-    "mean_log_playcount":13.1435121571
+    "mean_log_playcount":13.1448212998
   },
   {
     "genre":"rnb",
@@ -24081,7 +24081,7 @@
     "diversity":1.3209366798,
     "pop_coverage":0.1,
     "lyric_coverage":0.9,
-    "mean_log_playcount":13.1435121571
+    "mean_log_playcount":13.1448212998
   },
   {
     "genre":"rnb",
@@ -24225,7 +24225,7 @@
     "diversity":1.5236054659,
     "pop_coverage":0.3,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.117861407
+    "mean_log_playcount":14.118971025
   },
   {
     "genre":"rnb",
@@ -24237,7 +24237,7 @@
     "diversity":1.3204797506,
     "pop_coverage":0.1,
     "lyric_coverage":1.0,
-    "mean_log_playcount":13.1435121571
+    "mean_log_playcount":13.1448212998
   },
   {
     "genre":"rnb",
@@ -24249,7 +24249,7 @@
     "diversity":1.3204797506,
     "pop_coverage":0.1,
     "lyric_coverage":1.0,
-    "mean_log_playcount":13.1435121571
+    "mean_log_playcount":13.1448212998
   },
   {
     "genre":"rnb",
@@ -24285,7 +24285,7 @@
     "diversity":1.6806644201,
     "pop_coverage":0.5,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.74046866
+    "mean_log_playcount":14.7413755478
   },
   {
     "genre":"rnb",
@@ -24297,7 +24297,7 @@
     "diversity":1.680664897,
     "pop_coverage":0.5,
     "lyric_coverage":1.0,
-    "mean_log_playcount":14.74046866
+    "mean_log_playcount":14.7413755478
   },
   {
     "genre":"rnb",
@@ -24309,7 +24309,7 @@
     "diversity":1.4482268095,
     "pop_coverage":0.2,
     "lyric_coverage":1.0,
-    "mean_log_playcount":13.950763232
+    "mean_log_playcount":13.9520772424
   },
   {
     "genre":"rnb",
@@ -24321,7 +24321,7 @@
     "diversity":1.3204797506,
     "pop_coverage":0.1,
     "lyric_coverage":1.0,
-    "mean_log_playcount":13.1435121571
+    "mean_log_playcount":13.1448212998
   },
   {
     "genre":"rnb",
@@ -24489,7 +24489,7 @@
     "diversity":2.9699528217,
     "pop_coverage":1.0,
     "lyric_coverage":0.8,
-    "mean_log_playcount":10.4850092728
+    "mean_log_playcount":10.4873875432
   },
   {
     "genre":"rnb",
@@ -24501,7 +24501,7 @@
     "diversity":2.9699523449,
     "pop_coverage":1.0,
     "lyric_coverage":0.8,
-    "mean_log_playcount":10.4850092728
+    "mean_log_playcount":10.4873875432
   },
   {
     "genre":"rnb",
@@ -24513,7 +24513,7 @@
     "diversity":2.8106005192,
     "pop_coverage":1.0,
     "lyric_coverage":0.8,
-    "mean_log_playcount":9.9656002317
+    "mean_log_playcount":9.9679127446
   },
   {
     "genre":"rnb",
@@ -24525,7 +24525,7 @@
     "diversity":2.8256726265,
     "pop_coverage":1.0,
     "lyric_coverage":0.8,
-    "mean_log_playcount":9.7730263259
+    "mean_log_playcount":9.7753575453
   },
   {
     "genre":"rnb",
@@ -24537,7 +24537,7 @@
     "diversity":2.6407830715,
     "pop_coverage":1.0,
     "lyric_coverage":0.8,
-    "mean_log_playcount":9.5456956638
+    "mean_log_playcount":9.5479818845
   },
   {
     "genre":"rnb",
@@ -24549,7 +24549,7 @@
     "diversity":2.9699528217,
     "pop_coverage":1.0,
     "lyric_coverage":0.8,
-    "mean_log_playcount":10.4850092728
+    "mean_log_playcount":10.4873875432
   },
   {
     "genre":"rnb",
@@ -24561,7 +24561,7 @@
     "diversity":2.9699523449,
     "pop_coverage":1.0,
     "lyric_coverage":0.8,
-    "mean_log_playcount":10.4850092728
+    "mean_log_playcount":10.4873875432
   },
   {
     "genre":"rnb",
@@ -24573,7 +24573,7 @@
     "diversity":2.9699528217,
     "pop_coverage":1.0,
     "lyric_coverage":0.8,
-    "mean_log_playcount":10.4850092728
+    "mean_log_playcount":10.4873875432
   },
   {
     "genre":"rnb",
@@ -24585,7 +24585,7 @@
     "diversity":2.9699523449,
     "pop_coverage":1.0,
     "lyric_coverage":0.8,
-    "mean_log_playcount":10.4850092728
+    "mean_log_playcount":10.4873875432
   },
   {
     "genre":"rnb",
@@ -24597,7 +24597,7 @@
     "diversity":2.8256726265,
     "pop_coverage":1.0,
     "lyric_coverage":0.8,
-    "mean_log_playcount":9.7730263259
+    "mean_log_playcount":9.7753575453
   },
   {
     "genre":"rnb",
@@ -24609,7 +24609,7 @@
     "diversity":0.5712108016,
     "pop_coverage":0.1,
     "lyric_coverage":1.0,
-    "mean_log_playcount":12.6315495094
+    "mean_log_playcount":12.6323268223
   },
   {
     "genre":"rnb",
@@ -24669,7 +24669,7 @@
     "diversity":0.5712108016,
     "pop_coverage":0.1,
     "lyric_coverage":1.0,
-    "mean_log_playcount":12.6315495094
+    "mean_log_playcount":12.6323268223
   },
   {
     "genre":"rnb",
