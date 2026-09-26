@@ -20,7 +20,6 @@ class PreferenceParameters(BaseModel):
     """User controllable params with each request"""
 
     novelty: float = Field(default=0.5, ge=0, le=1)  # greater or equal, less or equal
-
     target_mood: Mood = Mood.any
     exclude_seen: bool = True  # Ignore tracks that have been used in the request
 

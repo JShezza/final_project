@@ -1,0 +1,262 @@
+{
+  "example": {
+    "seed": "7lmeHLHBe4nmXzuXc0HDjk",
+    "variant": "full_hybrid",
+    "lists": {
+      "0.0": [
+        {
+          "rank": 1,
+          "id": "1MQTmpYOZ6fcMQc56Hdo7T",
+          "name": "Sleep Now In the Fire",
+          "artists": "Rage Against The Machine",
+          "score": 0.5923,
+          "rationale": {
+            "audio": 0.0,
+            "collaborative": 0.4,
+            "lyric": 0.1923
+          },
+          "sums_to_score": true
+        },
+        {
+          "rank": 2,
+          "id": "1wsRitfRRtWyEapl0q22o8",
+          "name": "Guerrilla Radio",
+          "artists": "Rage Against The Machine",
+          "score": 0.5711,
+          "rationale": {
+            "audio": 0.0,
+            "collaborative": 0.381,
+            "lyric": 0.19
+          },
+          "sums_to_score": false
+        },
+        {
+          "rank": 3,
+          "id": "1XsmgDo7e4g87IwbFykOcP",
+          "name": "Julia",
+          "artists": "Our Lady Peace",
+          "score": 0.4414,
+          "rationale": {
+            "audio": 0.2988,
+            "collaborative": 0.0,
+            "lyric": 0.1426
+          },
+          "sums_to_score": true
+        },
+        {
+          "rank": 4,
+          "id": "0dm9ncmnV7rgrcPnGLnUn5",
+          "name": "Locked Out",
+          "artists": "Crowded House",
+          "score": 0.4134,
+          "rationale": {
+            "audio": 0.4,
+            "collaborative": 0.0,
+            "lyric": 0.0134
+          },
+          "sums_to_score": true
+        },
+        {
+          "rank": 5,
+          "id": "1H1A6hwQr3ZkYfgB5jw6xd",
+          "name": "Bring The Fight [To The Floor]",
+          "artists": "DevilDriver",
+          "score": 0.3642,
+          "rationale": {
+            "audio": 0.1741,
+            "collaborative": 0.0,
+            "lyric": 0.1901
+          },
+          "sums_to_score": true
+        }
+      ],
+      "0.75": [
+        {
+          "rank": 1,
+          "id": "1XsmgDo7e4g87IwbFykOcP",
+          "name": "Julia",
+          "artists": "Our Lady Peace",
+          "score": 0.4414,
+          "rationale": {
+            "audio": 0.2988,
+            "collaborative": 0.0,
+            "lyric": 0.1426
+          },
+          "sums_to_score": true
+        },
+        {
+          "rank": 2,
+          "id": "0dm9ncmnV7rgrcPnGLnUn5",
+          "name": "Locked Out",
+          "artists": "Crowded House",
+          "score": 0.4134,
+          "rationale": {
+            "audio": 0.4,
+            "collaborative": 0.0,
+            "lyric": 0.0134
+          },
+          "sums_to_score": true
+        },
+        {
+          "rank": 3,
+          "id": "1H1A6hwQr3ZkYfgB5jw6xd",
+          "name": "Bring The Fight [To The Floor]",
+          "artists": "DevilDriver",
+          "score": 0.3642,
+          "rationale": {
+            "audio": 0.1741,
+            "collaborative": 0.0,
+            "lyric": 0.1901
+          },
+          "sums_to_score": true
+        },
+        {
+          "rank": 4,
+          "id": "3pd2hBDHn6yq969wgTHV2L",
+          "name": "Bring The Fight [To The Floor]",
+          "artists": "DevilDriver",
+          "score": 0.3642,
+          "rationale": {
+            "audio": 0.1741,
+            "collaborative": 0.0,
+            "lyric": 0.1901
+          },
+          "sums_to_score": true
+        },
+        {
+          "rank": 5,
+          "id": "2jILdI2HRWIpyqGgVFFF8u",
+          "name": "You're Through",
+          "artists": "Hour Of The Wolf",
+          "score": 0.3557,
+          "rationale": {
+            "audio": 0.1655,
+            "collaborative": 0.0,
+            "lyric": 0.1902
+          },
+          "sums_to_score": true
+        }
+      ]
+    },
+    "left_top_five": [
+      {
+        "id": "1MQTmpYOZ6fcMQc56Hdo7T",
+        "track": "Sleep Now In the Fire - Rage Against The Machine",
+        "old_rank": 1,
+        "new_rank": 16,
+        "novelty_penalty": -0.394
+      },
+      {
+        "id": "1wsRitfRRtWyEapl0q22o8",
+        "track": "Guerrilla Radio - Rage Against The Machine",
+        "old_rank": 2,
+        "new_rank": 17,
+        "novelty_penalty": -0.383
+      }
+    ]
+  },
+  "latency": {
+    "audio_only": {
+      "n": 12,
+      "seeds": [
+        "6HDK3LS0kijWZvb3Hq7kBt",
+        "6cilOVloMnTTPhCLPE7ldy",
+        "5FJ6OcM2bT0NIv4l1zPKZO",
+        "0ffHxhSn74sW6KwBqG5oar",
+        "3DVo4Fsm5BL4s3AIXJbqU5",
+        "3ExmtMlduFzTufqwjSKylw",
+        "0o7vI1zwUY0zItcbBWa13g",
+        "0yrc24x1EVD0WdZdeibHW3",
+        "4vcSjS5gPdLGUqOwDPkBbE",
+        "6qyknJwFNU2505p7e7I8ei",
+        "0SCjJKDkGaR4qh3AjPMbXf",
+        "72Tdb8XXJ8vEsW30mMJx04"
+      ],
+      "cold_ms": [
+        221.11025400226936,
+        609.9130989750847,
+        445.62886096537113,
+        706.0288820066489,
+        452.28764502098784,
+        601.5085750259459,
+        565.7134729553945,
+        684.7728689899668,
+        430.81354501191527,
+        629.3694310006686,
+        617.9504469619133,
+        591.3345059962012
+      ],
+      "warm_ms": [
+        4.7570629976689816,
+        4.795555025339127,
+        4.57665603607893,
+        5.161208042409271,
+        4.640274972189218,
+        5.142423033248633,
+        5.197426013182849,
+        5.753042991273105,
+        4.7887120163068175,
+        5.258099001366645,
+        5.296010000165552,
+        5.5929949739947915
+      ],
+      "cold_median": 596.4215405110735,
+      "cold_max": 706.0288820066489,
+      "warm_median": 5.151815537828952,
+      "warm_max": 5.753042991273105,
+      "seeds_with_collab_results": 0,
+      "seeds_with_lyric_results": 0
+    },
+    "full_hybrid": {
+      "n": 12,
+      "seeds": [
+        "5WrhpFv0O4gelpS8aacyL0",
+        "1rHrpRn1W1Ua6WUAhcrMET",
+        "5TiZAsxzwGyyTCszPMclXw",
+        "6zFA1MhqzScQHhWHJlYQqV",
+        "6K6ftas1MZjh7G2nrXHgFD",
+        "5SQ4kBZ3GLlxbn7zBZzl6W",
+        "6sTgJqTkNGbCurPASmwh79",
+        "47fi2RvRXlBTGS7xj1aaut",
+        "69yCpvzZpH5VfvQHPbyfx0",
+        "034F498KHq5TUtX0zO9QN9",
+        "3FGOQhWPk3dibXlFxm1iQ9",
+        "3C0WJ9DArlo0CLUDvnN6c5"
+      ],
+      "cold_ms": [
+        324.2649899912067,
+        6207.852085994091,
+        7503.568965010345,
+        498.30580700654536,
+        596.1451779585332,
+        720.6372000509873,
+        686.8832989712246,
+        550.1206839689985,
+        7842.779970029369,
+        518.5266869957559,
+        5960.700586030725,
+        7143.260228971485
+      ],
+      "warm_ms": [
+        4.980841011274606,
+        6.031021999660879,
+        5.953738000243902,
+        5.05885697202757,
+        5.701858026441187,
+        5.318131006788462,
+        5.710413039196283,
+        5.291239998769015,
+        6.2914690352045,
+        5.66935702227056,
+        6.380906037520617,
+        5.938058020547032
+      ],
+      "cold_median": 703.7602495111059,
+      "cold_max": 7842.779970029369,
+      "warm_median": 5.706135532818735,
+      "warm_max": 6.380906037520617,
+      "seeds_with_collab_results": 10,
+      "seeds_with_lyric_results": 5
+    }
+  }
+}
